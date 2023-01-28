@@ -1,0 +1,36 @@
+appId: com.kptncook.app.kptncook
+---
+- launchApp
+
+# Assert navigation bar
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Navigate to profile tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Open setting tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/action_info"
+
+# Tap on My-account list item
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/myAccount"
+
+# Tap on delete-account list item
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvDeleteAccount"
+
+# Assert alert window by text
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/alertTitle"
+
+# Tap on send-email
+- tapOn:
+    id: "android:id/button1"
+
+- stopApp
+
+
+

@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+env:
+    EMAIL: vincent+testui+login@kptncook.com
+    PASSWORD: testing
+
+---
+- runFlow:
+        file: login.yaml
+- runFlow: # cleanup
+        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/logout/logout.yaml

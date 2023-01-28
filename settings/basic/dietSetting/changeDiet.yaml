@@ -1,0 +1,28 @@
+appId: com.kptncook.app.kptncook
+---
+
+- launchApp
+
+# Assert navigation bar
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Navigate to profile tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Open settings tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/action_info"
+
+# Tap on diet (basic) 
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/diet"
+
+# Tap on veggie
+- tapOn:
+    id: ${DIET_CHOICE}
+
+# Assert navigation bar
+- assertVisible:
+    id: ${DIET_ASSERT}

@@ -1,0 +1,9 @@
+appId: com.kptncook.app.kptncook
+---
+
+- runFlow:
+        file: purchaseTrial.yaml
+- runFlow:
+        file: forced/tests.yaml
+- runFlow:
+        file: cancelSubscription.yaml

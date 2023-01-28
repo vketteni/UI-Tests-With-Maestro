@@ -1,0 +1,25 @@
+appId: com.kptncook.app.kptncook
+# This flow tests forced login and registration methods
+---
+
+# facebook 
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KptnCook/profile/registration/facebook.yaml
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml
+
+# google 
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KptnCook/profile/registration/google.yaml
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml
+
+# email 
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KptnCook/profile/registration/email.yaml
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml
+
+# login
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KptnCook/profile/login/tests.yaml

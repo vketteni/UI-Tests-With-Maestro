@@ -1,0 +1,48 @@
+appId: com.kptncook.app.kptncook
+---
+
+
+
+# Save recipe title from flipper
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
+- evalScript: ${output.recipeTitle = maestro.copiedText}
+
+# Swipe up
+- swipe:
+        start: 100, 400
+        end: 100, 200
+        duration: 50
+
+# Save other recipe title from flipper
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
+
+# Assert flipping up by different recipe title
+- assertTrue: ${output.recipeTitle != maestro.copiedText}
+
+# Swipe down
+- swipe:
+      start: 100, 300
+      end: 100, 500
+      duration: 50
+
+# Save other recipe title from flipper
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
+
+# Assert flipping back by same recipe title
+- assertTrue: ${output.recipeTitle == maestro.copiedText}
+
+# Swipe down
+- swipe:
+    start: 100, 300
+    end: 100, 500
+    duration: 50
+
+# Save other recipe title from flipper
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
+
+# Assert flipping down by unequal recipe title
+- assertTrue: ${output.recipeTitle != maestro.copiedText}

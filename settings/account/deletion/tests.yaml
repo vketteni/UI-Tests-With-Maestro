@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+
+- runFlow:
+        file: deleteAccount.yaml
+- runFlow:
+        file: confirmEmail.yaml

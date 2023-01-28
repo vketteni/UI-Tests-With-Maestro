@@ -1,0 +1,7 @@
+
+appId: com.kptncook.app.kptncook
+---
+
+# Open flipper (daily by default)
+- tapOn:
+          id: "com.kptncook.app.kptncook:id/flipperTabFragment"

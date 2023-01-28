@@ -1,0 +1,12 @@
+appId: com.kptncook.app.kptncook
+env:
+    PASSWORD_OLD: testing
+    PASSWORD_NEW: testing1
+---
+
+- runFlow:
+        file: updatePassword.yaml
+- runFlow:
+        file: tryNewPassword.yaml
+- runFlow:
+        file: reverseChange.yaml

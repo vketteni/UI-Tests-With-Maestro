@@ -1,0 +1,65 @@
+appId: com.kptncook.app.kptncook
+---
+- launchApp
+
+# Assert navigation bar
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Navigate to profile tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Open setting tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/action_info"
+
+# Tap on my-account 
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/myAccount"
+
+# Tap on email
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvEmail"
+
+# Focus text field for email
+- repeat:
+    times: 3
+    commands:
+        - tapOn:
+            id: "com.kptncook.app.kptncook:id/etEmail"
+        - eraseText
+
+
+
+# Fill in new email
+- inputText: ${EMAIL_NEW}
+
+# Focus text field for password
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/etPassword"
+- eraseText
+
+# Fill in new last name
+- inputText: ${PASSWORD}
+
+# Tap on save
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnSave"
+
+# Assert notification by title
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvTitle"
+
+# Tap on confirm now
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnNegative"
+
+# Take email string from text field
+- copyTextFrom:
+    id:  "com.kptncook.app.kptncook:id/etEmail"
+
+# compare with EMAIL_NEW
+- assertTrue: ${maestro.copiedText == EMAIL_NEW}
+
+

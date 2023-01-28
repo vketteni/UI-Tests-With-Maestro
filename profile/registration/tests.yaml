@@ -1,0 +1,22 @@
+appId: com.kptncook.app.kptncook
+env:
+   inputTest: 'true'
+---
+- launchApp
+# email
+- runFlow:
+        file: email/email.yaml
+- runFlow: # cleanup
+        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml 
+
+# facebook
+- runFlow:
+        file: facebook.yaml
+- runFlow: # cleanup
+        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml 
+
+# google
+- runFlow:
+        file: google.yaml
+- runFlow: # cleanup
+        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml 

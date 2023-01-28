@@ -1,0 +1,20 @@
+appId: com.kptncook.app.kptncook
+---
+- launchApp
+
+# Navigate into the flipper
+# - tapOn:
+#     id: "com.kptncook.app.kptncook:id/flipperTabFragment"
+
+# Navigate into a recipe from the flipper
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
+
+# Use step view button
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fabCook"
+
+# Assert step view picture is visible
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/videoFrame"
+    index: 0

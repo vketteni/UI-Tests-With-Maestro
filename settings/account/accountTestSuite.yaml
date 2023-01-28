@@ -1,0 +1,11 @@
+appId: com.kptncook.app.kptncook
+---
+- runFlow:
+        file: updateEmail/tests.yaml
+
+- runFlow:
+        file: updateName/tests.yaml
+
+- runFlow:
+        file: updatePassword/tests.yaml
+

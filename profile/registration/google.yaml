@@ -1,0 +1,68 @@
+appId: com.kptncook.app.kptncook
+---
+- launchApp
+
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Navigate to profile tab (Pixel 4a) 
+# - tapOn:
+#     point: "90%,91%" # (doesn't work it opens recipe detail)
+# 
+# alternativ 1 (Spanish)
+# - tapOn:
+#     text: "Perfil"
+#     index: 1
+#
+# alternativ 2
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/profileDashboardFragment"
+
+# Assert header text
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/niceTextView5"
+
+# Press google button
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnGoogle"
+#
+# alternativ 1 (Spanish)
+# - tapOn: "INICIAR SESIÓN CON GOOGLE"
+#
+# alternativ 2 (Pixel 4a)
+# - tapOn:
+#     point: "50%,39%"
+
+# Assert info image 
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/ivInfo"
+
+# Press yes (age is over 16)
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnOk"
+#
+# alternativ 1 (Pixel 4a)
+# - tapOn:
+#     point: "70%,64%"
+# 
+# alternativ 2 (Spanish)
+# - tapOn: "SÍ"
+
+# Choose a google account from users android system
+- tapOn:
+    id: "com.google.android.gms:id/account_display_name"
+    index: 1 # Indicates which account 
+#
+# Alternativ 1
+# - tapOn: "firstname lastname"
+#
+# Alternativ 2 (Pixel 4a)
+# - tapOn:
+#     point: "33%,54%"
+
+# Assert new account by cooked-counter "0"
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/tvCookedCount"
+    text: "0"
+
+- stopApp

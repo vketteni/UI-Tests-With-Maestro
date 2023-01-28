@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+env:
+    DIET_CHOICE: "com.kptncook.app.kptncook:id/btnVeggie"
+    DIET_ASSERT: com.kptncook.app.kptncook:id/settings_diet_veggie
+---
+
+- runFlow:
+        file: changeDiet.yaml
+- runFlow:
+        file: reverseChange.yaml

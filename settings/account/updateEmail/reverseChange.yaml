@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+env:
+    EMAIL_NEW: vincent+testui+changeAccount@kptncook.com
+    EMAIL_OLD: vincent+testui+changeAccount+new@kptncook.com
+---
+
+- runFlow:
+        file: updateEmail.yaml

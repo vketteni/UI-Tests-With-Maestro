@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+---
+- runFlow:
+        file: detailView/detailViewTestSuite.yaml
+
+- runFlow:
+        file: profileTab/profileTestSuite.yaml
+

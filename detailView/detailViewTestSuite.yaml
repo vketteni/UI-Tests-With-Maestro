@@ -1,0 +1,20 @@
+appId: com.kptncook.app.kptncook
+---
+- runFlow:
+        file: collectionButton/tests.yaml
+- runFlow:
+        file: favoriteButton/tests.yaml
+- runFlow:
+        file: shareButton/tests.yaml
+- runFlow:
+        file: addToMealPlanButton/tests.yaml
+- runFlow:
+        file: createNoteButton/tests.yaml
+- runFlow:
+        file: ingredientsButton/tests.yaml
+- runFlow:
+        file: servingButton/tests.yaml
+- runFlow:
+        file: stepViewButton/tests.yaml
+- runFlow:
+        file: visitBlogButton/tests.yaml

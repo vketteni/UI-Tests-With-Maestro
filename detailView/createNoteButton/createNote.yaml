@@ -1,0 +1,59 @@
+appId: com.kptncook.app.kptncook
+---
+- launchApp
+
+# Navigate into a recipe from the flipper
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
+
+# Swipe to the bottom
+# Such that createNote button is visible
+- repeat:
+    times: 5
+    commands:
+        - swipe:
+            start: 100, 400
+            end: 100, 200
+            duration: 10
+
+# Use createNote button
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvAction"
+- eraseText
+
+# Write to the note
+- inputText: "Hello World"
+
+# Save the note
+- tapOn:
+    id: "android:id/button1"
+
+# Leave recipe detail view
+- tapOn:
+    point: "7%,9%"
+
+# Go back inside
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
+
+# Swipe to the bottom
+- repeat:
+    times: 5
+    commands:
+        - swipe:
+            start: 100, 400
+            end: 100, 200
+            duration: 10
+
+# Open the note 
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvAction"
+
+# Copy the text inside
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/etNote" 
+
+# Assert that the text matches the one we saved 
+- assertTrue: ${maestro.copiedText == 'Hello World'}
+
+- inputText: " == 'Hello World'"

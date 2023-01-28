@@ -1,0 +1,50 @@
+appId: com.kptncook.app.kptncook
+---
+- launchApp
+
+# Navigate into the flipper
+# - tapOn:
+#     id: "com.kptncook.app.kptncook:id/flipperTabFragment"
+
+# Navigate into a recipe from the flipper
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
+
+# Swipe to the bottom
+# Such that createNote button is visible
+- repeat:
+    times: 3
+    commands:
+        - swipe:
+            start: 100, 400
+            end: 100, 200
+            duration: 50
+
+# Select a single ingredient
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/imageView2"
+    index: 0
+
+# Assert that ingredient is displayed as selected
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/ivSelectedIcon"
+    index: 0
+
+# Select a single ingredient
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/imageView2"
+    index: 0
+
+# Use button to select all
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvAction"
+    index: 0
+
+# Assert first two ingredients are selected
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/ivSelectedIcon"
+    index: 0
+- assertVisible:
+    id: "com.kptncook.app.kptncook:id/ivSelectedIcon"
+    index: 1
+

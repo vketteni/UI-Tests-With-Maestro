@@ -1,0 +1,1 @@
+deletion/tests.yaml is run by registration/tests.yaml 
