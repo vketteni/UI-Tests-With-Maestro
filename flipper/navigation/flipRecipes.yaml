@@ -18,6 +18,13 @@ appId: com.kptncook.app.kptncook
 - copyTextFrom:
     id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
 
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
+    retryTapIfNoChange: false
+
+- tapOn:
+      point: "7%,9%"
+
 # Assert flipping up by different recipe title
 - assertTrue: ${output.recipeTitle != maestro.copiedText}
 
@@ -31,6 +38,12 @@ appId: com.kptncook.app.kptncook
 - copyTextFrom:
     id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
 
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
+    retryTapIfNoChange: false
+- tapOn:
+      point: "7%,9%"
+
 # Assert flipping back by same recipe title
 - assertTrue: ${output.recipeTitle == maestro.copiedText}
 
@@ -43,6 +56,12 @@ appId: com.kptncook.app.kptncook
 # Save other recipe title from flipper
 - copyTextFrom:
     id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
+
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
+    retryTapIfNoChange: false
+- tapOn:
+      point: "7%,9%"
 
 # Assert flipping down by unequal recipe title
 - assertTrue: ${output.recipeTitle != maestro.copiedText}

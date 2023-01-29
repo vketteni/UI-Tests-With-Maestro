@@ -1,6 +1,6 @@
 appId: com.kptncook.app.kptncook
 env:
-   BAD_EMAIL0: 'email'
+   : 'email'
    BAD_EMAIL1: '@email'
    BAD_EMAIL2: '@email.de'
    BAD_EMAIL3: 'suffix@email'

@@ -1,5 +1,7 @@
 appId: com.kptncook.app.kptncook
 ---
+- launchApp
+
 - runFlow:
         file: collectionButton/tests.yaml
 - runFlow:

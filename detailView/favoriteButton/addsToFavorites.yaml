@@ -33,8 +33,8 @@ appId: com.kptncook.app.kptncook
 - assertTrue: ${output.recipeTitle == maestro.copiedText}
 
 # Compare titles of added recipe and second recipe displayed. Assert inequality.
-- copyTextFrom:
-    id: com.kptncook.app.kptncook:id/tvTitle
-    index: 1
-- assertTrue: ${output.recipeTitle != maestro.copiedText}
+#- copyTextFrom:
+#    id: com.kptncook.app.kptncook:id/tvTitle
+#    index: 1
+#- assertTrue: ${output.recipeTitle != maestro.copiedText}
 

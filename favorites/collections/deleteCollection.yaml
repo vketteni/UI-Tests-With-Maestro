@@ -1,0 +1,15 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Three dot menu
+- tapOn:
+    point: "95%,9%"
+
+# Delete collection
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/content"
+    index: 1
+
+# Confirm
+- tapOn:
+    id: "android:id/button1"

@@ -1,0 +1,13 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Focus text field
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/etCollectionName"
+
+# Name
+- inputText: "Custom"
+
+# Continue
+- tapOn:
+      id: "com.kptncook.app.kptncook:id/btnContinue"

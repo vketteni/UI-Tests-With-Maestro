@@ -4,22 +4,22 @@ appId: com.kptncook.app.kptncook
 
 # facebook 
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KptnCook/profile/registration/facebook.yaml
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/registration/facebook.yaml
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/account/deletion/tests.yaml
 
 # google 
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KptnCook/profile/registration/google.yaml
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/registration/google.yaml
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/account/deletion/tests.yaml
 
 # email 
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KptnCook/profile/registration/email.yaml
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/registration/email.yaml
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KptnCook/settings/account/deletion/tests.yaml
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/account/deletion/tests.yaml
 
 # login
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KptnCook/profile/login/tests.yaml
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/login/tests.yaml

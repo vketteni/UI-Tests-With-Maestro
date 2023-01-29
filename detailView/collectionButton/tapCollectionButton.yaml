@@ -15,7 +15,7 @@ appId: com.kptncook.app.kptncook
 - tapOn:
     id: "com.kptncook.app.kptncook:id/fragment_recipe_iv_cover"
 
-# # Use the collections button
+# Use the collections button
 - tapOn:
     id: "com.kptncook.app.kptncook:id/action_add_list"
 

@@ -1,0 +1,27 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Three dot menu
+- tapOn:
+    point: "95%,9%"
+
+# Select
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/content"
+
+# First Recipe
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/ivCover"
+    index: 1
+
+# Delete
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/action_delete"
+
+# Confirm
+- tapOn:
+    id: "android:id/button1"
+
+# Leave
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/favoriteFragment"
