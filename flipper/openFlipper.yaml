@@ -1,0 +1,9 @@
+appId: com.kptncook.app.kptncook
+---
+#- launchApp
+
+# Navigate into favorites tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/flipperFragment"
+
+

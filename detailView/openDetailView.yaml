@@ -1,6 +1,8 @@
 appId: com.kptncook.app.kptncook
+# Part of this flow could be separated into openFlipper.yaml
+# Left here for now
 ---
-- launchApp
+#- launchApp
 
 # Navigate into the flipper
 - tapOn:
