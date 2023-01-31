@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+---
+# Copy the text inside
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/etNote"
+
+# Assert that the text matches the one we saved
+- assertTrue: ${maestro.copiedText == NOTE}
+
+- inputText: " == 'Hello World'"

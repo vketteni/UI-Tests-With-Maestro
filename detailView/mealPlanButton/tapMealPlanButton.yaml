@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Meal planner button
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnMealplann"

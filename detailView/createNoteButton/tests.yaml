@@ -1,4 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- runFlow:
-        file: createNote.yaml

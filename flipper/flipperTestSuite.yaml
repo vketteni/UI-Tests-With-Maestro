@@ -1,4 +1,4 @@
 appId: com.kptncook.app.kptncook
 ---
 - runFlow:
-        file: navigation/tests.yaml
+        file: navigation/test.yaml

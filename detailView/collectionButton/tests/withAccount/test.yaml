@@ -2,25 +2,26 @@ appId: com.kptncook.app.kptncook
 env:
         EMAIL: vincent+testui+detailView@kptncook.com
         PASSWORD: testing
-# Try making path a variable
+# This flow tests correct behaviour of collection button: With Account
+
 ---
-# with account
 # add recipe to collection (cooked, custom)
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/login/login.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
 - runFlow:
-    file: tapCollectionButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/collectionButton/tapCollectionButton.yaml
 - runFlow:
-    file: menu/addToCookedCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/collectionButton/menu/addToCookedCollection.yaml
 - runFlow:
-    file: menu/addToNewCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/collectionButton/menu/addToNewCollection.yaml
 - runFlow:
-    file: menu/createNewCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/collectionButton/menu/createNewCollection.yaml
 - runFlow:
-      file: menu/closeMenu.yaml
-# control if recipe has been added
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/collectionButton/menu/closeMenu.yaml
+
+# Check if recipe has been added
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/UITests-KC/favorites/openFavorites.yaml
 - runFlow:
@@ -37,6 +38,7 @@ env:
       INDEX: 2
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/UITests-KC/favorites/collections/compareFirstTitle.yaml
+
 # Remove recipe from cooked and delete custom collection
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/UITests-KC/favorites/openFavorites.yaml
@@ -54,12 +56,3 @@ env:
       INDEX: 2
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/UITests-KC/favorites/collections/deleteCollection.yaml
-# without account (login prompt)
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/account/logout/logout.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
-- runFlow:
-    file: tapCollectionButton.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/collectionButton/loginPrompt/hasOpened.yaml

@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+
+- assertVisible: ${output.recipeTitle}

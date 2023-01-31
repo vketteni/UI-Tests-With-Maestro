@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# Discovery tab
+- tapOn:
+      id: "com.kptncook.app.kptncook:id/text"
+      index: 0

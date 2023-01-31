@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# With Account But Without Premium == Without Account
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/mealPlanButton/tests/withoutAccount/test.yaml

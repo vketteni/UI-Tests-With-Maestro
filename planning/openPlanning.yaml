@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Go into planning tab (discovery by default)
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/planningTabFragment"
