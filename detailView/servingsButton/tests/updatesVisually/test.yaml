@@ -5,13 +5,13 @@ appId: com.kptncook.app.kptncook
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/scrollUntilServingButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/storeNumberOfServingsVariable.yaml
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/saveServingsCounter.yaml
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/tapDecreaseButton.yaml
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/servingsCounterHasDecreased.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/storeNumberOfServingsVariable.yaml
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/saveServingsCounter.yaml
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/tapIncreaseButton.yaml
 - runFlow:

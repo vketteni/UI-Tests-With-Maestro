@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-
-- runScript: /Users/vincentketteniss/UITests-KptnCook/stepView/js/lessThan.js
-- assertTrue: ${output.assert == false}

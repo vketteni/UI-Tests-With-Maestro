@@ -1,7 +1,9 @@
 import os, sys, re, shutil      
 from pathlib import Path         
 
-# /UITests-KptnCook/
+# EXAMPLE CALL
+# % python3 TESTING_SETUP/replaceSubpath.py /Users/vincentketteniss/UITests-KC/UITests-KC  "UITests-KptnCook" "UITests-KC/UITests-KC"
+
 def main(path, old, new):
     subpath = old.replace('/', r'\/')
     subpath_regex = re.compile(rf"""
@@ -11,7 +13,7 @@ def main(path, old, new):
 
     for root, dirs, files in os.walk(path):
         for file in files:
-            if file == 'tests.yaml':
+            if file.endswith('.yaml'):
 
                 path = Path(root) / file
                 text = path.read_text()
