@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+
+- assertTrue: ${output.ingredientQuantity.first > output.ingredientQuantity.second}

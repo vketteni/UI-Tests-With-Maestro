@@ -1,0 +1,51 @@
+appId: com.kptncook.app.kptncook
+# This flow tests if ingredient quantities change according to serving counter changes.
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KptnCook/stepView/actions/openStepView.yaml
+
+# Decrease
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KptnCook/stepView/actions/servingsButton/saveIngredientStringByIndex.yaml
+    env:
+      INGREDIENT_INDEX: 0
+- runScript:
+    file: /Users/vincentketteniss/UITests-KptnCook/stepView/js/getIngredientQuantityFromString.js
+    env:
+      isFirst: ${ true }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KptnCook/stepView/actions/servingsButton/tapDecreaseButton.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KptnCook/stepView/actions/servingsButton/saveIngredientStringByIndex.yaml
+    env:
+        INGREDIENT_INDEX: 0
+- runScript:
+      file: /Users/vincentketteniss/UITests-KptnCook/stepView/js/getIngredientQuantityFromString.js
+      env:
+          isFirst: ${ false }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KptnCook/stepView/asserts/servingsButton/quantityHasDecreased.yaml
+
+# Increase
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KptnCook/stepView/actions/servingsButton/saveIngredientStringByIndex.yaml
+      env:
+          INGREDIENT_INDEX: 0
+- runScript:
+      file: /Users/vincentketteniss/UITests-KptnCook/stepView/js/getIngredientQuantityFromString.js
+      env:
+          isFirst: ${ true }
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KptnCook/stepView/actions/servingsButton/tapIncreaseButton.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KptnCook/stepView/actions/servingsButton/saveIngredientStringByIndex.yaml
+      env:
+          INGREDIENT_INDEX: 0
+- runScript:
+      file: /Users/vincentketteniss/UITests-KptnCook/stepView/js/getIngredientQuantityFromString.js
+      env:
+          isFirst: ${ false }
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KptnCook/stepView/asserts/servingsButton/quantityHasIncreased.yaml
+

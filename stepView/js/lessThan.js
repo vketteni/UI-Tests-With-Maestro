@@ -1,0 +1,1 @@
+output.assert = output.ingredientQuantity.first > output.ingredientQuantity.second
