@@ -1,0 +1,18 @@
+appId: com.kptncook.app.kptncook
+---
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/scrollUntilServingButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/saveNumberOfServings.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/tapDecreaseButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/servingsHaveDecreased.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/saveNumberOfServings.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/tapIncreaseButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/servingsButton/servingsHaveIncreased.yaml

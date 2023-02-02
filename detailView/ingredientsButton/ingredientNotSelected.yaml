@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/ingredientsButton/ingredientIsSelected.yaml
+        env:
+          INGREDIENT_INDEX: 0
