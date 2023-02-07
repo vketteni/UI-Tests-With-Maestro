@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+---
+# Take picture
+- tapOn:
+    id: "com.google.android.GoogleCamera:id/shutter_button"
+# Confirm
+- tapOn:
+      id: "com.google.android.GoogleCamera:id/shutter_button"

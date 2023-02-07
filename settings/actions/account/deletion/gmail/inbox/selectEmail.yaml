@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# select email
+- tapOn:
+    id: "com.google.android.gm:id/viewified_conversation_item_view"
+    index: ${ INDEX }

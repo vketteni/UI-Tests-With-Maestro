@@ -1,0 +1,5 @@
+appId: "com.google.android.gm"
+---
+# close dialog
+- tapOn:
+    id: "com.google.android.gm:id/dismiss_button"

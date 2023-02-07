@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert new first name
+- assertVisible: ${FIRSTNAME_NEW}

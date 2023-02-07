@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+- tapOn:
+    point: "66%,51%"

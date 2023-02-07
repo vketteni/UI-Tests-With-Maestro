@@ -1,0 +1,5 @@
+appId: "com.google.android.gm"
+---
+# continue
+- tapOn:
+      id: "com.google.android.gm:id/action_done"

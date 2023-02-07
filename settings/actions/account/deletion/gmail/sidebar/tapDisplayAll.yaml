@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# Display all inboxes
+- tapOn:
+    id: "com.google.android.gm:id/hub_drawer_label_title"
+    index: 2

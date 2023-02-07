@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+# Imperial system (oz.)
+# Celsius
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnRight"
+    index: 1

@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Open profile tab
+- tapOn:
+      id: "com.kptncook.app.kptncook:id/profileDashboardFragment"

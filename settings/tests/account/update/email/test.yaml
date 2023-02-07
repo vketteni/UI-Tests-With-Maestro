@@ -1,0 +1,34 @@
+appId: com.kptncook.app.kptncook
+env:
+    PASSWORD: testing
+    EMAIL: vincent+testui+changeAccount+new@kptncook.com
+---
+# Setup
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/tapAccount.yaml
+- launchApp:
+    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/email/tapUpdateEmail.yaml
+
+# Update
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/email/updateView/inputEmail.yaml
+    env:
+        EMAIL: ${ EMAIL }
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/email/updateView/inputPassword.yaml
+    env:
+        PASSWORD: ${ PASSWORD }
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/email/updateView/tapSave.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/update/email/alert/isDisplayed.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/email/alert/tapConfirmLater.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/update/email/hasUpdated.yaml

@@ -1,0 +1,28 @@
+appId: com.kptncook.app.kptncook
+---
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/stickyButton/stickyButtonHidden.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/stickyButton/staticButtonDisplayed.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/stickyButton/tapStatic.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/insideStepView.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/leaveStepView.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/scrollUntilSticky.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/staticButtonDisplayed.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/tapSticky.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/insideStepView.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/leaveStepView.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/scrollUntilStatic.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/stepViewButton/stickyButtonHidden.yaml

@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+env:
+    LASTNAME: economy
+---
+# Focus text field for last name
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/etLastName"
+
+# Fill last name
+- inputText: ${LASTNAME}

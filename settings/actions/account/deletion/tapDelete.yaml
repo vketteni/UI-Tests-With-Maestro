@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Delete account
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvDeleteAccount"

@@ -1,0 +1,5 @@
+appId: "com.google.android.gm"
+---
+# notification permission
+- tapOn:
+    id: "com.android.permissioncontroller:id/permission_allow_button"

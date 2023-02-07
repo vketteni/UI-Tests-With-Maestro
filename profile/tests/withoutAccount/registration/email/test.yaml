@@ -1,0 +1,74 @@
+appId: com.kptncook.app.kptncook
+env:
+  FIRSTNAME: jesus
+  LASTNAME: economy
+  EMAIL: vincent+testui@kptncook.com
+  PASSWORD: testing
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/loginRegistrationIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/tapEmailRegistration.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/registration/email/namePage/isDisplayed.yaml
+
+# Name
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/namePage/inputFirstName.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/namePage/inputLastName.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/tapContinue.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/registration/email/emailPage/isDisplayed.yaml
+
+# Email address
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/emailPage/inputEmail.yaml
+    env:
+      EMAIL: vincent+testui+registration@kptncook.com
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/tapContinue.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/registration/email/passwordPage/isDisplayed.yaml
+
+# Password
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/passwordPage/inputPassword.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/tapContinue.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/registration/termsOfUse/isDisplayed.yaml
+
+# Terms of use
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/termsOfUse/confirm.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/registration/email/picturePage/isDisplayed.yaml
+
+# Profile picture
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/picturePage/tapAddPicture.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/registration/email/picturePage/menu/isDisplayed.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/picturePage/menu/tapTakePicture.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/picturePage/camera/takePicture.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/picturePage/camera/selectPicture.yaml
+
+# Confirm email reminder
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/registration/email/confirmEmailReminder/isDisplayed.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/registration/email/confirmEmailReminder/tapSendAgain.yaml
+
+# logged in user profile = done
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/userProfileIsVisible.yaml

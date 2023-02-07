@@ -1,8 +1,0 @@
-appId: com.kptncook.app.kptncook
-env:
-    PASSWORD_OLD: testing1
-    PASSWORD_NEW: testing
----
-
-- runFlow:
-        file: updatePassword.yaml

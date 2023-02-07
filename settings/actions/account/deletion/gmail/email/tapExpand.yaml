@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Expand message
+- tapOn:
+    id: "com.google.android.gm:id/view_entire_message_prompt"

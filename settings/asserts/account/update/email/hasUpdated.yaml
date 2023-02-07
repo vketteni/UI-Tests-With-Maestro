@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+---
+# Take email string from text field
+- copyTextFrom:
+    id:  "com.kptncook.app.kptncook:id/etEmail"
+
+# Assert success by comparison
+- assertTrue: ${ maestro.copiedText == NEW_EMAIL }

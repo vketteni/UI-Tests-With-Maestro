@@ -1,0 +1,39 @@
+appId: com.kptncook.app.kptncook
+env:
+  FIRSTNAME_NEW: Vincentt
+  LASTNAME_NEW: Kette
+---
+# Setup
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/tapAccount.yaml
+- launchApp:
+    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/email/tapUpdateName.yaml
+
+# Update
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/name/updateView/inputFirstName.yaml
+      env:
+        FIRSTNAME_NEW: ${ FIRSTNAME_NEW }
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/name/updateView/inputLastName.yaml
+      env:
+        LASTNAME_NEW: ${ LASTNAME_NEW }
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/name/updateView/tapSave.yaml
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/update/name/alert/isDisplayed.yaml
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/name/alert/close.yaml
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/name/tapUpdateName.yaml
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/update/name/firstName/hasUpdated.yaml
+- launchApp:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/update/name/lastName/hasUpdated.yaml
+

@@ -1,0 +1,4 @@
+appId: "com.google.android.gm"
+---
+- assertVisible:
+    id: "com.google.android.gm:id/open_search_bar_text_view"

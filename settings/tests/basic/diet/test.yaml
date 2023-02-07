@@ -1,0 +1,25 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+
+# Vegetarian
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/tapDiet.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/diet/tapVegetarian.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/basic/diet/vegetarian/EN/isVisible.yaml
+
+# Omnivore
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/tapDiet.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/diet/tapOmnivore.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/basic/diet/omnivore/EN/isVisible.yaml

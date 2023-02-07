@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# logout
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvLogout"

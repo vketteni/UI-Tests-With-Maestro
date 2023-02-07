@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert servings have increased
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/tvPortionsValue"
+- assertTrue: ${output.servings < maestro.copiedText}
+# output.servings = old value
+# maestro.copiedText = new value

@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert by url
+- assertVisible:
+    id: "com.android.chrome:id/title_url_container"

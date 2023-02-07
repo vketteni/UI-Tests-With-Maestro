@@ -1,9 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert that ingredient is displayed as selected
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/ivSelectedIcon"
-    index: ${INGREDIENT_INDEX}
-    rightOf:
-        id: com.kptncook.app.kptncook:id/imageView2"
-

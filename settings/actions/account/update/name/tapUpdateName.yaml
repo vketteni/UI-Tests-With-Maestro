@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Name
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/tvName"

@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# Celsius
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnLeft"
+    index: 0

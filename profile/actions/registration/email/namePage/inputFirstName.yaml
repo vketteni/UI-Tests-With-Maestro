@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+env:
+    FIRSTNAME: jesus
+---
+# Focus text field for first name
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/etFirstName"
+
+# Fill first name
+- inputText: ${FIRSTNAME}

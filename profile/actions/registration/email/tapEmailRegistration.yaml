@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Press email signup button
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnEmailSignup"

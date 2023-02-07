@@ -1,0 +1,15 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+
+# Fahrenheit
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/temperature/tapFahrenheit.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/openStepView.yaml
