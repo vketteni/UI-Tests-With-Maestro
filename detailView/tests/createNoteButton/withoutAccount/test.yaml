@@ -2,10 +2,10 @@ appId: com.kptncook.app.kptncook
 ---
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/scrollUntilNote.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/scrollUntilNote.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/tapCreateNoteButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/tapCreateNoteButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/loginPrompt/hasOpened.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/loginPrompt/hasOpened.yaml

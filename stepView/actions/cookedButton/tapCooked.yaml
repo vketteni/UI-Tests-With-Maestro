@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap on cook
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnCooked"

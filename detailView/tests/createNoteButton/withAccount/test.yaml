@@ -5,24 +5,24 @@ env:
 #- launchApp
 
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+        file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/scrollUntilNote.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/scrollUntilNote.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/tapCreateNoteButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/tapCreateNoteButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/writeNote.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/writeNote.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/saveNote.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/saveNote.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/leaveDetailView.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/leaveDetailView.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/scrollUntilNote.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/scrollUntilNote.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/tapCreateNoteButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/tapCreateNoteButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/compareNote.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/compareNote.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/createNoteButton/saveNote.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/createNoteButton/saveNote.yaml

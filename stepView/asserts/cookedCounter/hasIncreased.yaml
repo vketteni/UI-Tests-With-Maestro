@@ -1,0 +1,9 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Copy count string
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/tvCookedCounter"
+
+# Assert by inequality
+- assertTrue: ${ output.cookedCounter < maestro.copiedText.match(/\d+/)[0] }

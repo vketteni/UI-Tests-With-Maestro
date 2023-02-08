@@ -1,10 +1,10 @@
 appId: com.kptncook.app.kptncook
 ---
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/mealPlanButton/scrollUntilMealPlanButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/mealPlanButton/scrollUntilMealPlanButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/mealPlanButton/tapMealPlanButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/mealPlanButton/tapMealPlanButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/subscriptionScreen/assertScreenByTitle.yaml
+          file: /Users/vincentketteniss/UITests-KC/subscriptionScreen/assertScreenByTitle.yaml

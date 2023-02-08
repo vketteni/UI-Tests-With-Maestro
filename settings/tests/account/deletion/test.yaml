@@ -2,19 +2,19 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapProfileTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+    file: /Users/vincentketteniss/UITests-KC/profile/actions/tapSettingsIcon.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/tapAccount.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/tapAccount.yaml
 
 # Initiate account deletion
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/tapDelete.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/tapDelete.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/confirm.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/confirm.yaml
 
 # Setup
 - stopApp
@@ -24,35 +24,35 @@ appId: com.kptncook.app.kptncook
 
 # Confirm account deletion
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/continueWelcomeTour1.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/continueWelcomeTour1.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/continueWelcomeTour2.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/continueWelcomeTour2.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/allowPermission.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/allowPermission.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/closeStartDialog.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/welcomeTour/closeStartDialog.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/deletion/gmail/inbox/isDisplayed.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/asserts/account/deletion/gmail/inbox/isDisplayed.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/inbox/openSidebar.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/inbox/openSidebar.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/sidebar/tapDisplayAll.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/sidebar/tapDisplayAll.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/inbox/selectEmail.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/inbox/selectEmail.yaml
     env:
       INDEX: 0
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/scroll.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/scroll.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/email/tapExpand.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/email/tapExpand.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/deletion/gmail/email/expandedView/isDisplayed.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/asserts/account/deletion/gmail/email/expandedView/isDisplayed.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/scroll.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/scroll.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/scroll.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/scroll.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/gmail/email/expandedView/confirmAccountDeletion.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/gmail/email/expandedView/confirmAccountDeletion.yaml
 
 # Setup
 - stopApp
@@ -61,7 +61,7 @@ appId: com.kptncook.app.kptncook
 
 # Post deletion alert
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/account/deletion/alert/isDisplayed.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/asserts/account/deletion/alert/isDisplayed.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/deletion/confirm.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/deletion/confirm.yaml
 

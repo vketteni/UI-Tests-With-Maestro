@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+---
+# Copy count string
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/tvCookedCounter"
+
+# /\d+/ => regex to match a number
+- evalScript: ${ output.cookedCounter = maestro.copiedText.match(/\d+/)[0] }

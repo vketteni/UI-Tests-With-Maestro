@@ -2,11 +2,11 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
 
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/actions/visitBlogButton/scrollUntilBlog.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/visitBlogButton/scrollUntilBlog.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/actions/visitBlogButton/tapVisitBlogButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/visitBlogButton/tapVisitBlogButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/asserts/visitBlogButton/browser/hasOpened.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/asserts/visitBlogButton/browser/hasOpened.yaml

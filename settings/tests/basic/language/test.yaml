@@ -2,28 +2,28 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+    file:  /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapProfileTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+    file: /Users/vincentketteniss/UITests-KC/profile/actions/tapSettingsIcon.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/tapLanguage.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/basic/tapLanguage.yaml
 
 # Change language
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/language/select.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/actions/basic/language/select.yaml
       env:
         LANGUAGE: ${ LANGUAGE }
 
 # Assert language has updated
 - runFlow:
-    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+    file:  /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapProfileTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+    file: /Users/vincentketteniss/UITests-KC/profile/actions/tapSettingsIcon.yaml
 - runFlow:
-    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/basic/language/languageIsVisible.yaml
+    file:  /Users/vincentketteniss/UITests-KC/settings/asserts/basic/language/languageIsVisible.yaml
     env:
       LANGUAGE: ${ LANGUAGE }

@@ -4,14 +4,14 @@ appId: com.kptncook.app.kptncook
 
 # Share link by email
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/openDetailView.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/actions/shareButton/tapShareButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/shareButton/tapShareButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/asserts/shareButton/menu/hasOpened.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/shareButton/menu/hasOpened.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/actions/shareButton/menu/sendEmail.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/shareButton/menu/sendEmail.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/asserts/shareButton/email/hasLink.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/shareButton/email/hasLink.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/detailView/actions/shareButton/email/discardMessage.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/shareButton/email/discardMessage.yaml

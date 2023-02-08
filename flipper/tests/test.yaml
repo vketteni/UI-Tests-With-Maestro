@@ -5,7 +5,7 @@ appId: com.kptncook.app.kptncook
 
 # login
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/login/login.yaml
+        file: /Users/vincentketteniss/UITests-KC/profile/login/login.yaml
         env:
           EMAIL: vincent+testui+login@kptncook.com
           PASSWORD: testing
@@ -22,7 +22,7 @@ appId: com.kptncook.app.kptncook
 
 # logout
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/account/logout/logout.yaml
+        file: /Users/vincentketteniss/UITests-KC/settings/account/logout/logout.yaml
 
 # navigation test
 - runFlow:

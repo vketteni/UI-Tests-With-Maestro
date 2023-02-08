@@ -5,26 +5,26 @@ env:
 ---
 # Setup
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapProfileTab.yaml
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/tapSettingsIcon.yaml
+    file: /Users/vincentketteniss/UITests-KC/profile/actions/tapSettingsIcon.yaml
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/tapAccount.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/tapAccount.yaml
 - launchApp:
-    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/email/tapUpdatePassword.yaml
+    file:  /Users/vincentketteniss/UITests-KC/settings/actions/account/update/email/tapUpdatePassword.yaml
 
 # Update
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/password/updateView/inputNewPassword.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/update/password/updateView/inputNewPassword.yaml
     env:
         NEW_PASSWORD: ${ NEW_PASSWORD }
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/password/updateView/inputOldPassword.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/update/password/updateView/inputOldPassword.yaml
     env:
         OLD_PASSWORD: ${ OLD_PASSWORD }
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/password/updateView/save.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/update/password/updateView/save.yaml
 - launchApp:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/account/update/password/alert/close.yaml
+    file: /Users/vincentketteniss/UITests-KC/settings/actions/account/update/password/alert/close.yaml

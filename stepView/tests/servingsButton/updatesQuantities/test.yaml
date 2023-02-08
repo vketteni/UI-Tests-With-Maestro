@@ -3,36 +3,36 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/openStepView.yaml
+    file: /Users/vincentketteniss/UITests-KC/stepView/actions/openStepView.yaml
 
 # Decrease
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/ingredients/saveIngredientQuantity.yaml
+    file: /Users/vincentketteniss/UITests-KC/stepView/actions/ingredients/saveIngredientQuantity.yaml
     env:
       INGREDIENT_INDEX: 0
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/servingsButton/tapDecreaseButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/stepView/actions/servingsButton/tapDecreaseButton.yaml
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/ingredients/copyIngredientQuantity.yaml
+    file: /Users/vincentketteniss/UITests-KC/stepView/actions/ingredients/copyIngredientQuantity.yaml
     env:
       INGREDIENT_INDEX: 0
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/asserts/ingredients/quantityHasDecreased.yaml
+    file: /Users/vincentketteniss/UITests-KC/stepView/asserts/ingredients/quantityHasDecreased.yaml
 
 # Increase
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/ingredients/saveIngredientQuantity.yaml
+      file: /Users/vincentketteniss/UITests-KC/stepView/actions/ingredients/saveIngredientQuantity.yaml
       env:
           INGREDIENT_INDEX: 0
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/servingsButton/tapIncreaseButton.yaml
+      file: /Users/vincentketteniss/UITests-KC/stepView/actions/servingsButton/tapIncreaseButton.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/actions/ingredients/copyIngredientQuantity.yaml
+      file: /Users/vincentketteniss/UITests-KC/stepView/actions/ingredients/copyIngredientQuantity.yaml
       env:
           INGREDIENT_INDEX: 0
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/stepView/asserts/ingredients/quantityHasIncreased.yaml
+      file: /Users/vincentketteniss/UITests-KC/stepView/asserts/ingredients/quantityHasIncreased.yaml
 

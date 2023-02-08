@@ -2,22 +2,22 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-    file:  /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+    file:  /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapProfileTab.yaml
 
 # Fahrenheit
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/temperature/tapFahrenheit.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/actions/basic/temperature/tapFahrenheit.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/basic/temperature/scrollUntil.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/asserts/basic/temperature/scrollUntil.yaml
       env:
           TEMPERATURE: ${ TEMPERATURE }
 
 # Fahrenheit
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/actions/basic/temperature/tapFahrenheit.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/actions/basic/temperature/tapFahrenheit.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/settings/asserts/basic/temperature/scrollUntil.yaml
+      file: /Users/vincentketteniss/UITests-KC/settings/asserts/basic/temperature/scrollUntil.yaml
       env:
           TEMPERATURE: ${ TEMPERATURE }

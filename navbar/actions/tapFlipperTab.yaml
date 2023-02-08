@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Open flipper tab
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/flipperTabFragment"

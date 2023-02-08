@@ -1,21 +1,25 @@
 appId: com.kptncook.app.kptncook
-env:
-    EMAIL: vincent+testui+login@kptncook.com
-    PASSWORD: testing
-
+# Call test with environment variables EMAIL and PASSWORD
+#  EMAIL: vincent+testui+login@kptncook.com
+#  PASSWORD: testing
 ---
+# Setup
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+      file: /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/UITests-KC/navbar/actions/tapProfileTab.yaml
+      file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapProfileTab.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/login/tapEmailLoginButton.yaml
+      file: /Users/vincentketteniss/UITests-KC/profile/asserts/loginRegistrationIsVisible.yaml
+
+# Login
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/login/inputEmail.yaml
+      file: /Users/vincentketteniss/UITests-KC/profile/actions/login/tapEmailLoginButton.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/login/inputPassword.yaml
+      file: /Users/vincentketteniss/UITests-KC/profile/actions/login/inputEmail.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/actions/login/submit.yaml
+      file: /Users/vincentketteniss/UITests-KC/profile/actions/login/inputPassword.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/UITests-KC/profile/asserts/userProfileIsVisible.yaml
+      file: /Users/vincentketteniss/UITests-KC/profile/actions/login/submit.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/profile/asserts/userProfileIsVisible.yaml
 

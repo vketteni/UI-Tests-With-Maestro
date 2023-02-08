@@ -2,9 +2,9 @@ import os, sys, re, shutil
 from pathlib import Path         
 
 # EXAMPLE CALLS
-# % python3 TESTING_SETUP/replace.py /Users/vincentketteniss/UITests-KC/UITests-KC  "UITests-KptnCook" "UITests-KC/UITests-KC"
+# % python3 TESTING_SETUP/replace.py /Users/vincentketteniss/UITests-KC "UITests-KC/UITests-KC" "UITests-KC"
 # % python3 TESTING_SETUP/replace.py /Users/vincentketteniss/UITests-KC/UITests-KC  ".yaml.yaml" ".yaml"
-
+# /Users/vincentketteniss/UITests-KptnCook/collections/actions/deleteCollection.yaml
 def main(path, old, new):
     subpath = old.replace('/', r'\/')
     subpath_regex = re.compile(rf"""
