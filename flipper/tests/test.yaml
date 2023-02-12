@@ -3,33 +3,26 @@ appId: com.kptncook.app.kptncook
 # This flow tests navigation inside flipper
 ---
 
-# login
-- runFlow:
-        file: /Users/vincentketteniss/UITests-KC/profile/login/login.yaml
-        env:
-          EMAIL: vincent+testui+login@kptncook.com
-          PASSWORD: testing
-
 # navigation test
 - runFlow:
-        file: openDaily.yaml
+        file: openDaily_.yaml
 - runFlow:
-        file: flipRecipes.yaml
+        file: flipRecipes_.yaml
 - runFlow:
-          file: openWeekly.yaml
+          file: openWeekly_.yaml
 - runFlow:
-          file: flipRecipes.yaml
+          file: flipRecipes_.yaml
 
 # logout
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/settings/account/logout/logout.yaml
+        file: /Users/vincentketteniss/UITests-KC/settings/tests/account/logout/test.yaml
 
 # navigation test
 - runFlow:
-          file: openDaily.yaml
+          file: openDaily_.yaml
 - runFlow:
-          file: flipRecipes.yaml
+          file: flipRecipes_.yaml
 - runFlow:
-          file: openWeekly.yaml
+          file: openWeekly_.yaml
 - runFlow:
-          file: flipRecipes.yaml
+          file: flipRecipes_.yaml

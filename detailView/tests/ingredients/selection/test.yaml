@@ -3,37 +3,41 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/detailView/ingredientsButton/scrollUntilIngredients.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/scrollUntil.yaml
 
 # Zero by default
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/zeroIngredientsAreSelected.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/selection/zero/isSelected.yaml
 
 # One
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/ingredientsButton/tapIngredientImage.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/tapImage.yaml
     env:
       INGREDIENT_INDEX: 0
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/oneIngredientIsSelected.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/selection/single/isSelected.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/ingredientsButton/tapIngredientImage.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/tapImage.yaml
     env:
       INGREDIENT_INDEX: 0
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/zeroIngredientsAreSelected.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/selection/single/isSelected.yaml
 
 # All
 - runFlow:
         file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/tapSelectAllButton.yaml
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/multipleIngredientsAreSelected.yaml
+        file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/selection/multiple/isSelected.yaml
 - runFlow:
         file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/tapSelectAllButton.yaml
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/zeroIngredientsAreSelected.yaml
+        file: /Users/vincentketteniss/UITests-KC/detailView/asserts/ingredients/selection/multiple/isSelected.yaml
 
 
 

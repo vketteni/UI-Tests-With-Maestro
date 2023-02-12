@@ -1,12 +1,22 @@
 appId: com.kptncook.app.kptncook
 # This flow tests correct behaviour of collection button: Without Account
 ---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/flipper/actions/tapRecipe.yaml
 
+# Test
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/settings/account/logout/logout.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/collectionsButton/tapCollectionButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
+      file:  /Users/vincentketteniss/UITests-KC/detailView/actions/collectionsButton/collectionMenu/addToNewCollection.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/collectionButton/tapCollectionButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/collectionsButton/signUpPrompt/hasOpened.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/collectionButton/loginPrompt/hasOpened.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/collectionsButton/signUpPrompt/tapNegativ.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/detailView/asserts/isVisible.yaml

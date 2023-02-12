@@ -1,58 +1,52 @@
 appId: com.kptncook.app.kptncook
 env:
-        EMAIL: vincent+testui+detailView@kptncook.com
-        PASSWORD: testing
-# This flow tests correct behaviour of collection button: With Account
-
+  EMAIL: vincent+testui+detailView@kptncook.com
+  PASSWORD: testing
+# This flow tests correct behaviour of collection button when logged into an account
 ---
-# add recipe to collection (cooked, custom)
+# Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/profile/login/login.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/collectionButton/tapCollectionButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/flipper/actions/saveRecipeTitle.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/collectionButton/menu/addToCookedCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/flipper/actions/tapRecipe.yaml
+
+# Add recipe
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/collectionButton/menu/addToNewCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/collectionsButton/tapCollectionButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/detailView/collectionButton/menu/createNewCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/collectionsButton/collectionMenu/addToNewCollection.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/detailView/collectionButton/menu/closeMenu.yaml
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/collectionsButton/collectionMenu/createNewCollection.yaml
+    env:
+      COLLECTION_NAME: "Custom"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/detailView/actions/collectionsButton/collectionMenu/closeMenu.yaml
 
 # Check if recipe has been added
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/tapFavoritesTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapFavoritesTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/openCollection.yaml
-    env:
-      INDEX: 0
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/compareFirstTitle.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/tapFavoritesTab.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/openCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/favorites/actions/collection/tapCollection.yaml
     env:
       INDEX: 2
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/compareFirstTitle.yaml
+    file: /Users/vincentketteniss/UITests-KC/collections/asserts/savedRecipeTitle/isEqual.yaml
+    env:
+      INDEX: 0
 
-# Remove recipe from cooked and delete custom collection
+# Delete collection
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/tapFavoritesTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/collections/actions/tapMenu.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/openCollection.yaml
+    file:  /Users/vincentketteniss/UITests-KC/collections/actions/menu/tapDelete.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/collections/actions/menu/confirm.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/collections/asserts/collection/isNotVisible.yaml
     env:
-      INDEX: 0
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/removeFirst.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/tapFavoritesTab.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/openCollection.yaml
-    env:
-      INDEX: 2
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/favorites/collections/deleteCollection.yaml
+      COLLECTION_NAME: "Custom"
+

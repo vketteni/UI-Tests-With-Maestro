@@ -1,10 +1,10 @@
 appId: com.kptncook.app.kptncook
 ---
-
 # Copy first title
 - copyTextFrom:
     id: com.kptncook.app.kptncook:id/tvTitle
-    index: 0
+    index: ${ INDEX }
 
 # Compare with global recipe title variable (output.recipeTitle)
 - assertTrue: ${output.recipeTitle == maestro.copiedText}
+

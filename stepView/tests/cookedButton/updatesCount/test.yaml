@@ -11,20 +11,20 @@ appId: com.kptncook.app.kptncook
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/stepView/actions/cookedButton/scrollUntil.yaml
 
-# Start count with one
+# Starts count
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/stepView/actions/cookedButton/tapCooked.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/stepView/actions/cookedCounter/saveCount.yaml
-- runFlow:
-      file: /Users/vincentketteniss/UITests-KC/stepView/asserts/cookedCounter/startsWithOne.yaml
+    file: /Users/vincentketteniss/UITests-KC/stepView/asserts/cookedCounter/isVisible.yaml
 
-# Increases when tapped
-- runFlow:
-      file: /Users/vincentketteniss/UITests-KC/stepView/actions/cookedButton/tapCooked.yaml
+# Increases
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/stepView/actions/cookedCounter/saveCount.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/stepView/actions/cookedButton/tapCooked.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/stepView/asserts/cookedCounter/hasIncreased.yaml
+
+
 
 

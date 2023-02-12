@@ -1,7 +1,6 @@
 appId: com.kptncook.app.kptncook
-# Call test with environment variables EMAIL and PASSWORD
-#  EMAIL: vincent+testui+login@kptncook.com
-#  PASSWORD: testing
+# This flow performs a login
+# Call it with environment variables EMAIL and PASSWORD
 ---
 # Setup
 - runFlow:

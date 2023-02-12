@@ -1,5 +1,5 @@
 appId: com.kptncook.app.kptncook
-  ---
+---
 # account
 - tapOn:
     id: "com.kptncook.app.kptncook:id/myAccount"

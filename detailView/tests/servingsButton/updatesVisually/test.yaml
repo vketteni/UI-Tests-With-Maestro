@@ -3,23 +3,23 @@ appId: com.kptncook.app.kptncook
 
 # Setup
 - runFlow:
-        file: /Users/vincentketteniss/UITests-KC/detailView/openDetailView.yaml
+        file: /Users/vincentketteniss/UITests-KC/detailView/actions/openDetailView.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/servingsButton/scrollUntilServingButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/servingsButton/scrollUntil.yaml
 
 # Decrease
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/servingsButton/saveServingsCount.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/servingsButton/counter/saveServingsCount.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/servingsButton/tapDecreaseButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/servingsButton/tapDecreaseButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/servingsButton/servingsCounterHasDecreased.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/asserts/servingsButton/counter/hasDecreased.yaml
 
 
 # Increase
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/servingsButton/saveServingsCount.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/servingsButton/counter/saveServingsCount.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/servingsButton/tapIncreaseButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/servingsButton/tapIncreaseButton.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/servingsButton/servingsCounterHasIncreased.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/asserts/servingsButton/counter/hasIncreased.yaml

@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Three dot menu (Pixel 4a)
+- tapOn:
+    point: "95%,9%"

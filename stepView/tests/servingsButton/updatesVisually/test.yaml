@@ -11,7 +11,7 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/stepView/actions/servingsButton/tapDecreaseButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/stepView/asserts/servingsButton/servingsCounterHasDecreased.yaml
+    file: /Users/vincentketteniss/UITests-KC/stepView/asserts/servingsButton/hasDecreased.yaml
 
 # Increase
 - runFlow:
@@ -19,4 +19,4 @@ appId: com.kptncook.app.kptncook
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/stepView/actions/servingsButton/tapIncreaseButton.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/stepView/asserts/servingsButton/servingsCounterHasIncreased.yaml
+      file: /Users/vincentketteniss/UITests-KC/stepView/asserts/servingsButton/hasIncreased.yaml
