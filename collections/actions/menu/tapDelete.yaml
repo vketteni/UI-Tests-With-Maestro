@@ -3,4 +3,4 @@ appId: com.kptncook.app.kptncook
 # Delete collection
 - tapOn:
     id: "com.kptncook.app.kptncook:id/content"
-    index: 2
+    index: 1

@@ -2,4 +2,6 @@ appId: com.kptncook.app.kptncook
 ---
 - scrollUntilVisible:
     element:
-      id: "com.kptncook.app.kptncook:id/tvIngredientRegularNeeded"
+      id: "com.kptncook.app.kptncook:id/tvTitle"
+      text: "You Might Have This at Home"
+    speed: 60

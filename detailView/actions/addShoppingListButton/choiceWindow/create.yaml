@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Create new shopping list
+- tapOn:
+    id: "android:id/button3"

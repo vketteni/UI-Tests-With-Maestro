@@ -1,9 +1,9 @@
 appId: com.kptncook.app.kptncook
-env:
-  FIRSTNAME: jesus
-  LASTNAME: economy
-  EMAIL: vincent+testui@kptncook.com
-  PASSWORD: testing
+# Call with environment variables:
+#  FIRSTNAME: jesus
+#  LASTNAME: economy
+#  EMAIL: vincent+testui+premium@kptncook.com
+#  PASSWORD: testing
 ---
 # Setup
 - runFlow:
@@ -20,9 +20,13 @@ env:
 # Name
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/namePage/inputFirstName.yaml
+    env:
+      FIRSTNAME: ${ FIRSTNAME }
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/namePage/inputLastName.yaml
 - runFlow:
+    env:
+      LASTNAME: ${ LASTNAME }
     file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/tapContinue.yaml
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/profile/asserts/registration/email/emailPage/isDisplayed.yaml
@@ -31,7 +35,7 @@ env:
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/emailPage/inputEmail.yaml
     env:
-      EMAIL: vincent+testui+registration@kptncook.com
+      EMAIL: ${ EMAIL }
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/tapContinue.yaml
 - runFlow:
@@ -40,6 +44,8 @@ env:
 # Password
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/passwordPage/inputPassword.yaml
+    env:
+      PASSWORD: ${ PASSWORD }
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/tapContinue.yaml
 - runFlow:
@@ -51,17 +57,21 @@ env:
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/profile/asserts/registration/email/picturePage/isDisplayed.yaml
 
-# Profile picture
+# Skip profile picture
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/tapAddPicture.yaml
-- runFlow:
-      file: /Users/vincentketteniss/UITests-KC/profile/asserts/registration/email/picturePage/menu/isDisplayed.yaml
-- runFlow:
-      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/menu/tapTakePicture.yaml
-- runFlow:
-      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/camera/takePicture.yaml
-- runFlow:
-      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/camera/selectPicture.yaml
+    file:  /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/tapSkipPicture.yaml
+
+# Take profile picture
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/tapAddPicture.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/profile/asserts/registration/email/picturePage/menu/isDisplayed.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/menu/tapTakePicture.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/camera/takePicture.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/picturePage/camera/selectPicture.yaml
 
 # Confirm email reminder
 - runFlow:
@@ -69,6 +79,6 @@ env:
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/profile/actions/registration/email/confirmEmailReminder/tapSendAgain.yaml
 
-# logged in user profile = done
+# Assert new user profile
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/profile/asserts/userProfileIsVisible.yaml

@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Add to shopping list
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnAddToCart"

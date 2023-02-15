@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap on icon
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnEdit"
+    index: ${ INDEX }

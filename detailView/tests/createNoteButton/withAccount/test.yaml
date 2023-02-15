@@ -12,7 +12,7 @@ env:
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/flipper/actions/tapRecipe.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/actions/createNoteButton/scrollUntil.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/scrollUntil/regular.yaml
 
 # Test
 - runFlow:
@@ -26,7 +26,7 @@ env:
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/flipper/actions/tapRecipe.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/detailView/actions/createNoteButton/scrollUntil.yaml
+          file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/scrollUntil/regular.yaml
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/detailView/actions/createNoteButton/tapCreateNoteButton.yaml
 - runFlow:

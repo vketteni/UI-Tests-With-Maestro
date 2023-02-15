@@ -3,7 +3,7 @@ appId: com.kptncook.app.kptncook
 # Setup
 - launchApp
 
-# Test as anonymous user
+# Tests without user account
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/detailView/tests/collectionsButton/withoutAccount/test.yaml
 - runFlow:
@@ -11,7 +11,7 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/detailView/tests/mealPlanButton/withoutAccount/test.yaml
 
-# Test but don't care account status (for now)
+# Tests where account or not is irrelevant
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/detailView/tests/favoritesButton/test.yaml
 - runFlow:
@@ -20,6 +20,8 @@ appId: com.kptncook.app.kptncook
           file: /Users/vincentketteniss/UITests-KC/detailView/tests/servingsButton/updatesCorrectQuantity/test.yaml
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/detailView/tests/servingsButton/updatesVisually/test.yaml
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/detailView/tests/servingsButton/updatesCorrectQuantity_/test.yaml
 - runFlow:
           file: /Users/vincentketteniss/UITests-KC/detailView/tests/shareButton/test.yaml
 - runFlow:
@@ -34,11 +36,11 @@ appId: com.kptncook.app.kptncook
       EMAIL: vincent+testui+free@kptncook.com
       PASSWORD: testing
 
-# Test with free account
+# Tests with free account
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/detailView/tests/mealPlanButton/withAccount/withoutPremium/test.yaml
 
-# Test with account, don't care free/premium
+# Tests with account where free or premium is irrelevant
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/detailView/tests/collectionsButton/withAccount/test.yaml
 - runFlow:
@@ -53,7 +55,7 @@ appId: com.kptncook.app.kptncook
       EMAIL: vincent+testui+premium@kptncook.com
       PASSWORD: testing
 
-# Test with premium account
+# Tests with premium account
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/detailView/tests/mealPlanButton/withAccount/withPremium/test.yaml
 

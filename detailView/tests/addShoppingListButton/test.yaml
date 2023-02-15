@@ -1,0 +1,34 @@
+appId: com.kptncook.app.kptncook
+env:
+  INGREDIENT_INDEX: 2
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/navbar/assertions/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/scrollUntil.yaml
+
+# Test
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/detailView/actions/ingredients/saveIngredientText.yaml
+    INDEX: ${ INGREDIENT_INDEX }
+- runFlow:
+    file:
+- runFlow:
+    file:
+- runFlow:
+    file:
+- runFlow:
+    file:
+- runFlow:
+    file:
+- runFlow:
+    file:
+- runFlow:
+    file:
+- runFlow:
+    file:

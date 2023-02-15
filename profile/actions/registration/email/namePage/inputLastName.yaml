@@ -1,6 +1,4 @@
 appId: com.kptncook.app.kptncook
-env:
-    LASTNAME: economy
 ---
 # Focus text field for last name
 - tapOn:
