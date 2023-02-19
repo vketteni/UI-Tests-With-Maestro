@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Scroll until celsius measurement visible
-- scrollUntilVisible:
-    Element:
-      id: "com.kptncook.app.kptncook:id/tvStepDescription"
-      text: .*C\s.*

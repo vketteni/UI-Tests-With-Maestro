@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap email app
+- tapOn: ${ EMAIL_APP }

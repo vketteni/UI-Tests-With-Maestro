@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+---
+
+
+- runFlow:
+  file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/tests/deleteAll/test.yaml
+- runFlow:
+  file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/tests/createList/test.yaml
+- runFlow:
+  file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/tests/maximum/test.yaml

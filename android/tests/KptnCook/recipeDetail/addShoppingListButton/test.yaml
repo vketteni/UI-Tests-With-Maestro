@@ -1,0 +1,52 @@
+appId: com.kptncook.app.kptncook
+env:
+  INGREDIENT_INDEX: 2
+  LIST_INDEX: 0
+  INGREDIENT_TEXT_INDEX: 0
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/scrollUntil.yaml
+
+# Add to new shopping list
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/tapImage.yaml
+    env:
+      INDEX: ${ INGREDIENT_INDEX }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/saveIngredientText.yaml
+    INDEX: ${ INGREDIENT_INDEX }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addShoppingListButton/tapOnButton.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addToShoppingListButton/window/tapCreate.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addToShoppingListButton/createAlert/confirm.yaml
+
+# Test if list contains ingredient
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapShoppingTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/asserts/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/actions/list/tapList.yaml
+    env:
+      INDEX: ${ LIST_INDEX }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/asserts/ingredientText/isEqual.yaml
+    env:
+      INDEX: ${ INGREDIENT_TEXT_INDEX }
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/actions/editIcon/tapEdit.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListEdit/actions/deleteIcon/tapDelete.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListEdit/actions/deleteIcon/alert/tapConfirm.yaml
+

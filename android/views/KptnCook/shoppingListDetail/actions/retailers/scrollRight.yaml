@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# Scroll retailer list to the right
+- swipe:
+    start: 55%, 39%
+    end: 20%, 39%

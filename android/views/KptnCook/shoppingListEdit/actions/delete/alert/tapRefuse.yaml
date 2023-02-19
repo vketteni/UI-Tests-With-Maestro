@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Refuse
+- tapOn:
+    id: "android:id/button2"

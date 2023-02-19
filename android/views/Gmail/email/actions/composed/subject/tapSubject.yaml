@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap subject line
+- tapOn:
+    id: com.google.android.gm:id/subject

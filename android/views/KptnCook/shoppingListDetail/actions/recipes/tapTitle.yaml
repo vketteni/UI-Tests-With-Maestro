@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert recipe title attribute exists
+- assertTrue: ${ typeof output.recipeTitle == 'string' }
+
+# Tap on recipe title
+- tapOn: ${ output.recipeTitle }

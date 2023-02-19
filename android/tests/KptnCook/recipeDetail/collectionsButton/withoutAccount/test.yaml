@@ -1,0 +1,22 @@
+appId: com.kptncook.app.kptncook
+# This flow tests correct behaviour of collection button: Without Account
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+
+# Test
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/collectionsButton/tapCollectionButton.yaml
+- runFlow:
+      file:  /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/collectionsButton/collectionMenu/addToNewCollection.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/asserts/collectionsButton/signUpPrompt/hasOpened.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/collectionsButton/signUpPrompt/tapNegativ.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/asserts/isVisible.yaml

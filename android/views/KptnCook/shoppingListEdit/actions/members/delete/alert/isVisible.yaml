@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+---
+# Init output.strings attribute
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.localizations/Android/EN/output.js
+
+# Assert by string
+- assertVisible: ${ output.strings.shopping_delete_list_question }

@@ -1,0 +1,30 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/stepViewButton/tapStatic.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedButton/scrollUntil.yaml
+
+# Starts count
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedButton/tapCooked.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/asserts/cookedCounter/isVisible.yaml
+
+# Increases
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedCounter/saveCount.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedButton/tapCooked.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/asserts/cookedCounter/hasIncreased.yaml
+
+
+
+

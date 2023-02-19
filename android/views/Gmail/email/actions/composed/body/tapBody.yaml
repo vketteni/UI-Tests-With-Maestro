@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap body
+- tapOn:
+      id: com.google.android.gm:id/composearea_tap_trap_bottom

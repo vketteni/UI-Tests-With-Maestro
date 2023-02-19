@@ -1,0 +1,6 @@
+vincent+testui@kptncook.com
+vincent+testui+login@kptncook.com
+vincent+testui+registration@kptncook.com
+vincent+testui+premium@kptncook.com
+vincent+testui+free@kptncook.com
+vincent+testui+friend@kptncook.com

@@ -1,0 +1,30 @@
+appId: com.kptncook.app.kptncook
+env:
+    OLD_PASSWORD: testing
+    NEW_PASSWORD: testing1
+---
+# Setup
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/tapSettingsIcon.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/tapAccount.yaml
+- launchApp:
+    file:  /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/email/tapUpdatePassword.yaml
+
+# Update
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/password/updateView/inputNewPassword.yaml
+    env:
+        NEW_PASSWORD: ${ NEW_PASSWORD }
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/password/updateView/inputOldPassword.yaml
+    env:
+        OLD_PASSWORD: ${ OLD_PASSWORD }
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/password/updateView/save.yaml
+- launchApp:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/password/alert/close.yaml

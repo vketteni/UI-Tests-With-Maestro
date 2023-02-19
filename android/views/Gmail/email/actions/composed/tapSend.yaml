@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Send composed email
+- tapOn:
+    id: com.google.android.gm:id/send

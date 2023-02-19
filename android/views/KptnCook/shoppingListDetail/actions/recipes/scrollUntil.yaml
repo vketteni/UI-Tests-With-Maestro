@@ -1,0 +1,14 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert recipe title attribute exists
+- assertTrue: ${ typeof output.recipeTitle == 'string' }
+
+# Scroll recipe pane sideways until recipe title
+- repeat:
+    while:
+      notVisible: ${ output.recipeTitle }
+    commands:
+      # Swipe right to left, 15% height
+      - swipe:
+          start: 55%, 15%
+          end: 20%, 15%

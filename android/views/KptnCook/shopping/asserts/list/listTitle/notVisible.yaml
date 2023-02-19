@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert list title attribute exists
+- assertTrue: ${ typeof output.listTitle == 'string' }
+
+# Assert title by its text
+- assertNotVisible: ${ output.listTitle }

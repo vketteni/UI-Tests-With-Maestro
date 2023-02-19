@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Add ingredient to list
+- tapOn:
+    id: com.kptncook.app.kptncook:id/fabAddIngredient

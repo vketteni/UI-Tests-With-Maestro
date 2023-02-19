@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap receiver field
+- tapOn:
+    id: "com.google.android.gm:id/peoplekit_autocomplete_to_prefix"

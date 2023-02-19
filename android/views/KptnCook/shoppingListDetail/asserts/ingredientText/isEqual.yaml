@@ -1,0 +1,12 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert ingredient text variable exists
+- assertTrue: ${ output.ingredientText !== null }
+
+# Copy new ingredient text
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/tvNeeded"
+    index: ${ INDEX }
+
+# Assert strings are equal
+- assertTrue: ${ maestro.copiedText == output.ingredientText }

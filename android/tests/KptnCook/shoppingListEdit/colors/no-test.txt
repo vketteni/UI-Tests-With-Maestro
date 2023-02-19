@@ -1,0 +1,2 @@
+# As of Feb. 18, 2023 there is no way of differentiating between colors
+# No test possible thus far.

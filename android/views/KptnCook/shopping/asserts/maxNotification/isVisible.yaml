@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.localizations/Android/EN/output.js
+
+# Assert popup by localized string
+- assertVisible: ${ output.strings.shopping_limit_reached_title }

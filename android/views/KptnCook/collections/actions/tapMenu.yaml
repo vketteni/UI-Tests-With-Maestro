@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Three dot menu (Pixel 4a, iPhone 14 Pro)
+- tapOn:
+    point: "95%,9%"

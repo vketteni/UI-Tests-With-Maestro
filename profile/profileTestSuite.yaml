@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- runFlow:
-        file: login/test.yaml
-- runFlow:
-        file: registration/test.yaml

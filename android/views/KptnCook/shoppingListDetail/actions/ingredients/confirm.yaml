@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Confirm input
+- tapOn:
+    id: com.kptncook.app.kptncook:id/btnAddIngredient

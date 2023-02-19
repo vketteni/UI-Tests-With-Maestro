@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Create list counter
+- evalScript: ${ output.listCounter = 0 }
