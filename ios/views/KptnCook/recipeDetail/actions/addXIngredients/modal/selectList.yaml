@@ -1,0 +1,8 @@
+appId: com.kptncook.KptnCook
+env:
+  INDEX: 0
+---
+# Select shopping list by index
+- tapOn:
+    id: shopping_list_row
+    index: ${ INDEX }

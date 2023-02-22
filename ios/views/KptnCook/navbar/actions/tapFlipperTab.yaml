@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Tab flipper tab in navbar
+- tapOn:
+    id: tabbar_today_title

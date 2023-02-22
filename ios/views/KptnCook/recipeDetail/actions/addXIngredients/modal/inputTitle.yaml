@@ -1,0 +1,9 @@
+appId: com.kptncook.KptnCook
+env:
+  TITLE: "Monday shopping list"
+---
+# Input shopping list title
+- inputText: ${ TITLE }
+
+# Confirm input
+- pressKey: Enter

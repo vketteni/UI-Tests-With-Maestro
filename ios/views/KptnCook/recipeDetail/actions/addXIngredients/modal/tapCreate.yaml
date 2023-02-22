@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Create shopping list
+- tapOn:
+    id: create_shopping_list_lbl

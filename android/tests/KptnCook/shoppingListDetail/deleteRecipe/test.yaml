@@ -1,0 +1,26 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapShoppingTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/actions/tapList.yaml
+    env:
+      INDEX: 0
+
+# Test
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/asserts/recipes/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/actions/recipes/saveTitle.yaml
+
+# TODO: include checking if ingredients disappear
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/actions/recipes/swipeUpRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/actions/recipes/alert/confirm.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/asserts/recipes/savedTitle/notVisible.yaml

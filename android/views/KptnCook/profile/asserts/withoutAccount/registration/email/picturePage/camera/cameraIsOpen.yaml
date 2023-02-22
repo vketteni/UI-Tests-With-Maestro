@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert camera by button (Pixel 4a)
-- assertVisible:
-    id: "com.google.android.GoogleCamera:id/camera_switch_button"

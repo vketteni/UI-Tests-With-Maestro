@@ -5,7 +5,7 @@ appId: com.kptncook.app.kptncook
 
 # Copy new ingredient text
 - copyTextFrom:
-    id: "com.kptncook.app.kptncook:id/tvNeeded"
+    id: com.kptncook.app.kptncook:id/tvNeeded
     index: ${ INDEX }
 
 # Assert strings are equal

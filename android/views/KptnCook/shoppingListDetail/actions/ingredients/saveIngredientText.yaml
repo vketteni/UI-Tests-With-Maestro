@@ -1,0 +1,9 @@
+appId: com.kptncook.app.kptncook
+---
+# Copy first ingredient text by id, index
+- copyTextFrom:
+    id: com.kptncook.app.kptncook:id/tvNeeded
+    index: 0
+
+# Save to its output attribute
+- evalScript: ${ output.ingredientText = maestro.copiedText }

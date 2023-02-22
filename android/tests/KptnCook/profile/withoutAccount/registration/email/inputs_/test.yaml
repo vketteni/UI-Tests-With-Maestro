@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
-env:
-  FIRSTNAME: jesus
-  LASTNAME: economy
-  EMAIL: vincent+testui@kptncook.com
-  PASSWORD: testing
----

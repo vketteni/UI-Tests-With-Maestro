@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert profile tab (status: not logged in) by header text
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/niceTextView5"

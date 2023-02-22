@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert by first name text input id
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/etFirstName"

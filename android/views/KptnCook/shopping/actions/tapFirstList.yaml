@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap on list by index
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/simpleDraweeView"
+    index: 0

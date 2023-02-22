@@ -24,15 +24,15 @@ appId: com.kptncook.app.kptncook
 
 # Confirm account deletion
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/deletion/gmail/welcomeTour/continueWelcomeTour1.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/Gmail/welcomeTour/actions/continueWelcomeTour1.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/deletion/gmail/welcomeTour/continueWelcomeTour2.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/Gmail/welcomeTour/actions/continueWelcomeTour2.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/deletion/gmail/welcomeTour/allowPermission.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/Gmail/welcomeTour/actions/allowPermission.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/deletion/gmail/welcomeTour/closeStartDialog.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/Gmail/welcomeTour/actions/closeStartDialog.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/asserts/account/deletion/gmail/inbox/isDisplayed.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/Gmail/inbox/asserts/isDisplayed.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/deletion/gmail/inbox/openSidebar.yaml
 - runFlow:

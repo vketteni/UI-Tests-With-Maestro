@@ -1,0 +1,6 @@
+appId: com.kptncook.KptnCook
+---
+# Scroll until ingredients segment
+- scrollUntilVisible:
+    element:
+      id: ingredientListView_selectAllButtonTitle

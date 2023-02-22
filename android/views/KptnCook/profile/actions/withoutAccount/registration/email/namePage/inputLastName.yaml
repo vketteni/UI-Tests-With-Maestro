@@ -1,8 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Focus text field for last name
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/etLastName"
-
-# Fill last name
-- inputText: ${LASTNAME}

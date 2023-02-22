@@ -1,0 +1,9 @@
+appId: com.kptncook.KptnCook
+---
+# Assert at least 1 shopping list exists
+- assertVisible:
+    id: shopping_list_row
+    index: 1
+- assertVisible:
+    id: shopping_list_row
+    index: 0

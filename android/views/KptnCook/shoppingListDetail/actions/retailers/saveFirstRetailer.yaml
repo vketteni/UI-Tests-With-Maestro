@@ -1,0 +1,9 @@
+appId: com.kptncook.app.kptncook
+---
+# Copy
+- copyTextFrom:
+    id: com.kptncook.app.kptncook:id/row_recipe_detail_retailer_tab
+    index: 0
+
+# Save
+- evalScript: ${ output.retailer = maestro.copiedText }

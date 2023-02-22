@@ -1,4 +1,4 @@
 appId: com.kptncook.app.kptncook
 ---
 # Input
-- textInput: ${ EMAIL }
+- inputText: ${ EMAIL }

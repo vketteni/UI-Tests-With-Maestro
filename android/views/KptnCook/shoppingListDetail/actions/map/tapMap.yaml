@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap google maps by string (regex)
+- tapOn: Google.*
