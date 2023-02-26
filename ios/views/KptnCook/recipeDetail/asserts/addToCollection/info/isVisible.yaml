@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Assert info notification visible
+- assertVisible:
+    id: information_lbl

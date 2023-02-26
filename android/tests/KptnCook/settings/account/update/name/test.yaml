@@ -27,7 +27,7 @@ env:
 - launchApp:
       file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/name/updateView/tapSave.yaml
 - launchApp:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/asserts/account/update/name/alert/isDisplayed.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/asserts/account/update/name/alert/isVisible.yaml
 - launchApp:
       file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/name/alert/close.yaml
 - launchApp:

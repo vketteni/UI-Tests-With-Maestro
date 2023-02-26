@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert by layout element
+- assertVisible:
+    id: "com.google.android.gms:id/account_picker_container"

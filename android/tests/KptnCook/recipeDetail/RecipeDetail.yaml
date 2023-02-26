@@ -3,52 +3,52 @@ appId: com.kptncook.app.kptncook
 # Setup
 - launchApp
 
-# Tests without user account
-- runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/collectionsButton/notUser/test.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/createNoteButton/notUser/test.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/mealPlanButton/notUser/test.yaml
-
-# Tests where account or not is irrelevant
-- runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/favoritesButton/test.yaml
-- runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/ingredients/selection/test.yaml
-- runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/servingsButton/updatesCorrectQuantity/test.yaml
-- runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/servingsButton/updatesVisually/test.yaml
+## Tests without user account
 #- runFlow:
-#          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/servingsButton/updatesCorrectQuantity_/test.yaml
-- runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/shareButton/test.yaml
-- runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/stepViewButton/test.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/visitBlogButton/test.yaml
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/addToCollection/notUser/test.yaml
+#- runFlow:
+#    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/createNote/notUser/test.yaml
+#- runFlow:
+#    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/addToMealPlanner/notUser/test.yaml
+#
+## Tests where account or not is irrelevant
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/addToFavorites/test.yaml
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/ingredients/selection/test.yaml
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/servings/updatesCorrectQuantity/test.yaml
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/servings/updatesVisually/test.yaml
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/servings/updatesCorrectQuantity_/test.yaml
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/share/test.yaml
+#- runFlow:
+#          file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/openSteps/test.yaml
+#- runFlow:
+#    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/authorBlog/test.yaml
 
 # Setup free account
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/notUser/login/email/test.yaml
-    env:
-      EMAIL: vincent+testui+free@kptncook.com
-      PASSWORD: testing
+#- runFlow:
+#    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/notUser/login/email/test.yaml
+#    env:
+#      EMAIL: vincent+testui+free@kptncook.com
+#      PASSWORD: testing
 
 # Tests with free account
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/mealPlanButton/user/noPremium/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/addToMealPlanner/user/noPremium/test.yaml
 
 # Tests with account where free or premium is irrelevant
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/collectionsButton/user/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/addToCollection/user/test.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/createNoteButton/user/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/createNote/user/test.yaml
 
 # Setup premium account
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/tests/account/logout/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/test.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/notUser/login/email/test.yaml
     env:
@@ -57,5 +57,5 @@ appId: com.kptncook.app.kptncook
 
 # Tests with premium account
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/tests/mealPlanButton/user/premium/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/recipeDetail/addToMealPlanner/user/premium/test.yaml
 

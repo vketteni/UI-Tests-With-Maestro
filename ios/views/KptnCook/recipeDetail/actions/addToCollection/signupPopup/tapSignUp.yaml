@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Tap sign up
+- tapOn:
+    id: popup_button_one_id

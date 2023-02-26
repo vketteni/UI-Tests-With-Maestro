@@ -1,0 +1,6 @@
+appId: com.kptncook.KptnCook
+---
+# Scroll until icon
+- scrollUntilVisible:
+    element:
+      id: meal_planner_button_id

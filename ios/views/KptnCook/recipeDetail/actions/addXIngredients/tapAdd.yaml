@@ -2,4 +2,4 @@ appId: com.kptncook.KptnCook
 ---
 # Add recipe to shopping list # Add x ingredients
 - tapOn:
-    id: add_to_shopping_list_btn
+    id: add_to_shopping_list_button_id

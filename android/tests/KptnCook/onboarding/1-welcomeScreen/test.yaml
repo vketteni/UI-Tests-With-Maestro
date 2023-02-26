@@ -1,0 +1,13 @@
+appId: com.kptncook.app.kptncook
+---
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/welcomeScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/welcomeScreen/tapContinue.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/welcomeScreen/updatedTerms/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/welcomeScreen/updatedTerms/tapConfirm.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/notificationScreen/isVisible.yaml
+

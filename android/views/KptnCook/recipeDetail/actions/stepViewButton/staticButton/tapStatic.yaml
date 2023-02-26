@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Use step view button
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/btnStartCooking" # pre 8.2.1 = id/fabCook

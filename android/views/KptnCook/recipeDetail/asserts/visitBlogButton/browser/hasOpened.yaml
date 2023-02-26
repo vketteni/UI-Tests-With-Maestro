@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Assert browser has opened
-- assertVisible:
-    id: "com.android.chrome:id/url_bar"

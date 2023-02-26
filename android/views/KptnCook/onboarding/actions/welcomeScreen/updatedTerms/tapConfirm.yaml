@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Confirm AGB
+- tapOn:
+    id: android:id/button1

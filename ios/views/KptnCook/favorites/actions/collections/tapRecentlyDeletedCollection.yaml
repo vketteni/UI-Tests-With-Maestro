@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Tap user collection
+- tapOn:
+    id: recently_deleted_collection_id

@@ -1,0 +1,6 @@
+appId: com.kptncook.KptnCook
+---
+# Scroll until icon
+- scrollUntilVisible:
+    element:
+      id: collectionButton_id

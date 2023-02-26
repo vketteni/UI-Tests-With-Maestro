@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Tap user collection
+- tapOn:
+    id: cooked_collection_id

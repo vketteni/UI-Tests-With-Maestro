@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Assert user profile visible
+- assertVisible:
+    id: user_profile_title_id

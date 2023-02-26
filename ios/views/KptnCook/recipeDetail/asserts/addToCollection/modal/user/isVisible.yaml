@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Assert by id
+- assertVisible:
+    id: user_collection_id

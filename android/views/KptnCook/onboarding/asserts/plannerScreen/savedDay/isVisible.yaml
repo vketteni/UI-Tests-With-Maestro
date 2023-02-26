@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert changes are saved
+- assertVisible: Saturday.*

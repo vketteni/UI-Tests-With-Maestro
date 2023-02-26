@@ -2,7 +2,6 @@ import os, sys, re, shutil
 from pathlib import Path
 
 # EXAMPLE CALLS
-# % python3 .helper/rename_directories.py /Users/vincentketteniss/UITests-KC "withAccount" "user"
 # % python3 .helper/rename_directories.py /Users/vincentketteniss/UITests-KC "noUser" "notUser"
 
 

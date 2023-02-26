@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+# Launch with clean state
+- launchApp:
+    appId: com.kptncook.app.kptncook
+    clearState: true
+

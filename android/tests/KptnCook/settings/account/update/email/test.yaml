@@ -27,7 +27,7 @@ env:
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/email/updateView/tapSave.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/asserts/account/update/email/alert/isDisplayed.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/asserts/account/update/email/alert/isVisible.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/settings/actions/account/update/email/alert/tapConfirmLater.yaml
 - runFlow:

@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Tap collections icon
+- tapOn:
+    id: collection_button_id

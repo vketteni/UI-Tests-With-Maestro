@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert Notification screen
+- assertVisible: Don’t miss out!
+- assertVisible:
+    id: com.kptncook.app.kptncook:id/btnTurnNotificationsOn

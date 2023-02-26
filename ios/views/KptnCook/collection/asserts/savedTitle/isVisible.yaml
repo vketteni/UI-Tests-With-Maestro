@@ -1,0 +1,7 @@
+appId: com.kptncook.KptnCook
+---
+# Assert output.recipeTitle exists
+- assertTrue: ${ typeof output.recipeTitle === 'string' }
+
+# Assert saved recipe title visible
+- assertVisible: ${ output.recipeTitle }

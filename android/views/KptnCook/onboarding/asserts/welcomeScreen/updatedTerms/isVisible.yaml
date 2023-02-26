@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert AGB visible
+- assertVisible: We’ve updated our terms and privacy policy

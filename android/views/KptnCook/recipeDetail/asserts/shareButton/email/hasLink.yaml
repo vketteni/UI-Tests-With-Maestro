@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Assert link by substring
-- assertVisible:
-      text: '.*https://sharing.kptncook.com/.*'

@@ -1,0 +1,7 @@
+appId: com.kptncook.KptnCook
+---
+# Copy title
+- copyTextFrom:
+    id: recipe_title_id
+# Save to recipe title attribute
+- evalScript: ${ output.recipeTitle = maestro.copiedText }

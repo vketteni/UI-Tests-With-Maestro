@@ -2,4 +2,4 @@ appId: com.kptncook.KptnCook
 ---
 # Assert navbar by today tabbar id
 - assertVisible:
-    id: tabbar_today_title
+    id: tabbar_today_id

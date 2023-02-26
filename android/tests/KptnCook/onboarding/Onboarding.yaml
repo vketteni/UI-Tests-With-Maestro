@@ -1,0 +1,28 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/1-welcomeScreen/setup.yaml
+# 1-welcomeScreen
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/1-welcomeScreen/test.yaml
+# 2-notificationScreen
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/2-notificationScreen/test.yaml
+# 3-dietScreen
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/3-dietScreen/test.yaml
+# 4-ingredientScreen
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/4-ingredientScreen/test.yaml
+# 5-explanationScreen
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/5-explanationScreen/test.yaml
+# 6-plannerScreen
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/6-plannerScreen/test.yaml
+# 7-doneScreen
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/onboarding/7-doneScreen/test.yaml
+
+

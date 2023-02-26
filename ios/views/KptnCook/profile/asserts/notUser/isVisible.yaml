@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Assert login registration visible
+- assertVisible:
+    id: not_a_user_profile_title_id

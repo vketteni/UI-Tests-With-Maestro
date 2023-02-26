@@ -1,0 +1,5 @@
+appId: com.kptncook.KptnCook
+---
+# Go to favorites tab
+- tapOn:
+    id: tabbar_favorites_id

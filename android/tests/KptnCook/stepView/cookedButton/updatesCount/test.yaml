@@ -7,7 +7,7 @@ appId: com.kptncook.app.kptncook
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/stepViewButton/tapStatic.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/openSteps/tapStatic.yaml
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedButton/scrollUntil.yaml
 

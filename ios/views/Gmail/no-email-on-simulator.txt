@@ -1,0 +1,2 @@
+# Simulator doesn't provide an email application
+# Any UI test involving email has to be executed on a real device

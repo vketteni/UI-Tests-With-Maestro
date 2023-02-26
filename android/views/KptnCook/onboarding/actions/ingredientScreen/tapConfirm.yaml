@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Confirm choices
+- tapOn:
+    id: com.kptncook.app.kptncook:id/btnContinue

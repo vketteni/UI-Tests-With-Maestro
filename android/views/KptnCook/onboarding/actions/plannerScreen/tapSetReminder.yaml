@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap set a reminder
+- tapOn:
+    id: com.kptncook.app.kptncook:id/btnContinue
