@@ -3,4 +3,4 @@ appId: com.kptncook.app.kptncook
 # Select a single ingredient
 - tapOn:
     id: "com.kptncook.app.kptncook:id/imageView2"
-    index: ${INGREDIENT_INDEX}
+    index: ${ INDEX }

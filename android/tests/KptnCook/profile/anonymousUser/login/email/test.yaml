@@ -1,0 +1,26 @@
+appId: com.kptncook.app.kptncook
+# This flow performs a login
+# Call it with environment variables EMAIL and PASSWORD
+# maestro test -e EMAIL="" -e PASSWORD="" /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/anonymousUser/login/email/test.yaml
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/isVisible.yaml
+
+# Login
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/login/tapEmailLoginButton.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/login/inputEmail.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/login/inputPassword.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/login/submit.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/user/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/login/reminderNotification/tapSendAgain.yaml

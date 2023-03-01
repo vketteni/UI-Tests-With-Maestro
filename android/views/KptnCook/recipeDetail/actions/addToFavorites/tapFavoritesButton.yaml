@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Use the favorite button
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/action_favorite"
+    retryTapIfNoChange: false

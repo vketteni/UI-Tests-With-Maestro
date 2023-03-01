@@ -1,0 +1,8 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Clear old text
+- eraseText
+
+# Write to the note
+- inputText: ${NOTE}

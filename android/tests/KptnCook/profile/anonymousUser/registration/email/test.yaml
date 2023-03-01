@@ -1,0 +1,85 @@
+appId: com.kptncook.app.kptncook
+# Call with environment variables:
+#  FIRSTNAME: jesus
+#  LASTNAME: economy
+#  EMAIL: vincent+testui+premium@kptncook.com
+#  PASSWORD: testing
+# maestro test -e FIRSTNAME="jesus" -e LASTNAME="economy" -e EMAIL="vincent+testui+friend@kptncook.com" -e PASSWORD="testing" /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/anonymousUser/registration/email/test.yaml
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/tapEmailRegistration.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/email/namePage/isVisible.yaml
+
+# Name
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/namePage/inputFirstName.yaml
+    env:
+      FIRSTNAME: ${ FIRSTNAME }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/namePage/inputLastName.yaml
+- runFlow:
+    env:
+      LASTNAME: ${ LASTNAME }
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/tapContinue.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/email/emailPage/isVisible.yaml
+
+# Email address
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/emailPage/inputEmail.yaml
+    env:
+      EMAIL: ${ EMAIL }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/tapContinue.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/email/passwordPage/isVisible.yaml
+
+# Password
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/passwordPage/inputPassword.yaml
+    env:
+      PASSWORD: ${ PASSWORD }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/tapContinue.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/termsOfUse/isVisible.yaml
+
+# Terms of use
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/termsOfUse/confirm.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/email/picturePage/isVisible.yaml
+
+# Skip profile picture
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/picturePage/tapSkipPicture.yaml
+
+# Take profile picture
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/picturePage/tapAddPicture.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/email/picturePage/menu/isVisible.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/picturePage/menu/tapTakePicture.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/picturePage/camera/takePicture.yaml
+#- runFlow:
+#      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/picturePage/camera/selectPicture.yaml
+
+# Confirm email reminder
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/email/confirmEmailReminder/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/email/confirmEmailReminder/tapSendAgain.yaml
+
+# Assert new user profile
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/user/isVisible.yaml

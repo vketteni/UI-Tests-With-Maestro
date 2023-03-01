@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+
+# Add to collection: Cooked
+- tapOn:
+      id: "com.kptncook.app.kptncook:id/textView"
+      index: 0

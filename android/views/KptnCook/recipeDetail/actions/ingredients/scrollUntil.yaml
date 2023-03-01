@@ -1,7 +1,10 @@
 appId: com.kptncook.app.kptncook
 ---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+
 - scrollUntilVisible:
     element:
       id: "com.kptncook.app.kptncook:id/tvTitle"
-      text: "You Might Have This at Home"
-    speed: 60
+      text: ${ output.strings.shopping_basicingredient_sectiontitle }
+
+

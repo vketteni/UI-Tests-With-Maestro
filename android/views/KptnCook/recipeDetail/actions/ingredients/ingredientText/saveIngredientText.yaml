@@ -2,7 +2,7 @@ appId: com.kptncook.app.kptncook
 ---
 # Copy and save text
 - copyTextFrom:
-      id: "com.kptncook.app.kptncook:id/row_step_ingredient_list_row_tv_quantity"
-      index: ${INGREDIENT_INDEX}
+      id: "com.kptncook.app.kptncook:id/tvIngredientRegularNeeded"
+      index: ${ INDEX }
 
-- evalScript: ${output.ingredientText = maestro.copiedText }
+- evalScript: ${ output.ingredientText = maestro.copiedText }

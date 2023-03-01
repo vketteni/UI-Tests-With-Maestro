@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Tap send again
+- tapOn:
+    id: "android:id/button2"

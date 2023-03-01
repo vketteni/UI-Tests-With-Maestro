@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Authenticate with google
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnGoogle"

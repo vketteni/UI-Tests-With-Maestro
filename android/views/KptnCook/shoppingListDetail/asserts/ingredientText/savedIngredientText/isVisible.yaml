@@ -1,0 +1,7 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert ingredient text variable exists
+- assertTrue: ${ typeof output.ingredientText === 'string' }
+
+# Copy new ingredient text
+- assertVisible: ${ output.ingredientText }

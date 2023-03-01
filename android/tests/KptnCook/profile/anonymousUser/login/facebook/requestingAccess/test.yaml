@@ -1,0 +1,26 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/facebook/tapFacebook.yaml
+
+# Terms of use
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/termsOfUse/confirm.yaml
+
+# Request access
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/registration/facebook/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/anonymousUser/registration/facebook/requestingAccessPage/confirm.yaml
+
+
+# logged in user profile = done
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/user/isVisible.yaml

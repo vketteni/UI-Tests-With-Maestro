@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Confirm facebook authentication
+- tapOn:
+    point: "50%,66%"

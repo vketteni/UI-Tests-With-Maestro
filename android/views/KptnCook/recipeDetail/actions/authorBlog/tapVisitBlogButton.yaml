@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Use 'VISIT FOOD BLOG' button
+- tapOn:
+    id: "com.kptncook.app.kptncook:id/btnAuthorVisit"

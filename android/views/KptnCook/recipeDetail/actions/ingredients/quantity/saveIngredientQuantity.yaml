@@ -1,7 +1,10 @@
 appId: com.kptncook.app.kptncook
 ---
 - copyTextFrom:
-    id: "com.kptncook.app.kptncook:id/row_step_ingredient_list_row_tv_quantity"
-    index: ${INGREDIENT_INDEX}
+    id: "com.kptncook.app.kptncook:id/tvIngredientRegularNeeded"
+    index: ${ INDEX }
 
 - evalScript: ${output.ingredientQuantity = maestro.copiedText.split(" ")[0]}
+
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/symbolToNumber.js
+

@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert note still saved
+- assertVisible:
+    text: NOTE

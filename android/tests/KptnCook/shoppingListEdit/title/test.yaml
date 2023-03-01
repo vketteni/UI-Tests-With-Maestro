@@ -12,11 +12,11 @@ env:
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/actions/saveTitle.yaml
     env:
-      INDEX: 0
+        INDEX: 0
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/actions/tapList.yaml
     env:
-      INDEX: 0
+        INDEX: 0
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/actions/edit/tapEdit.yaml
 - runFlow:
@@ -40,4 +40,4 @@ env:
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/asserts/list/listTitle/isVisible.yaml
     env:
-      INDEX: 0
+        INDEX: 0

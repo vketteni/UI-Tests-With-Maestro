@@ -1,4 +1,17 @@
 appId: com.kptncook.app.kptncook
 ---
+# Save first ingredient quantity
+- evalScript: ${output.ingredientQuantity_first = output.ingredientQuantity}
+#- evalScript: ${output.ingredientQuantity.first = output.ingredientQuantity}
 
-- assertTrue: ${output.ingredientQuantity.first > output.ingredientQuantity.second}
+# Copy and save text
+- copyTextFrom:
+    id: "com.kptncook.app.kptncook:id/tvIngredientRegularNeeded"
+    index: ${ INDEX }
+- evalScript: ${output.ingredientQuantity = maestro.copiedText.split(" ")[0]}
+
+# Cleanup possible super- or subscript numerals
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/symbolToNumber.js
+
+# Assert quantity has decreased
+- assertTrue: ${eval(output.ingredientQuantity_first) > eval(output.ingredientQuantity)}
