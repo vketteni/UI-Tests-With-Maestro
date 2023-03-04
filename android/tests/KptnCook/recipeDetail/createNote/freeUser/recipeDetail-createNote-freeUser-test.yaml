@@ -1,10 +1,10 @@
 appId: com.kptncook.app.kptncook
 env:
-        NOTE: "Hello World"
+  NOTE: "Hello World"
 ---
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/freeUser-setup.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/free/freeUserSetup.yaml
 
 # Go to flipper # Go to recipe detail view # Scroll until create note button
 - runFlow:

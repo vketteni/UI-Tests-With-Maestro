@@ -2,4 +2,4 @@ appId: com.kptncook.app.kptncook
 ---
 # Assert collection view is visible
 - assertVisible:
-    id: com.kptncook.app.kptncook:id/etCollectionName
+    id: "com.kptncook.app.kptncook:id/etCollectionName"

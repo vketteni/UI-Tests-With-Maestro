@@ -1,0 +1,13 @@
+appId: com.kptncook.app.kptncook
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/collections.js
+# Scroll until collection visible
+- repeat:
+    while:
+        notVisible:
+          text: ${ TITLE }
+    commands:
+        - swipe:
+            start: 50%, 15% # From (90% of width, 50% of height)
+            end: 10%, 15% # To (10% of width, 50% of height)
+

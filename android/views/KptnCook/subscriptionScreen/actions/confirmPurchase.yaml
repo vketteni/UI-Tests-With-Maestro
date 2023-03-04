@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+- tapOn:
+    id: com.android.vending:id/button_group

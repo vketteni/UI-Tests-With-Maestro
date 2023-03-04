@@ -2,4 +2,4 @@ appId: com.kptncook.app.kptncook
 ---
 # Assert flipper by recipe title
 - assertVisible:
-    id: "com.kptncook.app.kptncook:id/fragment_recipe_tv_description"
+    id: "com.kptncook.app.kptncook:id/recipeTitle"

@@ -8,10 +8,10 @@ appId: com.kptncook.app.kptncook
 - copyTextFrom:
         id: "com.kptncook.app.kptncook:id/tvIngredientRegularNeeded"
         index: ${ INDEX }
-- evalScript: ${output.ingredientQuantity = maestro.copiedText.split(" ")[0]}
+- evalScript: ${output.ingredientText = maestro.copiedText}
 
-# Cleanup possible super- or subscript numerals
-- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/symbolToNumber.js
+# Get quantity from ingredient text
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/getQuantity.js
 
 # Assert quantity has increased
 - assertTrue: ${eval(output.ingredientQuantity_first) < eval(output.ingredientQuantity)}

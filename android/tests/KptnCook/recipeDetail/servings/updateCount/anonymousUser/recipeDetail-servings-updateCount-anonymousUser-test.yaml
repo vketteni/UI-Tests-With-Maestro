@@ -2,7 +2,7 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/anonymousUser-setup.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/anonymous/anonymousUserSetup.yaml
 
 # Go to flipper # Go to recipe detail # Scroll until servings segment # Save servings count
 - runFlow:

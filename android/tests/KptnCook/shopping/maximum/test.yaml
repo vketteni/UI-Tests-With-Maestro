@@ -48,6 +48,6 @@ appId: com.kptncook.app.kptncook
 
 # Assert count equals maximum
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/asserts/count/isEqual.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/asserts/count/isVisible.yaml
     env:
       MAX: 5

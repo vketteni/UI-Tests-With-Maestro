@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+- copyTextFrom:
+    id: com.kptncook.app.kptncook:id/tvCookedCount
+- assertTrue: ${eval(output.cookedCount) < eval(maestro.copiedText)}

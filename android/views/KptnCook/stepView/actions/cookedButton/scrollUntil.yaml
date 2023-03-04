@@ -4,3 +4,4 @@ appId: com.kptncook.app.kptncook
     element:
       id: "com.kptncook.app.kptncook:id/btnCooked"
     timeout: 100000
+    speed: 80

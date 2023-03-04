@@ -1,0 +1,12 @@
+appId: com.kptncook.app.kptncook
+---
+# Check user status
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    when:
+      notVisible: .*Kptn Settings.*
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/flowControl/runIf/notFreeUser.yaml
+

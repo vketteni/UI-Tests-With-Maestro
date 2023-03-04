@@ -1,10 +1,8 @@
 appId: com.kptncook.app.kptncook
 ---
-- copyTextFrom:
-    id: "com.kptncook.app.kptncook:id/tvIngredientRegularNeeded"
-    index: ${ INDEX }
+# Assert ingredient text attribute exists
+- assertTrue: ${ typeof output.ingredientText == 'string' }
 
-- evalScript: ${output.ingredientQuantity = maestro.copiedText.split(" ")[0]}
-
-- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/symbolToNumber.js
+# Extract quantity, save it to output.ingredientQuantity
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/getQuantity.js
 

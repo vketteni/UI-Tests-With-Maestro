@@ -6,4 +6,4 @@ appId: com.kptncook.app.kptncook
 
 - evalScript: ${output.ingredientQuantity = maestro.copiedText.split(" ")[0]}
 
-- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/symbolToNumber.js
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/getQuantity.js

@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+- assertTrue: ${ typeof output.recipeTitle === 'string' }
+# Copy first title
+- assertVisible: ${output.recipeTitle}
+

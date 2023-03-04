@@ -9,9 +9,9 @@ env:
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/anonymousUser/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/registrationPage/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/anonymousUser/login/email/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/login/email/anonymousUser/profile-login-email-anonymousUser-test.yaml
     env:
       EMAIL: "vincent+testui@kptncook.com"
       PASSWORD: "testing"
@@ -61,9 +61,9 @@ env:
 - launchApp
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/freeUser/test.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/anonymousUser/login/email/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/login/email/anonymousUser/profile-login-email-anonymousUser-test.yaml
     env:
       EMAIL: "vincent+testui+friend@kptncook.com"
       PASSWORD: "testing"

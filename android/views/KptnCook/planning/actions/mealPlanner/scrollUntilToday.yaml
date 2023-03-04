@@ -4,6 +4,6 @@ appId: com.kptncook.app.kptncook
 - scrollUntilVisible:
     element:
       id: com.kptncook.app.kptncook:id/tvTitle
-      above:
+      below:
           id: com.kptncook.app.kptncook:id/tvTitle
           text: "Today.*"

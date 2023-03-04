@@ -2,7 +2,7 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/premiumUser-setup.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/premium/premiumUserSetup.yaml
 
 # Go to flipper # Save recipe title # Go to recipe detail view # Scroll until ingredients segment
 - runFlow:
