@@ -6,13 +6,13 @@ appId: com.kptncook.app.kptncook
 
 # Tap flipper tab # Scroll until blog # Tap blog # Assert browser opens # Go back to app
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/authorBlog/scrollUntilBlog.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/authorBlog/scrollUntilBlog.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/authorBlog/tapVisitBlogButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/authorBlog/tapVisitBlogButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/asserts/authorBlog/browser/hasOpened.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/authorBlog/browser/hasOpened.yaml
 - launchApp

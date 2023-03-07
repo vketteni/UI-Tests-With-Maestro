@@ -1,5 +1,6 @@
 appId: com.kptncook.app.kptncook
 tags:
   - registration
+  - ignore
 ---
 - tapOn: "0"

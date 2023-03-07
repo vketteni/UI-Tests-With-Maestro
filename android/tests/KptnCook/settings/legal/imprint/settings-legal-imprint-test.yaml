@@ -1,0 +1,22 @@
+appId: com.kptncook.app.kptncook
+
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to profile # Go to settings # Find legal notices
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/legal/scrollUntil.yaml
+
+# Go to imprint # Assert imprint page
+
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/legal/imprint/tapImprint.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/asserts/legal/imprint/isVisible.yaml
+- launchApp

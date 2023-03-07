@@ -1,8 +1,8 @@
 appId: com.kptncook.app.kptncook
 ---
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/exlpanationScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/exlpanationScreen/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/explanationScreen/tapContinue.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/explanationScreen/tapContinue.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/plannerScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/plannerScreen/isVisible.yaml

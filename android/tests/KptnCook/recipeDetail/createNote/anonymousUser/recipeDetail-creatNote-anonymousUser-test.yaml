@@ -6,18 +6,18 @@ appId: com.kptncook.app.kptncook
 
 # Go to flipper # Go to recipe detail # Scroll until create note button # Tap create note
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/createNote/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/createNote/scrollUntil.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/createNote/tapCreateNoteButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/createNote/tapCreateNoteButton.yaml
 
 # Assert signup notification visible # Refuse signup # Assert recipe detail view visible
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/asserts/createNote/loginPrompt/hasOpened.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/createNote/loginPrompt/hasOpened.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addToCollection/signUpPrompt/tapNegativ.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToCollection/signUpPrompt/tapNegativ.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/asserts/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/isVisible.yaml

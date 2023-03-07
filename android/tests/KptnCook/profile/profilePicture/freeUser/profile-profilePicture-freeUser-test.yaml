@@ -8,18 +8,18 @@ appId: com.kptncook.app.kptncook
 
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
 # Tap profile picture # Tap take picture
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/profilePicture/tapProfilePicture.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/profilePicture/tapProfilePicture.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/profilePicture/menu/tapTakePicture.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/profilePicture/menu/tapTakePicture.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/Camera/takePicture.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Camera/takePicture.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/Camera/selectPicture.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Camera/selectPicture.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/userProfile/isVisible.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/userProfile/isVisible.yaml
 
 
 # Save cooked counter

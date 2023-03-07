@@ -3,27 +3,27 @@ appId: com.kptncook.app.kptncook
 
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/openSteps/tapStatic.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/tapStatic.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedButton/scrollUntil.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/cookedButton/scrollUntil.yaml
 
 # Starts count
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedButton/tapCooked.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/cookedButton/tapCooked.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/asserts/cookedCount/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/asserts/cookedCount/isVisible.yaml
 
 # Increases
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedCount/saveCount.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/cookedCount/saveCount.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/cookedButton/tapCooked.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/cookedButton/tapCooked.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/asserts/cookedCount/hasIncreased.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/asserts/cookedCount/hasIncreased.yaml
 
 
 

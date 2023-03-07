@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- scrollUntilVisible:
+    element:
+      id: com.kptncook.app.kptncook:id/settingsSupport
+      above:
+        text: ${ output.strings.info_feedbacklabel }
+        above:
+          text: ${ output.strings.info_faqlabel }

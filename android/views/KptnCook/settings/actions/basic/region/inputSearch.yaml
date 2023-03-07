@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Search
-- inputText: ${ COUNTRY }
-- pressKey: Enter

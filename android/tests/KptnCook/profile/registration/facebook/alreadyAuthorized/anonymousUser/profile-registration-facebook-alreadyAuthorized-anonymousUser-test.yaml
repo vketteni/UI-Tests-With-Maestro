@@ -5,24 +5,24 @@ tags:
 
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/asserts/navbarIsVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/registrationPage/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/registrationPage/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/registration/facebook/tapFacebook.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/registration/facebook/tapFacebook.yaml
 
 # Terms of use
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/registration/termsOfUse/confirm.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/registration/termsOfUse/confirm.yaml
 
 # Previously logged in with facebook
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/registrationPage/registration/facebook/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/registrationPage/registration/facebook/isVisible.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/registration/facebook/previouslyLoggedInPage/confirm.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/registration/facebook/previouslyLoggedInPage/confirm.yaml
 
 # logged in user profile = done
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/userProfile/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/userProfile/isVisible.yaml

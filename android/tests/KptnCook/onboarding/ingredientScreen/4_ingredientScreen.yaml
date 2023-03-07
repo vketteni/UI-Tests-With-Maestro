@@ -1,18 +1,18 @@
 appId: com.kptncook.app.kptncook
 ---
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/ingredientScreen/tapSkip.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/ingredientScreen/tapSkip.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/exlpanationScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/exlpanationScreen/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/explanationScreen/tapBack.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/explanationScreen/tapBack.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/ingredientScreen/tapIngredient.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/ingredientScreen/tapIngredient.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/ingredientScreen/tapConfirm.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/ingredientScreen/tapConfirm.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/exlpanationScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/exlpanationScreen/isVisible.yaml

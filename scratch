@@ -1,0 +1,2 @@
+# REPLACE
+python3 .helper/rename_files.py /Users/vincentketteniss/UITests-KC "/Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/freeUser/test.yaml" "/Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/settings-account-logout-test.yaml"

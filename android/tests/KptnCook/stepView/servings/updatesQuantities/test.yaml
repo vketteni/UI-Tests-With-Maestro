@@ -3,36 +3,36 @@ appId: com.kptncook.app.kptncook
 ---
 # Setup
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/openStepView.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/openStepView.yaml
 
 # Decrease
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/ingredients/saveIngredientQuantity.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/ingredients/saveIngredientQuantity.yaml
     env:
       INGREDIENT_INDEX: 0
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/servings/tapDecreaseButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/servings/tapDecreaseButton.yaml
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
     env:
       INGREDIENT_INDEX: 0
 
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/asserts/ingredients/quantityHasDecreased.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/asserts/ingredients/quantityHasDecreased.yaml
 
 # Increase
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/ingredients/saveIngredientQuantity.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/ingredients/saveIngredientQuantity.yaml
       env:
           INGREDIENT_INDEX: 0
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/actions/servings/tapIncreaseButton.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/servings/tapIncreaseButton.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
       env:
           INGREDIENT_INDEX: 0
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/stepView/asserts/ingredients/quantityHasIncreased.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/asserts/ingredients/quantityHasIncreased.yaml
 

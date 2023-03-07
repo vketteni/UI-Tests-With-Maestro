@@ -1,18 +1,18 @@
 appId: com.kptncook.app.kptncook
 ---
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/dietScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/dietScreen/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/dietScreen/tapDiet.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/dietScreen/tapDiet.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/dietScreen/tapConfirm.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/dietScreen/tapConfirm.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/ingredientScreen/tapBack.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/ingredientScreen/tapBack.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/dietScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/dietScreen/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/actions/dietScreen/tapConfirm.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/actions/dietScreen/tapConfirm.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/onboarding/asserts/ingredientScreen/isVisible.yaml

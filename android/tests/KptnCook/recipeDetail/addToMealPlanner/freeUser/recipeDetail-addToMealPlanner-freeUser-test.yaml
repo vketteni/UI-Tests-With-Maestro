@@ -6,18 +6,18 @@ appId: com.kptncook.app.kptncook
 
 # Go to flipper # Go to recipe detail view # Scroll until meal planner icon # Tap icon
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addToMealPlanner/scrollUntil.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToMealPlanner/scrollUntil.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addToMealPlanner/tapMealPlanButton.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToMealPlanner/tapMealPlanButton.yaml
 
 # Assert subscription screen visible # Tap close # Assert flipper visible
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/subscriptionScreen/asserts/isVisible.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/asserts/isVisible.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/subscriptionScreen/actions/tapClose.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/actions/tapClose.yaml
 - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/asserts/isVisible.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/asserts/isVisible.yaml

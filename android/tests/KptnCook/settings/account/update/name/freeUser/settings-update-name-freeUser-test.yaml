@@ -1,0 +1,13 @@
+appId: com.kptncook.app.kptncook
+---
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/update/name/freeUser/_settings-update-name-freeUser-test.yaml
+    env:
+      FIRSTNAME_NEW: free
+      LASTNAME_NEW: vkette
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/update/name/freeUser/_settings-update-name-freeUser-test.yaml
+    env:
+      FIRSTNAME_NEW: Free
+      LASTNAME_NEW: vketteni

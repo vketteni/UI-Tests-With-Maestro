@@ -1,4 +1,4 @@
 // TODO: REFACTOR ALL HARDCODED COLLECTIONS
-output.collections = {
-"settings" : "settings"
+output.collectionTitle = {
+"settings" : "settings-collection"
 }

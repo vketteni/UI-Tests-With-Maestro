@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+- assertVisible: .*oz.*
+- assertVisible: .*lb.*

@@ -4,11 +4,11 @@ appId: com.kptncook.app.kptncook
 - runScript:
     file: /Users/vincentketteniss/UITests-KC/.localizations/Android/EN/output.js
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/asserts/navbarIsVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/asserts/navbarIsVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapShoppingTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapShoppingTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/asserts/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/asserts/isVisible.yaml
 
 # Delete lists until empty shopping background is visible
 - repeat:
@@ -16,12 +16,12 @@ appId: com.kptncook.app.kptncook
       notVisible: ${ output.strings.shopping_empty_state_title }
     commands:
       - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shopping/actions/tapList.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/tapList.yaml
           env:
             INDEX: 0
       - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListDetail/actions/edit/tapEdit.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/actions/edit/tapEdit.yaml
       - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListEdit/actions/delete/tapDelete.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListEdit/actions/delete/tapDelete.yaml
       - runFlow:
-          file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/shoppingListEdit/actions/delete/alert/tapConfirm.yaml
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListEdit/actions/delete/alert/tapConfirm.yaml

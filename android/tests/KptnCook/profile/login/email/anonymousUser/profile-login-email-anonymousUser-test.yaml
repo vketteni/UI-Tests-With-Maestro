@@ -10,22 +10,22 @@ tags:
 
 # Go to profile # Assert login page visible # Tap email login
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapProfileTab.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/registrationPage/isVisible.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/registrationPage/isVisible.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/login/tapEmailLoginButton.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/login/tapEmailLoginButton.yaml
 
 # Input EMAIL variable # Input PASSWORD variable # Submit
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/login/inputEmail.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/login/inputEmail.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/login/inputPassword.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/login/inputPassword.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/login/submit.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/login/submit.yaml
 
 # Assert user profile is visible # Tap send verification email again
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/asserts/userProfile/isVisible.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/userProfile/isVisible.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/profile/actions/login/reminderNotification/tapSendAgain.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/login/reminderNotification/tapSendAgain.yaml

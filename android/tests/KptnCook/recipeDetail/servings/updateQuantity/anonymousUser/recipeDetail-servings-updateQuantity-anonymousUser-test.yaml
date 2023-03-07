@@ -6,49 +6,49 @@ appId: com.kptncook.app.kptncook
 
 # Go to flipper # Go to recipe detail # Scroll until servings segment # Save servings count
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/scrollUntil.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/ingredientText/saveIngredientText.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/ingredientText/saveIngredientText.yaml
     env:
       INDEX: 0
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/leaveRecipeDetail.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/leaveRecipeDetail.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/servings/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/servings/scrollUntil.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/servings/tapDecreaseButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/servings/tapDecreaseButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/scrollUntil.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/asserts/ingredients/quantity/quantityHasDecreased.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/ingredients/quantity/quantityHasDecreased.yaml
       env:
         INDEX: 0
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/ingredientText/saveIngredientText.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/ingredientText/saveIngredientText.yaml
     env:
       INDEX: 0
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/quantity/saveIngredientQuantity.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/leaveRecipeDetail.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/leaveRecipeDetail.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/servings/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/servings/scrollUntil.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/servings/tapIncreaseButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/servings/tapIncreaseButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/ingredients/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/ingredients/scrollUntil.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/asserts/ingredients/quantity/quantityHasIncreased.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/ingredients/quantity/quantityHasIncreased.yaml
       env:
         INDEX: 0
 

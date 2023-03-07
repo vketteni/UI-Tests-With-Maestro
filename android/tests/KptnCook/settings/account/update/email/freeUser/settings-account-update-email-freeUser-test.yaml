@@ -1,0 +1,14 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/update/email/freeUser/_settings-account-update-email-freeUser-test.yaml
+      env:
+          PASSWORD: testing
+          EMAIL: vincent+testui+free+new@kptncook.com
+
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/update/email/freeUser/_settings-account-update-email-freeUser-test.yaml
+      env:
+          PASSWORD: testing
+          EMAIL: vincent+testui+free@kptncook.com

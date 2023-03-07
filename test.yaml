@@ -4,6 +4,6 @@ env:
   PASSWORD: testing
 ---
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/freeUser/test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/settings-account-logout-test.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/login/email/anonymousUser/profile-login-email-anonymousUser-test.yaml

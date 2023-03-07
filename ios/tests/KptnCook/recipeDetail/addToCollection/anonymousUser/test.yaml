@@ -2,30 +2,30 @@ appId: com.kptncook.KptnCook
 ---
 # Assert navbar visible # Go to flipper # Tap recipe # Scroll to collection icon
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/navbar/asserts/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/navbar/asserts/isVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/flipper/actions/tapRecipe.yaml
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/recipeDetail/actions/addToCollection/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/recipeDetail/actions/addToCollection/scrollUntil.yaml
 
 # Tap collection icon
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/recipeDetail/actions/addToCollection/tapAdd.yaml
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/recipeDetail/actions/addToCollection/tapAdd.yaml
 
 # Tap new collection
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/recipeDetail/actions/addToCollection/modal/newCollection/tapCreate.yaml
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/recipeDetail/actions/addToCollection/modal/newCollection/tapCreate.yaml
 
 # Assert sign up notification visible
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/recipeDetail/asserts/addToCollection/signUpPopup/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/recipeDetail/asserts/addToCollection/signUpPopup/isVisible.yaml
 
 # Tap sign up
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/recipeDetail/actions/addToCollection/signupPopup/tapSignUp.yaml
+      file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/recipeDetail/actions/addToCollection/signupPopup/tapSignUp.yaml
 
 # Assert profile tab
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/ios/views/KptnCook/profile/asserts/registrationPage/isVisible.yaml
+      file: /Users/vincentketteniss/UITests-KC/ios/subflows/KptnCook/profile/asserts/registrationPage/isVisible.yaml

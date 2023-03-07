@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- assertVisible: ${ output.strings.info_feedbacklabel }

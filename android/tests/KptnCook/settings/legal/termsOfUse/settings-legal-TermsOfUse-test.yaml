@@ -1,0 +1,10 @@
+appId: com.kptncook.app.kptncook
+
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to profile # Go to settings # Find legal notices
+
+# Go to terms of use # Assert terms of use page

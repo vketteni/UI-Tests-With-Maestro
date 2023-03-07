@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+- tapOn:
+    point: "35%,9%"
+- scroll

@@ -1,0 +1,3 @@
+appId: com.kptncook.app.kptncook
+---
+- assertVisible: "Terms of Use for using the KptnCook App services of KptnCook GmbH"

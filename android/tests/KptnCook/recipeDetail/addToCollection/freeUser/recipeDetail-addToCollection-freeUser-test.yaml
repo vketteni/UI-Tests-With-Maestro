@@ -7,33 +7,33 @@ appId: com.kptncook.app.kptncook
 
 # Go to flipper # Save recipe title # Go to recipe detail view
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFlipperTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/saveRecipeTitle.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/saveRecipeTitle.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/flipper/actions/tapRecipe.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
 
 # Tap collection button # Add to new collection # Create new collection # Leave menu
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addToCollection/tapCollectionButton.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToCollection/tapCollectionButton.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/recipeDetail/actions/addToCollection/collectionMenu/addToCollection.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToCollection/collectionMenu/addToCollection.yaml
     env:
       TITLE: "user-collection"
 
 # Go to favorites # Go to user collection # Assert titles equal
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/navbar/actions/tapFavoritesTab.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/favorites/actions/collection/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/scrollUntil.yaml
     env:
       TITLE: "user-collection"
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/favorites/actions/collection/tapCollectionByTitle.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/tapCollectionByTitle.yaml
     env:
       TITLE: "user-collection"
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/views/KptnCook/collections/asserts/savedRecipeTitle/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/collections/asserts/savedRecipeTitle/isVisible.yaml
 
 
 
