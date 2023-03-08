@@ -1,0 +1,57 @@
+appId: com.kptncook.app.kptncook
+# This flow tests if profile stats increase with each new cooked recipe
+# Login required
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/free/freeUserSetup.yaml
+
+# Go to profile # Save cooked counter
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/cookedCount/saveCookedCount.yaml
+
+# Go to flipper # Go to recipe # Go to steps
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+
+ # Scroll down # Mark recipe as cooked # Go to profile
+- runFlow:
+      file:  /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/cookedButton/scrollUntil.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/cookedButton/tapCooked.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+
+# Assert counter has increased
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/cookedCount/hasIncreased.yaml
+
+# Save cooked count again # Go to favorites # Go to cooked collection
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/cookedCount/saveCookedCount.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/tapCollectionByIndex.yaml
+      env:
+        INDEX: 0
+
+# Delete recipe from cooked collection # Go to profile
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/collections/actions/removeRecipe.yaml
+      env:
+        INDEX: 1
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+
+# Assert count has decreased
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/cookedCount/hasDecreased.yaml

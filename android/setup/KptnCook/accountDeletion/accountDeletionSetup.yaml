@@ -1,7 +1,4 @@
 appId: com.kptncook.app.kptncook
-
-
-
 ---
 # Go to profile tab # If logged in then logout
 - runFlow:

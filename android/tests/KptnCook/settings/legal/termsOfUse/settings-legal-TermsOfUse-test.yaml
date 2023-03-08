@@ -6,5 +6,15 @@ appId: com.kptncook.app.kptncook
     file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/anonymous/anonymousUserSetup.yaml
 
 # Go to profile # Go to settings # Find legal notices
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/legal/scrollUntil.yaml
 
 # Go to terms of use # Assert terms of use page
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/legal/termsOfUse/tapTermsOfUse.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/asserts/legal/termsOfUse/isVisible.yaml

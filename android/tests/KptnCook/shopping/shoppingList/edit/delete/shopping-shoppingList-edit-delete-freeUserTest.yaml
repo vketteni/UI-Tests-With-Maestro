@@ -1,0 +1,42 @@
+appId: com.kptncook.app.kptncook
+env:
+  LIST_INDEX: 0
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/asserts/navbarIsVisible.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapShoppingTab.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/asserts/isVisible.yaml
+
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/asserts/emptyBackground/notVisible.yaml
+
+# Test
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/actions/saveTitle.yaml
+    env:
+        INDEX: ${ LIST_INDEX }
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/asserts/list/listTitle/isVisible.yaml
+
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/actions/tapList.yaml
+    env:
+        INDEX: ${ LIST_INDEX }
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/actions/edit/tapEdit.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListEdit/actions/delete/tapDelete.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListEdit/actions/delete/alert/tapConfirm.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/asserts/list/listTitle/notVisible.yaml

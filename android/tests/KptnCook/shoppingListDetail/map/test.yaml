@@ -6,18 +6,18 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapShoppingTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/asserts/emptyBackground/notVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/asserts/emptyBackground/notVisible.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/tapFirstList.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingList/actions/tapFirstList.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/asserts/ingredientList/notEmpty.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/asserts/ingredientList/notEmpty.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/actions/retailers/saveFirstRetailer.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/actions/retailers/saveFirstRetailer.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/actions/map/scrollUntilMap.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/actions/map/scrollUntilMap.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/actions/map/tapMap.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/actions/map/tapMap.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/asserts/map/retailerName/isVisible.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/asserts/map/retailerName/isVisible.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/actions/map/leaveMap.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/actions/map/leaveMap.yaml

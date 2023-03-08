@@ -2,8 +2,8 @@ appId: com.kptncook.app.kptncook
 ---
 # Tap edit # Tap delete list # Confirm
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/actions/edit/tapEdit.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListDetail/actions/edit/tapEdit.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListEdit/actions/delete/tapDelete.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListEdit/actions/delete/tapDelete.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListEdit/actions/delete/alert/tapConfirm.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListListEdit/actions/delete/alert/tapConfirm.yaml

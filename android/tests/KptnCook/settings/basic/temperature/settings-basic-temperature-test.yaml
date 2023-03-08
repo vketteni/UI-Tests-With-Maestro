@@ -35,9 +35,9 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/temperature/fahrenheit/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/temperature/fahrenheit/scrollUntil.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/leaveStepView.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml
 
 # Go to profile tab # Go to settings
 - runFlow:
@@ -69,6 +69,6 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/temperature/celsius/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/temperature/celsius/scrollUntil.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/stepView/actions/leaveStepView.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml

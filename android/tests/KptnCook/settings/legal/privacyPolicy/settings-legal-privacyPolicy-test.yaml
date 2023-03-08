@@ -13,8 +13,7 @@ appId: com.kptncook.app.kptncook
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/legal/scrollUntil.yaml
 
-# Go to imprint # Assert privacy policy web page
-
+# Go to privacy policy # Assert privacy policy web page
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/legal/privacyPolicy/tapPrivacy.yaml
 - runFlow:
