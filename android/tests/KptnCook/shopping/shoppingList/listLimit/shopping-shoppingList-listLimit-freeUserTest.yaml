@@ -1,0 +1,53 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup output.strings
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.localizations/Android/EN/output.js
+
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/free/freeUserSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/emptyShoppingTab/emptyShoppingTabSetup.yaml
+
+# Create lists until maximum is reached
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/shoppingList/create/emptyBackground/tapCreate.yaml
+- repeat:
+    while:
+      notVisible: ${ output.strings.shopping_limit_reached_title }
+    commands:
+      - runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/shoppingList/create/tapCreate.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/shoppingList/listLimit/alert/tapClose.yaml
+
+# Create list counter
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/shoppingList/listLimit/count/startCount.yaml
+
+# Iterate until empty shopping screen visible
+- repeat:
+    while:
+      notVisible: ${ output.strings.shopping_empty_state_title }
+    commands:
+      - runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/tapList.yaml
+          env:
+            INDEX: 0
+      - runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListDetail/actions/edit/tapEdit.yaml
+      - runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListEdit/actions/delete/tapDelete.yaml
+      - runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shoppingListEdit/actions/delete/alert/tapConfirm.yaml
+      # Count deleted list
+      - runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/actions/shoppingList/listLimit/count/increaseCount.yaml
+
+
+# Assert count equals maximum
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/shopping/asserts/count/isEqual.yaml
+    env:
+      MAX: 5
