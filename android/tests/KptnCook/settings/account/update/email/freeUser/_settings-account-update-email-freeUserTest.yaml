@@ -32,7 +32,7 @@ tags:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/account/update/email/alert/tapConfirmNow.yaml
 
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/tests/Gmail/email/confirmation/email-confirmation-test.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/tests/Gmail/email/confirmation/email-confirmationTest.yaml
 - launchApp
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml

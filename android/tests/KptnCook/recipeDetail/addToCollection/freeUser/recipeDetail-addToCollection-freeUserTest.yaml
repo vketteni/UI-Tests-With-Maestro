@@ -25,11 +25,11 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/scrollUntil.yaml
     env:
       TITLE: "user-collection"
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/tapCollectionByTitle.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/tapCollectionByTitle.yaml
     env:
       TITLE: "user-collection"
 - runFlow:

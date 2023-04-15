@@ -1,0 +1,17 @@
+appId: demo.app.ID
+---
+
+# Setup a specific scenario e.g. User A
+- runFlow:
+    file: setup/path/setupUserA.yaml
+
+# Test composed of reusable subflows within our app domain
+- runFlow:
+    file: action/path/tapHomeTab.yaml # reusable actions
+- runFlow: ....
+
+  ....
+- runFlow:
+    file: assert/path/savedTitleIsVisible.yaml # reusable asserts
+
+

@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+# Assert recipe not displayed by title string
+- assertVisible: ${ output.recipeTitle }

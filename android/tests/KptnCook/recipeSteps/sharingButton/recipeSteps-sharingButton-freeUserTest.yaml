@@ -1,0 +1,48 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup flow
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/free/freeUserSetup.yaml
+
+# Test flow
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/scrollUntil.yaml
+    env:
+      TITLE: "Kptn Free"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/tapCollectionByTitle.yaml
+    env:
+      TITLE: "Kptn Free"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/collections/actions/tapRecipeByIndex.yaml
+    env:
+      INDEX: 0
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/author/saveAuthorComment.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/sharing/tapShareIcon.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/sharing/menu/sendEmail.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/email/actions/composed/receiver/tapReceiver.yaml
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.helper/emails.js
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/email/actions/composed/receiver/inputReceiver.yaml
+    env:
+        EMAIL: ${ output.emails.friend.email }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/email/actions/composed/tapSend.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/friendsAccount/friendsAccountSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/Gmail/email/openSharedLink/email-openSharedLink-test.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/author/savedComment/isVisible.yaml

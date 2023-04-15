@@ -22,7 +22,7 @@ appId: com.kptncook.app.kptncook
 
 # Confirm email in gmail
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/tests/Gmail/email/confirmation/email-confirmation-test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/Gmail/email/confirmation/email-confirmationTest.yaml
 
 - launchApp
 

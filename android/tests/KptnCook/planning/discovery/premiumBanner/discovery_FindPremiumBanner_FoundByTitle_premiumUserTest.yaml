@@ -1,0 +1,13 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/premium/premiumUserSetup.yaml
+# Subflows
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapPlanningTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/discovery/tapDiscoveryTab.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/asserts/discovery/fridgeFinds/fridgeFindsBanner/isVisible.yaml

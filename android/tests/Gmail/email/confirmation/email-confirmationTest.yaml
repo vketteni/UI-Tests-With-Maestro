@@ -12,8 +12,8 @@ tags:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/continueWelcomeTour1.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/continueWelcomeTour2.yaml
-- runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/allowPermission.yaml
+#- runFlow:
+#    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/allowPermission.yaml
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/closeStartDialog.yaml
 - runFlow:

@@ -17,4 +17,5 @@ appId: com.kptncook.app.kptncook
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/legal/termsOfUse/tapTermsOfUse.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/asserts/legal/termsOfUse/isVisible.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/Chrome/KptnCookWebsite/asserts/termsOfUse/isVisible.yaml
+- launchApp

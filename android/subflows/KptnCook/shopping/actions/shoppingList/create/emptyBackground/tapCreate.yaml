@@ -2,4 +2,4 @@ appId: com.kptncook.app.kptncook
 ---
 # Create new list via button on empty shopping screen
 -  tapOn:
-          id: "com.kptncook.app.kptncook:id/btnCreateList"
+      id: "com.kptncook.app.kptncook:id/btnCreateList"

@@ -1,0 +1,6 @@
+appId: com.kptncook.app.kptncook
+---
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- assertVisible:
+    text: ${ output.strings.mealplanner_onboarding_ingredients_button_title } # fridge finds name..

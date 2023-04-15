@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+- assertNotVisible:
+    id: com.kptncook.app.kptncook:id/btnShowRecipes

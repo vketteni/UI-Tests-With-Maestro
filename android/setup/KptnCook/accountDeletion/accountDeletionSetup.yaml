@@ -9,9 +9,9 @@ appId: com.kptncook.app.kptncook
         id: "com.kptncook.app.kptncook:id/tvCaptain"
     file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/settings-account-logout-test.yaml
 
-- runScript: /Users/vincentketteniss/UITests-KC/.helper/emails.js
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/emails.js # Script file provides output.emails
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/registration/email/anonymousUser/profile-registration-email-anonymousUser-test.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/registration/email/anonymousUser/profile-registration-email-anonymousUserTest.yaml
     env:
       EMAIL: ${ output.emails.accountDeletion.email }
       PASSWORD: ${ output.emails.accountDeletion.password }

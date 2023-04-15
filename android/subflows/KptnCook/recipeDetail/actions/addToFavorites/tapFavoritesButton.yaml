@@ -5,6 +5,6 @@ appId: com.kptncook.app.kptncook
 - tapOn:
     id: "com.kptncook.app.kptncook:id/action_favorite"
     retryTapIfNoChange: false
-- tapOn:
-      id: "android:id/button1"
-      optional: true
+#- tapOn:
+#      id: "android:id/button1"
+#      optional: true

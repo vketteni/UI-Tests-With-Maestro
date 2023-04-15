@@ -40,7 +40,7 @@ appId: com.kptncook.app.kptncook
 - runFlow:
       file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
 - runFlow:
-      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/tapCollectionByIndex.yaml
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/tapCollectionByIndex.yaml
       env:
         INDEX: 0
 

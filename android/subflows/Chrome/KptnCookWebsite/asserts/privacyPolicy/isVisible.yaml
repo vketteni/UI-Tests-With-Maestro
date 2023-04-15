@@ -1,0 +1,3 @@
+appId: com.kptncook.app.kptncook
+---
+- assertVisible: "KptnCook Privacy Policy"

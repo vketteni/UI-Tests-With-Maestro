@@ -1,0 +1,16 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/premium/premiumUserSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapPlanningTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/discovery/tapDiscoveryTab.yaml
+
+- runScript:
+      file: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/discovery/lists/scrollUntil.yaml
+      env:
+          TITLE: ${ output.strings.discover_section2_title }

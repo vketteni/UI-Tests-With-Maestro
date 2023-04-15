@@ -1,0 +1,19 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KptnCook/userStatus/anonymous/anonymousUserSetup.yaml
+# Subflows
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/premium/upgradeToPremium/tapUpgrade.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/asserts/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/actions/scroll.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/actions/termsOfUse/tapTermsOfUse.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Chrome/KptnCookWebsite/asserts/termsOfUse/isVisible.yaml
+- launchApp

@@ -19,15 +19,15 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/scrollUntil.yaml
     env:
       TITLE: ${ output.collectionTitle.settings }
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/tapCollectionByTitle.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/tapCollectionByTitle.yaml
     env:
       TITLE: ${ output.collectionTitle.settings }
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/tapRecipeByIndex.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/recipe/tapByIndex.yaml
     env:
       INDEX: 0
 
@@ -53,15 +53,15 @@ appId: com.kptncook.app.kptncook
 - runFlow:
     file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/scrollUntil.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/scrollUntil.yaml
     env:
       TITLE: ${ output.collectionTitle.settings }
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collection/tapCollectionByTitle.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/tapCollectionByTitle.yaml
     env:
       TITLE: ${ output.collectionTitle.settings }
 - runFlow:
-    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/tapRecipeByIndex.yaml
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/recipe/tapByIndex.yaml
     env:
       INDEX: 0
 

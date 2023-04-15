@@ -1,0 +1,29 @@
+appId: "com.google.android.gm"
+tags:
+  - ignore
+---
+# Setup
+- launchApp:
+    appId: "com.google.android.gm"
+    clearState: true
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/continueWelcomeTour1.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/continueWelcomeTour2.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/welcomeTour/actions/closeStartDialog.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/inbox/asserts/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/inbox/actions/openSidebar.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/sidebar/actions/tapDisplayAll.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/inbox/actions/selectEmail.yaml
+    env:
+      INDEX: 0
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/email/actions/received/sharingLink/tapLink.yaml

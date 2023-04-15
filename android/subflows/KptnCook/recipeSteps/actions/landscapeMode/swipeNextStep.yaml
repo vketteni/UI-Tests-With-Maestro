@@ -1,0 +1,4 @@
+appId: com.kptncook.app.kptncook
+---
+- swipe:
+    direction: LEFT

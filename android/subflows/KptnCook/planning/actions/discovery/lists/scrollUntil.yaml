@@ -1,0 +1,9 @@
+appId: com.kptncook.app.kptncook
+---
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- scrollUntilVisible:
+    element:
+      text: ${ TITLE }
+      below:
+        id: com.kptncook.app.kptncook:id/imageViewCover
