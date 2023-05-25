@@ -1,0 +1,37 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup flow
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/userStatus/free/freeUserSetup.yaml
+
+# Test flow
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/saveRecipeTitle.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/favoriteButton/tapFavorite.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/asserts/savedTitle/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/favoriteButton/tapFavorite.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/asserts/savedTitle/notVisible.yaml

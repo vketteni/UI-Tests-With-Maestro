@@ -1,0 +1,17 @@
+appId: com.kptncook.app.kptncook
+---
+
+- scrollUntilVisible:
+    element:
+      id: com.kptncook.app.kptncook:id/tvTitle
+      below:
+        id: com.kptncook.app.kptncook:id/tvTitle
+        text: ${ DAY }.*
+
+- copyTextFrom:
+    id: com.kptncook.app.kptncook:id/tvTitle
+    below:
+      id: com.kptncook.app.kptncook:id/tvTitle
+      text: ${ DAY }.*
+
+- evalScript: ${ output.recipeTitle = maestro.copiedText }

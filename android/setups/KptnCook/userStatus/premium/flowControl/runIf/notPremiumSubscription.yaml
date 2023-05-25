@@ -1,0 +1,19 @@
+appId: com.kptncook.app.kptncook
+---
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/premium/upgradeToPremium/tapUpgrade.yaml
+
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/actions/tapOtherSubscriptions.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/actions/otherSubscriptions/tapAnnual.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/actions/startSubscription.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/subscriptionScreen/actions/confirmPurchase.yaml
+- tapOn:
+      point: "50%,30%"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/asserts/isVisible.yaml

@@ -1,0 +1,6 @@
+---
+flows:
+  - "**"
+excludeTags:
+  - logout
+  - ignore

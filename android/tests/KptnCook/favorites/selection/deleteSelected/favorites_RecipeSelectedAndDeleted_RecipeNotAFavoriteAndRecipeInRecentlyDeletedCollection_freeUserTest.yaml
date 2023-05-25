@@ -1,0 +1,23 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/userStatus/free/freeUserSetup.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/recipe/saveTitle.yaml
+    env:
+        INDEX: 0
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/recipe/longPressByIndex.yaml
+    env:
+        INDEX: 0
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/selection/delete/tapDelete.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/selection/delete/confirm.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/asserts/savedTitle/notVisible.yaml
+

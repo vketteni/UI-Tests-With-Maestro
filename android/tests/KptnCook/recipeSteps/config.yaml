@@ -1,0 +1,7 @@
+---
+flows:
+  - "**"
+excludeTags:
+  - login
+  - registration
+  - ignore

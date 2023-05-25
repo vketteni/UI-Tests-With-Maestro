@@ -1,0 +1,8 @@
+create collection test
+
+
+search recipes test
+filter recipes test
+selection - add to collection test
+selection - add to shopping list test
+selection - delete recipe test

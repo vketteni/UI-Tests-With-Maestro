@@ -1,0 +1,5 @@
+# REPLACE
+python3 .helper/replace.py /Users/vincentketteniss/UITests-KC "/setup/" "/setups/"
+
+# RENAME FILES
+python3 .helper/rename_files.py /Users/vincentketteniss/UITests-KC/android "TermsOfUseTest.yaml" "termsOfUse-test.yaml"

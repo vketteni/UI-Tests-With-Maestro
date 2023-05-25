@@ -1,0 +1,20 @@
+appId: com.kptncook.app.kptncook
+---
+- launchApp
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapPlanningTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/mealPlanner/tapMealPlannerTab.yaml
+
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- repeat:
+      times: 4
+      commands:
+          - runFlow:
+              file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/mealPlanner/week/tapNextWeek.yaml
+
+          - runFlow:
+              when:
+                notVisible: ${ output.strings.plan_empty_state_title }
+              file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/mealPlanner/flowControl/runIf/old/delete.yaml
+- launchApp

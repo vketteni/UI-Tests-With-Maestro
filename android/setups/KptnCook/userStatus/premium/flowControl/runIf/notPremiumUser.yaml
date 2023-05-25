@@ -1,0 +1,15 @@
+appId: com.kptncook.app.kptncook
+---
+- runFlow:
+    when:
+      visible: "com.kptncook.app.kptncook:id/tvCaptain"
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/settings/account/logout/settings-account-logout-test.yaml
+
+# Login
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KptnCook/profile/login/email/anonymousUser/profile-login-email-anonymousUserTest.yaml
+    env:
+      EMAIL: vincent+testui+Premium@kptncook.com
+      PASSWORD: testing
+
+- launchApp

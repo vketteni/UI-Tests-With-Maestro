@@ -1,0 +1,5 @@
+appId: com.kptncook.app.kptncook
+---
+- tapOn:
+    id: "android:id/text1"
+    index: ${ INDEX }

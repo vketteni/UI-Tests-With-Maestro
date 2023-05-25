@@ -1,0 +1,33 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/userStatus/premium/premiumUserSetup.yaml
+
+# Go to flipper # Save recipe title # Go to recipe detail view # Scroll until ingredients segment
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/saveRecipeTitle.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToMealPlanner/scrollUntil.yaml
+
+# Tap meal planner icon # Confirm date selection # Go to planning tab
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToMealPlanner/tapMealPlanButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/addToMealPlanner/calendar/confirmDate.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapPlanningTab.yaml
+
+# Go to meal planner tab # Scroll until today # Assert saved recipe title visible
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/mealPlanner/tapMealPlannerTab.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/mealPlanner/day/scrollUntil.yaml
+          env:
+            DAY: "Today.*"
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/asserts/mealPlanner/recipe/savedTitle/isVisible.yaml

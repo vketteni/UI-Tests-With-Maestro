@@ -1,0 +1,45 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to flipper # Go to recipe detail view
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/flipper/actions/tapRecipe.yaml
+
+# Assert sticky steps button not visible # Assert static steps button visible
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/openSteps/stickyButton/isHidden.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/openSteps/staticButton/isVisible.yaml
+
+# Tap static button # Assert step view # Go back to recipe detail view
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/asserts/isVisible.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml
+
+# Scroll until down until stick button visible # Assert static button not visible
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/stickyButton/scrollUntil.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/openSteps/staticButton/isHidden.yaml
+
+# Tap sticky button # Assert step view visible # Go back to recipe detail view
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/stickyButton/tapSticky.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/asserts/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/leaveStepView.yaml
+
+# Scroll UP until static button visible # Assert sticky button not visible
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/actions/openSteps/staticButton/scrollUntil.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeDetail/asserts/openSteps/stickyButton/isHidden.yaml

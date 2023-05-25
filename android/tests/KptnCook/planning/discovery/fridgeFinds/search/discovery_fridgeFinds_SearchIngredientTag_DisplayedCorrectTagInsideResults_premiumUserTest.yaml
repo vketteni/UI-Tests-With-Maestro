@@ -1,0 +1,32 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/userStatus/premium/premiumUserSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapPlanningTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/discovery/tapDiscoveryTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/discovery/fridgeFinds/tapFridgeFinds.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/actions/discovery/fridgeFinds/search/inputSearch.yaml
+    env:
+        SEARCH: "Onion"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/asserts/discovery/ingredientTags/isVisible.yaml
+    env:
+        TITLE: "green onion"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/asserts/discovery/ingredientTags/isVisible.yaml
+      env:
+          TITLE: "white onion"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/asserts/discovery/ingredientTags/isVisible.yaml
+      env:
+          TITLE: "yellow onion"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/planning/asserts/discovery/ingredientTags/isVisible.yaml
+      env:
+          TITLE: "red onion"
+- launchApp

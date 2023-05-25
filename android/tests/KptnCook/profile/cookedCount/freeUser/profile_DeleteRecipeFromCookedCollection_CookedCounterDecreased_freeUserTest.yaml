@@ -1,0 +1,34 @@
+appId: com.kptncook.app.kptncook
+# This flow tests if profile stats increase with each new cooked recipe
+# Login required
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/userStatus/free/freeUserSetup.yaml
+
+# Go to profile # Save cooked counter
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/cookedCount/saveCookedCount.yaml
+
+
+# Go to favorites # Go to cooked collection
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/favorites/actions/collections/tapCollectionByIndex.yaml
+      env:
+        INDEX: 0
+
+# Delete recipe from cooked collection # Go to profile
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/collections/actions/removeRecipe.yaml
+      env:
+        INDEX: 1
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+
+# Assert count has decreased
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/asserts/cookedCount/hasDecreased.yaml

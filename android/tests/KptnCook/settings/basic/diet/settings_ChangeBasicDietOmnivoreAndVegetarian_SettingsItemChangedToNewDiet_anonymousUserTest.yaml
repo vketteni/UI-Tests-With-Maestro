@@ -1,0 +1,26 @@
+appId: com.kptncook.app.kptncook
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setups/KptnCook/userStatus/anonymous/anonymousUserSetup.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/profile/actions/tapSettingsIcon.yaml
+
+# Vegetarian
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/basic/tapDiet.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/basic/diet/tapVegetarian.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/asserts/basic/diet/vegetarian/EN/isVisible.yaml
+
+# Omnivore
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/basic/tapDiet.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/actions/basic/diet/tapOmnivore.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/settings/asserts/basic/diet/omnivore/EN/isVisible.yaml

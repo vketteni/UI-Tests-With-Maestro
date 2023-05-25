@@ -1,0 +1,22 @@
+appId: com.kptncook.app.kptncook
+# This flow tests if the servings counter changes the displayed number according to taps on -/+ buttons.
+---
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/openStepView.yaml
+
+# Decrease
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/servings/saveServingsCount.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/servings/tapDecreaseButton.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/asserts/servings/hasDecreased.yaml
+
+# Increase
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/servings/saveServingsCount.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/actions/servings/tapIncreaseButton.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KptnCook/recipeSteps/asserts/servings/hasIncreased.yaml
