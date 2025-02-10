@@ -1,4 +1,4 @@
-# Maestro UI Tests for KC
+# UI Tests With Maestro
 
 ## Overview
 This repository contains UI test automation scripts for the **KC** application using [Maestro](https://maestro.mobile.dev/). They don't have a practical purpose anymore, but may prove useful as a refrence. The tests are structured for both Android and iOS platforms, ensuring a seamless experience across devices.
