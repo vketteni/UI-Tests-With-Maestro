@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Create new list via icon
+- tapOn:
+    id: "com.kc.app.kc:id/action_add_cartlist"
+    optional: true

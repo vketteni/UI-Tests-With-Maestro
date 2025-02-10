@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Confirm input
+- tapOn:
+    id: com.kc.app.kc:id/btnAddIngredient
+- hideKeyboard

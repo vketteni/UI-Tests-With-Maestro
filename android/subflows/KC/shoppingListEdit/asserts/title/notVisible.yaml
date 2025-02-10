@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+# Assert list title is not visible
+- assertNotVisible: ${ output.listTitle }

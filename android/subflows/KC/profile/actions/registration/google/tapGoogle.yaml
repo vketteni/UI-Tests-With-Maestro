@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Authenticate with google
+- tapOn:
+    id: "com.kc.app.kc:id/btnGoogle"

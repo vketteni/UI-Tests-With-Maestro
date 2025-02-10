@@ -1,0 +1,11 @@
+appId: com.kc.app.kc
+---
+# Focus text field for email
+- tapOn:
+      id: "com.kc.app.kc:id/etEmail"
+# - tapOn:
+#     id: "android:id/autofill_dialog_no"
+- eraseText
+
+# Fill email field
+- inputText: ${EMAIL}

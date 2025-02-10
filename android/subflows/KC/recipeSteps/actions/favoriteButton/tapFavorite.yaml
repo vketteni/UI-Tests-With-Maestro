@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+    id: com.kc.app.kc:id/action_favorite
+    retryTapIfNoChange: false
+- tapOn:
+    id: "android:id/button1"
+    optional: true

@@ -1,0 +1,17 @@
+appId: com.kc.KC
+---
+# Assert navbar visible
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/navbar/asserts/isVisible.yaml
+# Go to flipper
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/navbar/actions/tapFlipperTab.yaml
+# Tap recipe
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/flipper/actions/tapRecipe.yaml
+# Scroll to meal planner button
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/recipeDetail/actions/ingredients/scrollUntil.yaml
+# Tap meal planner button
+
+#

@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- copyTextFrom:
-    id: com.kptncook.app.kptncook:id/tvCookedCount
-- evalScript: ${ output.cookedCount = maestro.copiedText }

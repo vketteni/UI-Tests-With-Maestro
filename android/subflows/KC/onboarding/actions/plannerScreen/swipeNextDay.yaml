@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Swipe time picker one day up
+- swipe:
+    from:
+      id: "android:id/numberpicker_input"
+    direction: "UP"

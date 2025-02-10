@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+
+# Assert link by substring
+- assertVisible:
+      text: '.*https://sharing.kc.com/.*'

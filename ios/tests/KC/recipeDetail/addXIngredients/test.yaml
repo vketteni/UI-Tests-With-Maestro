@@ -1,0 +1,31 @@
+appId: com.kc.KC
+---
+# Assert navbar visible
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/navbar/asserts/isVisible.yaml
+# Go to flipper
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/navbar/actions/tapFlipperTab.yaml
+# Tap recipe
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/flipper/actions/tapRecipe.yaml
+# Scroll to ingredients
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/recipeDetail/actions/ingredients/scrollUntil.yaml
+# Select all
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/recipeDetail/actions/ingredients/tapSelectAll.yaml
+# Tap add X ingredients
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/recipeDetail/actions/addXIngredients/tapAdd.yaml
+# Assert list exists
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/recipeDetail/asserts/addXIngredients/modal/listsExists.yaml
+# Select list
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/recipeDetail/actions/addXIngredients/modal/selectList.yaml
+    env:
+        INDEX: 0
+# Assert info visible
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/ios/subflows/KC/recipeDetail/asserts/addXIngredients/info/isVisible.yaml

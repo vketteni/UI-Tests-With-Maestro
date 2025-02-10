@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+# Save list title
+- copyTextFrom:
+    id: com.kc.app.kc:id/etListName
+
+# Save in attribute
+- evalScript: ${ output.listTitle = maestro.copiedText }

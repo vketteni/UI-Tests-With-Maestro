@@ -1,0 +1,3 @@
+appId: com.kc.app.kc
+---
+- assertVisible: "Terms of Use for using the KC App services of KC GmbH"

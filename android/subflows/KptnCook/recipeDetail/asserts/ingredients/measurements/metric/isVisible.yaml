@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# TODO: Implement ml assert
-#- assertVisible: .*ml.*
-- assertVisible: .*g.*

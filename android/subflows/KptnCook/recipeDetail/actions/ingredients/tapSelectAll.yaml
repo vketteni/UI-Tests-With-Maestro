@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Use button to select all
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/tvAction"
-    index: 0

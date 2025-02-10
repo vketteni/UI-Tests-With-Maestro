@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Clear field
+- eraseText
+
+# Input list name
+- inputText: ${ TITLE }

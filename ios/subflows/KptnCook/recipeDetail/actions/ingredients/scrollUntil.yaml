@@ -1,4 +1,4 @@
-appId: com.kptncook.KptnCook
+appId: com.kc.KC
 ---
 # Scroll until ingredients segment
 - scrollUntilVisible:

@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Scroll until fahrenheit measurement visible
+- scrollUntilVisible:
+    element:
+      id: "com.kc.app.kc:id/tvStepDescription"
+      text: .*F\s.*

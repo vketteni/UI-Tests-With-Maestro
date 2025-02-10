@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Imperial system (oz.)
+# Celsius
+- tapOn:
+    id: "com.kc.app.kc:id/btnRight"
+    index: 1

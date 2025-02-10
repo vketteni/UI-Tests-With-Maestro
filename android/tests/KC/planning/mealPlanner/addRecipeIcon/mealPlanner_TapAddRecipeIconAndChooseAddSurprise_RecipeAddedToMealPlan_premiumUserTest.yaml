@@ -1,0 +1,52 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/premium/premiumUserSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/mealPlanner/FindUpcomingWeeksAndDeleteOldMealPlans_Setup.yaml
+# Subflows
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapPlanningTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/tapMealPlannerTab.yaml
+- runFlow:
+      when:
+          notVisible: .*"Fill your week".*
+      commands:
+          - tapOn:
+                id: com.kc.app.kc:id/action_more
+          - tapOn:
+                id: com.kc.app.kc:id/tvDeleteWeek
+          - tapOn:
+                id: android:id/button1
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/emptyMealPlan/tapPlanForMe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/day/saveRecipeTitle.yaml
+    env:
+        DAY: "Monday"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/tapRecipeMenuByDay.yaml
+    env:
+        DAY: "Monday"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/recipeMenu/tapRemoveFromMealPlan.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/recipeMenu/confirm.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/asserts/mealPlanner/day/isEmpty.yaml
+    env:
+        DAY: "Monday"
+        NEXT_DAY: "Tuesday"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/day/addRecipeIcon/tapAddIcon.yaml
+    env:
+        DAY: "Monday"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/day/addRecipeIcon/tapAddSurpriseRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/asserts/mealPlanner/day/notEmpty.yaml
+    env:
+        DAY: "Monday"
+        NEXT_DAY: "Tuesday"

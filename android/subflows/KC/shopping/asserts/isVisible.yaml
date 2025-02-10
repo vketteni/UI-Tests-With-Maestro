@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+# Load strings
+- runScript:  /Users/vincentketteniss/UITests-KC/.localizations/Android/EN/output.js
+
+# Assert shopping tab by string
+- assertVisible:
+      id: com.kc.app.kc:id/toolbarTitle
+      text: ${ output.strings.tabbar_shopping_title }

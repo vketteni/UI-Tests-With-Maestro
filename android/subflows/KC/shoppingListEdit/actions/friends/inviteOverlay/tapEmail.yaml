@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Select email option
+- tapOn:
+    id: com.kc.app.kc:id/title
+    index: 0

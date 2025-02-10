@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert by email text input id
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/etEmail"

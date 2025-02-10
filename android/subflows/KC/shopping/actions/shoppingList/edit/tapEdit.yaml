@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Tap on icon
+- tapOn:
+    id: "com.kc.app.kc:id/btnEdit"
+    index: ${ INDEX }

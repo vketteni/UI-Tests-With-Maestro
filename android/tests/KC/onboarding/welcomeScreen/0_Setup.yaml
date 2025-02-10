@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Launch with clean state
+- launchApp:
+    appId: com.kc.app.kc
+    clearState: true
+

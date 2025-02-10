@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert menu by title
+- assertVisible:
+    id: "com.kc.app.kc:id/alertTitle"

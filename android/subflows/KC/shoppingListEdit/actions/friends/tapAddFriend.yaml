@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Add friend to shopping list
+- tapOn:
+    id: com.kc.app.kc:id/tvInviteUser

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Open planning tab (discovery by default)
+- tapOn:
+    id: "com.kc.app.kc:id/planningTabFragment"

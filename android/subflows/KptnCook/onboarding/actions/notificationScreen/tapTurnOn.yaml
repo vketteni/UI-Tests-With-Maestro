@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Tap turn on notifications
-- tapOn:
-    id: com.kptncook.app.kptncook:id/btnTurnNotificationsOn

@@ -1,0 +1,32 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/premium/premiumUserSetup.yaml
+
+# Go to flipper # Save recipe title # Go to recipe detail view # Scroll until ingredients segment
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/saveRecipeTitle.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToMealPlanner/scrollUntil.yaml
+
+# Tap meal planner icon # Confirm date selection # Go to planning tab
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToMealPlanner/tapMealPlanButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToMealPlanner/calendar/confirmDate.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapPlanningTab.yaml
+
+# Go to meal planner tab # Scroll until today # Assert saved recipe title visible
+# Todo: Align compare recipe title with other saved title comparisons
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/tapMealPlannerTab.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/mealPlanner/scrollUntilToday.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/asserts/mealPlanner/compareRecipeTitle.yaml

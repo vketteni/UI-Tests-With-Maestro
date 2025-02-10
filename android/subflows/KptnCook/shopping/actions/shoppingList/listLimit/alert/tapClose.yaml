@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Close
-- tapOn:
-    id: "android:id/button1"

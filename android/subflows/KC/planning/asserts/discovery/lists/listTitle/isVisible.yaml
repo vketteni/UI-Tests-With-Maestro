@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+- assertVisible:
+    text: ${ TITLE }

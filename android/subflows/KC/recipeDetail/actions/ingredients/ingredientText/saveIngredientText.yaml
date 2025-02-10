@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+# Copy and save text
+- copyTextFrom:
+      id: "com.kc.app.kc:id/tvIngredientRegularNeeded"
+      index: ${ INDEX }
+
+- evalScript: ${ output.ingredientText = maestro.copiedText }

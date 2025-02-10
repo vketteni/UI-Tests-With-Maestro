@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- scrollUntilVisible:
-    element:
-      text: ${ FILTER }
-
-- tapOn: ${ FILTER }

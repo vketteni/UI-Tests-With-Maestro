@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Confirm facebook authentication
+- tapOn:
+    point: "50%,66%"

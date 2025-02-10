@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert picture page by skip button
+- assertVisible:
+    id: "com.kc.app.kc:id/btnSkip"

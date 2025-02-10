@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+- longPressOn:
+    id: com.kc.app.kc:id/tvTitle
+    index: ${ INDEX }

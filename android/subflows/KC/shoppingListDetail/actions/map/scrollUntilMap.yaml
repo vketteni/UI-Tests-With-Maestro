@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Scroll until map
+- scrollUntilVisible:
+    element:
+      id: "com.kc.app.kc:id/map"

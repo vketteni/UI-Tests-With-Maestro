@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+    id: "com.google.android.gms:id/container"
+    index: ${INDEX}

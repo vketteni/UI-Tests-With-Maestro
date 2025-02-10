@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Assert step view picture is visible
+- assertVisible:
+    id: "com.kc.app.kc:id/videoFrame"
+    index: 0

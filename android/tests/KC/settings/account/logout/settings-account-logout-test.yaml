@@ -1,0 +1,24 @@
+appId: com.kc.app.kc
+# TODO: REFACTOR PARENT FOLDER STRUCTURE
+tags:
+  - logout
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/userProfile/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/tapAccount.yaml
+
+# Logout
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/logout/tapLogout.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/asserts/account/logout/alert/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/logout/alert/confirm.yaml

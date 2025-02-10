@@ -1,8 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Load strings
-- runScript:
-    file: /Users/vincentketteniss/UITests-KC/.localizations/Android/EN/output.js
-
-# Assert background by string
-- assertVisible: ${ output.strings.shopping_empty_state_title }

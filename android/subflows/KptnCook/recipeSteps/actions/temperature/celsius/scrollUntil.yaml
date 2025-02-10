@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- scrollUntilVisible:
-    element:
-      text: .*°C.*

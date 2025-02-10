@@ -1,4 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert week planner screen
-- assertVisible: When would you like to plan your week?

@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert empty by missing ingredients
-- assertVisible:
-    id: com.kptncook.app.kptncook:id/tvNeeded

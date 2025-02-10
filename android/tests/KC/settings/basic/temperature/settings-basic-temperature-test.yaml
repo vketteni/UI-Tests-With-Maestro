@@ -1,0 +1,74 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/free/freeUserSetup.yaml
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/collections.js
+
+# Go to profile tab # Go to settings
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+
+# Change temperature measurement to fahrenheit
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/basic/temperature/tapFahrenheit.yaml
+
+# Go to favorites tab # Find collection # Tap collection # Tap recipe
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/scrollUntil.yaml
+    env:
+      TITLE: ${ output.collectionTitle.settings }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/tapCollectionByTitle.yaml
+    env:
+      TITLE: ${ output.collectionTitle.settings }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/recipe/tapByIndex.yaml
+    env:
+      INDEX: 0
+
+# Tap step view # Find fahrenheit
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/temperature/fahrenheit/scrollUntil.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/leaveStepView.yaml
+
+# Go to profile tab # Go to settings
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+
+# Change temperature measurement to celsius
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/basic/temperature/tapCelsius.yaml
+
+# Go to favorites tab # Find collection # Tap collection # Tap recipe
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/scrollUntil.yaml
+    env:
+      TITLE: ${ output.collectionTitle.settings }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/tapCollectionByTitle.yaml
+    env:
+      TITLE: ${ output.collectionTitle.settings }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/recipe/tapByIndex.yaml
+    env:
+      INDEX: 0
+
+# Tap step view # Find celsius
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/temperature/celsius/scrollUntil.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/leaveStepView.yaml

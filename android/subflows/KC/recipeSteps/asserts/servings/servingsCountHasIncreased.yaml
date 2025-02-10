@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+# Assert servings have increased
+- copyTextFrom:
+    id: "com.kc.app.kc:id/tvPortionsValue"
+- assertTrue: ${output.servings < maestro.copiedText}
+# output.servings = old value
+# maestro.copiedText = new value

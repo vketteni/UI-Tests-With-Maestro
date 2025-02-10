@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+# Assert ingredient text attribute exists
+- assertTrue: ${ typeof output.ingredientText == 'string' }
+
+# Extract quantity, save it to output.ingredientQuantity
+- runScript: /Users/vincentketteniss/UITests-KC/.helper/quantity/getQuantity.js
+

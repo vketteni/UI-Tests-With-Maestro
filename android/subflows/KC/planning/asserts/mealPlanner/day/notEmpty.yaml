@@ -1,0 +1,10 @@
+appId: com.kc.app.kc
+---
+- assertVisible:
+    id: "com.kc.app.kc:id/tvTitle"
+    text: .*${ DAY }.*
+    above:
+      id: "com.kc.app.kc:id/ivCover"
+      above:
+        id: "com.kc.app.kc:id/tvTitle"
+        text: .*${ NEXT_DAY }.*

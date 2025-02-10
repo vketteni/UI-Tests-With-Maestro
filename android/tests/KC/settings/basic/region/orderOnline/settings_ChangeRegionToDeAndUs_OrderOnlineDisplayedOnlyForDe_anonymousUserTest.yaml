@@ -1,0 +1,11 @@
+appId: com.kc.app.kc
+---
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KC/settings/basic/region/orderOnline/_settings_ChangeRegionToDeAndUs_OrderOnlineDisplayedOnlyForDe_anonymousUserTest.yaml
+    env:
+      REGION: United States
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KC/settings/basic/region/orderOnline/_settings_ChangeRegionToDeAndUs_OrderOnlineDisplayedOnlyForDe_anonymousUserTest.yaml
+    env:
+      REGION: Germany

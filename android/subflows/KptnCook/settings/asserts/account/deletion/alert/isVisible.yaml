@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert alert by title text id
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/alertTitle"

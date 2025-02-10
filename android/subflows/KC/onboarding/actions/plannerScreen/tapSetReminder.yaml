@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Tap set a reminder
+- tapOn:
+    id: com.kc.app.kc:id/btnContinue

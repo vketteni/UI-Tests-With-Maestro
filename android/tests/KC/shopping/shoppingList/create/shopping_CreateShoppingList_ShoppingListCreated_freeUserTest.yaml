@@ -1,0 +1,43 @@
+appId: com.kc.app.kc
+---
+# Setup free user
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/free/freeUserSetup.yaml
+
+# Setup empty background
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/emptyShoppingTab/emptyShoppingTabSetup.yaml
+
+# Assert shopping tab visible # Add list from empty background
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/asserts/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/actions/shoppingList/create/emptyBackground/tapCreate.yaml
+
+# Assert created lists by ids
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/asserts/list/isVisible.yaml
+    env:
+        INDEX: 0
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/asserts/list/notVisible.yaml
+      env:
+          INDEX: 1
+
+# Add list via existing lists background
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/actions/shoppingList/create/tapCreate.yaml
+
+# Assert created lists by ids
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/asserts/list/isVisible.yaml
+      env:
+          INDEX: 1
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/asserts/list/notVisible.yaml
+      env:
+          INDEX: 2
+
+
+
+

@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+
+# Clear old text
+- eraseText
+
+# Write to the note
+- inputText: ${NOTE}

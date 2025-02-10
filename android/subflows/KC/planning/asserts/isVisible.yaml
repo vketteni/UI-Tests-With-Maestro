@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- assertVisible:
+      id: com.kc.app.kc:id/toolbarTitle
+      text: ${ output.strings.tabbar_planning_title }

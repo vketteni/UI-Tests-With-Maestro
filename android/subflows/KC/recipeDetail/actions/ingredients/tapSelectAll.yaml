@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Use button to select all
+- tapOn:
+    id: "com.kc.app.kc:id/tvAction"
+    index: 0

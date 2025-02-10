@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Use the collections button
+- tapOn:
+    id: "com.kc.app.kc:id/action_add_list"
+

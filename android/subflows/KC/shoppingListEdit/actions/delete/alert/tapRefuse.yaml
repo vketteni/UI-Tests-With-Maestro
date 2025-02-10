@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Refuse
+- tapOn:
+    id: "android:id/button2"

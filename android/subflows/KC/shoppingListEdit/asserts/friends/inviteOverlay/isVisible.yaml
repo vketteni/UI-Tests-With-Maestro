@@ -1,0 +1,10 @@
+appId: com.kc.app.kc
+---
+# Init output.strings attribute
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.localizations/Android/EN/output.js
+
+# Assert overlay by string
+- assertVisible: ${ output.strings.cart_dialog_invite_user_title }
+
+

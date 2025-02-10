@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+
+# Open collection by index on screen (0-2)
+# Give Index via environment variable
+- tapOn:
+    id: "com.kc.app.kc:id/textView"
+    index: ${INDEX}

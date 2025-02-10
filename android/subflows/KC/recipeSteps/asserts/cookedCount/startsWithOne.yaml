@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+# Assert by value
+- assertTrue: ${ output.cookedCounter == 1 }

@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Increment by 1
-- evalScript: ${ output.listCounter += 1 }

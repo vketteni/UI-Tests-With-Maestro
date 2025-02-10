@@ -1,0 +1,53 @@
+appId: com.kc.app.kc
+# This flow tests if ingredient quantities change according to serving counter changes.
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to flipper # Go to recipe detail view # Scroll until ingredients
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/scrollUntil.yaml
+
+# Assert zero ingredient are selected # Tap ingredient
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/ingredients/selection/zero/isSelected.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/tapIngredient.yaml
+    env:
+      INDEX: 0
+
+# Assert a single ingredient is selected # Tap ingredient again # Assert zero ingredients selected
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/ingredients/selection/single/isSelected.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/tapIngredient.yaml
+    env:
+      INDEX: 0
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/ingredients/selection/zero/isSelected.yaml
+
+# Tap select-all button # Assert more than one ingredient selected
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/tapSelectAll.yaml
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/ingredients/selection/multiple/isSelected.yaml
+
+# Tap deselect-all # Assert zero ingredients selected
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/tapSelectAll.yaml
+- runFlow:
+        file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/ingredients/selection/zero/isSelected.yaml
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Tap edit icon
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/action_edit_cartlist"

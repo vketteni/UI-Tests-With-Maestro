@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Tap on cook
+- tapOn:
+    id: "com.kc.app.kc:id/btnCooked"

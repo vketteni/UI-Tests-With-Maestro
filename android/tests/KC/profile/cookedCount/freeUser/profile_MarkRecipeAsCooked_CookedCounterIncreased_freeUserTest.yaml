@@ -1,0 +1,35 @@
+appId: com.kc.app.kc
+# This flow tests if profile stats increase with each new cooked recipe
+# Login required
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/free/freeUserSetup.yaml
+
+# Go to profile # Save cooked counter
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/cookedCount/saveCookedCount.yaml
+
+# Go to flipper # Go to recipe # Go to steps
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/openSteps/staticButton/tapStatic.yaml
+
+ # Scroll down # Mark recipe as cooked # Go to profile
+- runFlow:
+      file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/cookedButton/scrollUntil.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/cookedButton/tapCooked.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/leaveStepView.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+
+# Assert counter has increased
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/cookedCount/hasIncreased.yaml

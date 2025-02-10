@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Omnivore diet
+- tapOn:
+    id: "com.kc.app.kc:id/btnEverything"

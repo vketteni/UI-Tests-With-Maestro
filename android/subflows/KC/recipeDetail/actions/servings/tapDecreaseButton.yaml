@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Decreased servings
+- tapOn:
+          id: "com.kc.app.kc:id/btnPortionsDown"

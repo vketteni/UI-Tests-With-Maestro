@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Navigate back to shopping list detail view
-- tapOn:
-    point: 7%,9%

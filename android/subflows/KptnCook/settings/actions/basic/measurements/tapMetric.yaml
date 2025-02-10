@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Metric system (ml)
-# Celsius
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/btnLeft"
-    index: 1

@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-- tapOn:
-    id: com.kptncook.app.kptncook:id/tvTitle
-    index: ${ INDEX }

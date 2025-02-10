@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Pick left out ingredients
+- tapOn:
+    id: com.kc.app.kc:id/item
+    index: 0

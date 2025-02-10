@@ -1,4 +1,4 @@
-appId: com.kptncook.app.kptncook
+appId: com.kc.app.kc
 ---
 # Assert by layout element
 - assertVisible:

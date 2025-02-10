@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Open favorites tab
-- tapOn:
-      id: "com.kptncook.app.kptncook:id/favoriteFragment"

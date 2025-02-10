@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- tapOn:
-    id: "com.google.android.gms:id/container"
-    index: ${INDEX}

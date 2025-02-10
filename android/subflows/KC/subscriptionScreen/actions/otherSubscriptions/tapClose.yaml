@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+    point: 7%,9%

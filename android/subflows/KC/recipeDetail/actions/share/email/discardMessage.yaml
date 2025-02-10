@@ -1,0 +1,11 @@
+appId: com.kc.app.kc
+---
+
+# Three dot email menu (gmail) (Pixel 4a)
+- tapOn:
+    point: "94%,9%"
+
+- tapOn:
+      id: "com.google.android.gm:id/title"
+      index: 4
+

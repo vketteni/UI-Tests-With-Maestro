@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert by layout element
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/title_template"

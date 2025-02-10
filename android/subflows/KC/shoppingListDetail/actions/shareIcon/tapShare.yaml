@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Share icon
+- tapOn:
+      id: "com.kc.app.kc:id/action_invite"

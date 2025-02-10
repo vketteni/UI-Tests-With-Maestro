@@ -1,9 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Copy title
-- copyTextFrom:
-        id: com.kptncook.app.kptncook:id/title
-        index: ${ INDEX }
-
-# Save list title
-- evalScript: ${ output.listTitle = maestro.copiedText }

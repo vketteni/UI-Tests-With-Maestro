@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert by first name text input id
+- assertVisible:
+    id: "com.kc.app.kc:id/etFirstName"

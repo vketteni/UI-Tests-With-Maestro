@@ -1,0 +1,10 @@
+appId: com.kc.app.kc
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+
+- scrollUntilVisible:
+    element:
+      id: "com.kc.app.kc:id/tvTitle"
+      text: ${ output.strings.shopping_basicingredient_sectiontitle }
+
+

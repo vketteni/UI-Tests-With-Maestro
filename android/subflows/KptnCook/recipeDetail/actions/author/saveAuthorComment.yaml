@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-- copyTextFrom:
-    id: com.kptncook.app.kptncook:id/tvHeaderAuthorComment
-
-- evalScript: ${ output.authorComment = maestro.copiedText }

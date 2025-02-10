@@ -1,0 +1,17 @@
+appId: com.kc.app.kc
+---
+- assertVisible:
+    id: com.kc.app.kc:id/tvTitle
+    index: 0
+    above:
+        id: com.kc.app.kc:id/dot
+    below:
+        id: com.kc.app.kc:id/etSearch
+
+- assertVisible:
+      id: com.kc.app.kc:id/imageView
+      index: 0
+      above:
+          id: com.kc.app.kc:id/dot
+      below:
+          id: com.kc.app.kc:id/etSearch

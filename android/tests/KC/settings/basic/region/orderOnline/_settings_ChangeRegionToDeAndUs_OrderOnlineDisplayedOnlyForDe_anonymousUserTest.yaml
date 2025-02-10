@@ -1,0 +1,38 @@
+appId: com.kc.app.kc
+tags:
+  - ignore
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/KC/settings/basic/region/_settings_ChangeRegion_SettingsItemChangedToNewRegion_anonymousUserTest.yaml
+    env:
+      REGION: ${ REGION }
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/scrollUntil.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/tapIngredient.yaml
+    env:
+      INDEX: 0
+
+- runFlow:
+    when:
+      true: ${ REGION === 'United States' }
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/orderOnline/notVisible.yaml
+
+- runFlow:
+    when:
+      true: ${ REGION === 'Germany' }
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/orderOnline/isVisible.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/tapIngredient.yaml
+    env:
+      INDEX: 0

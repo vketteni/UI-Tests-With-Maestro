@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+- swipe:
+    from:
+      id: "com.kc.app.kc:id/tvNeeded"
+      text: ${ INGREDIENT_TEXT }
+    direction: LEFT

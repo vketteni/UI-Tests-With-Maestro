@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Back button (Pixel 4a)
-- tapOn:
-    point: "7%,9%"

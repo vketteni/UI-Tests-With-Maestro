@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Clear field
-- eraseText
-
-# Input list name
-- inputText: ${ TITLE }

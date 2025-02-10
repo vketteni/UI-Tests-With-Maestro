@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+# Focus text field for last name
+- tapOn:
+    id: "com.kc.app.kc:id/etLastName"
+- eraseText
+
+# Fill in new last name
+- inputText: ${LASTNAME_NEW}

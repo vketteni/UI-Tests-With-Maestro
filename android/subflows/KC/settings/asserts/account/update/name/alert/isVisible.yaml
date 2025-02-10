@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+# Assert notification by title
+- assertVisible: ${ output.strings.profile_changename_success }

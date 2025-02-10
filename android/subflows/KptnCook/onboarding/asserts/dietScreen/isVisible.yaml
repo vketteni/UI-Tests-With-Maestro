@@ -1,4 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert Whats your diet screen
-- assertVisible: What's your diet?

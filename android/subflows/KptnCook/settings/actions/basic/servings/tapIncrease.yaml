@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Increase servings
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/add_btn"

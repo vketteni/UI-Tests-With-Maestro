@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+- copyTextFrom:
+    id: com.kc.app.kc:id/tvHeaderAuthorComment
+
+- assertTrue: ${ output.authorComment != maestro.copiedText }

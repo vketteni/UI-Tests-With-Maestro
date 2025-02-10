@@ -1,3 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- assertNotVisible: ${ COLLECTION_NAME }

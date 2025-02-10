@@ -1,0 +1,23 @@
+appId: com.kc.app.kc
+---
+
+- copyTextFrom:
+    id: "android:id/date_picker_header_date"
+
+- evalScript: ${output.weekdayString = maestro.copiedText.split(",")[0]}
+
+- runScript: dateToIndexMap.js
+
+- scrollUntilVisible:
+      element:
+          id: "com.kc.app.kc:id/etNote"
+
+# Note button
+- tapOn:
+      id: "com.kc.app.kc:id/tvAction"
+
+# Clear old text
+- eraseText
+
+# Write to the note
+- inputText: ${output.WeekdayIndex}

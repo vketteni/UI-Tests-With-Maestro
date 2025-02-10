@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Tap on confirm later
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/btnNegative"

@@ -1,0 +1,19 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/anonymous/anonymousUserSetup.yaml
+# Subflows
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/premium/upgradeToPremium/tapUpgrade.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/asserts/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/actions/scroll.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/actions/termsOfUse/tapTermsOfUse.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Chrome/KCWebsite/asserts/termsOfUse/isVisible.yaml
+- launchApp

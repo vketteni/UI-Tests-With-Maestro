@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Decrease servings
-- tapOn:
-      id: "com.kptncook.app.kptncook:id/subtract_btn"

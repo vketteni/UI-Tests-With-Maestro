@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Decrease servings
+- tapOn:
+      id: "com.kc.app.kc:id/subtract_btn"

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Create new list via button on empty shopping screen
+-  tapOn:
+      id: "com.kc.app.kc:id/btnCreateList"

@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Share icon
-- tapOn:
-      id: "com.kptncook.app.kptncook:id/action_invite"

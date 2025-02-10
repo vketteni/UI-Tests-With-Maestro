@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Open search field
+- tapOn:
+    id: "com.kc.app.kc:id/action_search"

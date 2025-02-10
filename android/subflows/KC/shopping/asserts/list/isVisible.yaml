@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# List with index is visible
+- assertVisible:
+    id: "com.kc.app.kc:id/title"
+    index: ${ INDEX }

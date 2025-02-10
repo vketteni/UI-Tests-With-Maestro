@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Assert counter exists
+- assertTrue: ${ typeof output.listCounter == 'number' }
+
+# Assert list counter is equal to maximum
+- assertTrue: ${ output.listCounter == MAX }

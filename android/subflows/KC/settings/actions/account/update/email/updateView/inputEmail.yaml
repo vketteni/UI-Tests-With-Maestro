@@ -1,0 +1,13 @@
+appId: com.kc.app.kc
+---
+
+# Focus text field for email and erase text
+- repeat:
+    times: 3
+    commands:
+      - tapOn:
+          id: "com.kc.app.kc:id/etEmail"
+      - eraseText
+
+# Fill in new email
+- inputText: ${ EMAIL }

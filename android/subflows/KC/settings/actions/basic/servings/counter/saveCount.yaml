@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Save servings count
+- copyTextFrom:
+    id: "com.kc.app.kc:id/number_counter"
+- evalScript: ${output.servings = maestro.copiedText}

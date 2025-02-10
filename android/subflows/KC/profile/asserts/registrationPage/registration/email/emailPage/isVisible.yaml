@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert by email text input id
+- assertVisible:
+    id: "com.kc.app.kc:id/etEmail"

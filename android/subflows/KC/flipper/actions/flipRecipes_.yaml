@@ -1,0 +1,67 @@
+appId: com.kc.app.kc
+---
+
+
+
+# Save recipe title from flipper
+- copyTextFrom:
+    id: "com.kc.app.kc:id/fragment_recipe_tv_description"
+- evalScript: ${output.recipeTitle = maestro.copiedText}
+
+# Swipe up
+- swipe:
+        start: 100, 400
+        end: 100, 200
+        duration: 50
+
+# Save other recipe title from flipper
+- copyTextFrom:
+    id: "com.kc.app.kc:id/fragment_recipe_tv_description"
+
+- tapOn:
+    id: "com.kc.app.kc:id/fragment_recipe_iv_cover"
+    retryTapIfNoChange: false
+
+- tapOn:
+      point: "7%,9%"
+
+# Assert flipping up by different recipe title
+- assertTrue: ${output.recipeTitle != maestro.copiedText}
+
+# Swipe down
+- swipe:
+      start: 100, 300
+      end: 100, 500
+      duration: 50
+
+# Save other recipe title from flipper
+- copyTextFrom:
+    id: "com.kc.app.kc:id/fragment_recipe_tv_description"
+
+- tapOn:
+    id: "com.kc.app.kc:id/fragment_recipe_iv_cover"
+    retryTapIfNoChange: false
+- tapOn:
+      point: "7%,9%"
+
+# Assert flipping back by same recipe title
+- assertTrue: ${output.recipeTitle == maestro.copiedText}
+
+# Swipe down
+- swipe:
+    start: 100, 300
+    end: 100, 500
+    duration: 50
+
+# Save other recipe title from flipper
+- copyTextFrom:
+    id: "com.kc.app.kc:id/fragment_recipe_tv_description"
+
+- tapOn:
+    id: "com.kc.app.kc:id/fragment_recipe_iv_cover"
+    retryTapIfNoChange: false
+- tapOn:
+      point: "7%,9%"
+
+# Assert flipping down by unequal recipe title
+- assertTrue: ${output.recipeTitle != maestro.copiedText}

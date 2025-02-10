@@ -1,0 +1,23 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/free/freeUserSetup.yaml
+
+# Go to flipper # Go to recipe detail view # Scroll until meal planner icon # Tap icon
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToMealPlanner/scrollUntil.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToMealPlanner/tapMealPlanButton.yaml
+
+# Assert subscription screen visible # Tap close # Assert flipper visible
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/asserts/isVisible.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/actions/tapClose.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/asserts/isVisible.yaml

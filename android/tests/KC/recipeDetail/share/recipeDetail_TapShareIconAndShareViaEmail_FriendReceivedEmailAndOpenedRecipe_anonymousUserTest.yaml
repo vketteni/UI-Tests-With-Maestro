@@ -1,0 +1,38 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Share link by email
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/author/saveAuthorComment.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/share/tapShareButton.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/share/menu/hasOpened.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/share/menu/sendEmail.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/email/actions/composed/receiver/tapReceiver.yaml
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.helper/emails.js
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/email/actions/composed/receiver/inputReceiver.yaml
+    env:
+      EMAIL: ${ output.emails.friend.email }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Gmail/email/actions/composed/tapSend.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeSteps/actions/leaveStepView.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/friendsAccount/friendsAccountSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/tests/Gmail/email/openSharedLink/email-openSharedLink-test.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/author/savedComment/isVisible.yaml

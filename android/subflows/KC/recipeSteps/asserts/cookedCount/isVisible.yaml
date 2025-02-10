@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert by id
+- isVisible:
+    id: "com.kc.app.kc:id/btnCooked"

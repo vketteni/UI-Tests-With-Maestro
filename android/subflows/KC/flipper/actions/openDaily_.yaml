@@ -1,0 +1,7 @@
+
+appId: com.kc.app.kc
+---
+
+# Open flipper (daily by default)
+- tapOn:
+          id: "com.kc.app.kc:id/flipperTabFragment"

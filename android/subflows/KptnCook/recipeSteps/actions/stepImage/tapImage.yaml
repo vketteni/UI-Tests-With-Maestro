@@ -1,9 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- tapOn:
-      id: com.kptncook.app.kptncook:id/videoFrame
-      below:
-            id: com.kptncook.app.kptncook:id/tvStepDescription
-            above:
-                  id: com.kptncook.app.kptncook:id/tvStepNumber
-                  text:  ${ "0" + POSITION }

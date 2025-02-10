@@ -1,0 +1,31 @@
+appId: com.kc.app.kc
+---
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/plannerScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/plannerScreen/tapBack.yaml
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/exlpanationScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/explanationScreen/tapContinue.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/plannerScreen/tapSkip.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/doneScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/doneScreen/tapBack.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/plannerScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/plannerScreen/tapTime.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/plannerScreen/swipeNextDay.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/plannerScreen/tapSave.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/plannerScreen/savedDay/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/plannerScreen/tapSetReminder.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/doneScreen/isVisible.yaml
+

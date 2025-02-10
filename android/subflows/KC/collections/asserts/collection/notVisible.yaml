@@ -1,0 +1,3 @@
+appId: com.kc.app.kc
+---
+- assertNotVisible: ${ COLLECTION_NAME }

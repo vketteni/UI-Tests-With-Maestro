@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+
+# Assert that the share tab opens
+- assertVisible:
+    id: "com.kc.app.kc:id/tvTitle"

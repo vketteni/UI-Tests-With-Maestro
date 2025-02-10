@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Add friend to shopping list
-- tapOn:
-    id: com.kptncook.app.kptncook:id/tvInviteUser

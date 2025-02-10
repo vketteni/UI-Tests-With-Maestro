@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert by navbar element
+- assertVisible:
+      id: "com.kc.app.kc:id/flipperTabFragment"

@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+# Copy title
+- copyTextFrom:
+        id: com.kc.app.kc:id/title
+        index: ${ INDEX }
+
+# Save list title
+- evalScript: ${ output.listTitle = maestro.copiedText }

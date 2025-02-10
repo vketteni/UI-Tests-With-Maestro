@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+tags:
+  - registration
+  - ignore
+---
+- tapOn: "0"

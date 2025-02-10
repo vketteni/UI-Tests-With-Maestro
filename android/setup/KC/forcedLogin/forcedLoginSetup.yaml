@@ -1,0 +1,20 @@
+appId: com.kc.app.kc
+---
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/forcedLoginScreen/asserts/isVisible.yaml
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/forcedLoginScreen/actions/tapLogin.yaml
+
+# Input EMAIL variable # Input PASSWORD variable # Submit
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/forcedLoginScreen/actions/email/inputEmail.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/forcedLoginScreen/actions/password/inputPassword.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/forcedLoginScreen/actions/submit.yaml
+
+# Assert user profile is visible # Tap send verification email again
+- waitForAnimationToEnd:
+      timeout: 15000
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/asserts/navbarIsVisible.yaml

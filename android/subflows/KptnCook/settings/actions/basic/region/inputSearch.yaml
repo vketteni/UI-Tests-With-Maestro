@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Search
-- inputText: ${ REGION }
-- tapOn:
-    text: ${ REGION }
-    index: 1

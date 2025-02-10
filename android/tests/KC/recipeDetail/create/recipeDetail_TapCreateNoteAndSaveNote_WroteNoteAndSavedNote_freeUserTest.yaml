@@ -1,0 +1,37 @@
+appId: com.kc.app.kc
+env:
+  NOTE: "Hello World"
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/free/freeUserSetup.yaml
+
+# Go to flipper # Go to recipe detail view # Scroll until create note button
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/createNote/scrollUntil.yaml
+
+# Tap create note # Input note # Save note # Leave recipe detail view
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/createNote/tapCreateNoteButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/createNote/menu/writeNote.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/createNote/menu/saveNote.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/leaveRecipeDetail.yaml
+
+# Go to recipe detail view # Scroll until note # Tap note # Assert note still visible
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/createNote/scrollUntil.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/createNote/tapCreateNoteButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/createNote/note/isVisible.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/createNote/menu/saveNote.yaml

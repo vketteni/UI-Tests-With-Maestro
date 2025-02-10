@@ -1,0 +1,32 @@
+appId: com.kc.app.kc
+tags:
+  - ignore
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/free/freeUserSetup.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/basic/tapLanguage.yaml
+
+# Change language
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/basic/language/tapSelect.yaml
+      env:
+        LANGUAGE: ${ LANGUAGE_BEFORE }
+
+# Assert language has updated
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/asserts/basic/language/languageIsVisible.yaml
+    env:
+      LANGUAGE: ${ LANGUAGE_AFTER }

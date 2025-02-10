@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Fahrenheit
+- tapOn:
+    id: "com.kc.app.kc:id/btnRight"
+    index: 0

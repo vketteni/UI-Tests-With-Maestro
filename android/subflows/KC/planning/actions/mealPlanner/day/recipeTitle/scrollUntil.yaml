@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+
+- scrollUntilVisible:
+    element:
+      id: com.kc.app.kc:id/tvTitle
+      text: ${ TITLE }

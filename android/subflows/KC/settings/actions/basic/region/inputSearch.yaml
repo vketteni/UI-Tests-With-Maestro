@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Search
+- inputText: ${ REGION }
+- tapOn:
+    text: ${ REGION }
+    index: 1

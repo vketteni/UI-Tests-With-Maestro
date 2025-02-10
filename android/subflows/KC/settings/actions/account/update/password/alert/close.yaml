@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Close info
+- tapOn:
+    id: "android:id/button1"

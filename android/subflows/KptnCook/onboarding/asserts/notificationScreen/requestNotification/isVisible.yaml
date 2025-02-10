@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert access notification
-- assertVisible:
-    id: com.android.permissioncontroller:id/content_container

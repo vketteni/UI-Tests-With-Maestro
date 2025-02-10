@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+    id: com.android.vending:id/button_group

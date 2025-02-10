@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- runScript:
-    file: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
-- assertVisible:
-    id: ${ output.string.shopping_login_title }
-

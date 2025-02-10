@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+
+# Create list counter
+- evalScript: ${ output.listCounter = 0 }

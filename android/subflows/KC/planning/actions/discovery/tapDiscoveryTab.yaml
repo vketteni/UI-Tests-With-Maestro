@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Discovery tab
+- tapOn:
+      id: "com.kc.app.kc:id/text"
+      index: 1

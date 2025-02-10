@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert by url
+- assertVisible:
+    id: "com.android.chrome:id/title_url_container"

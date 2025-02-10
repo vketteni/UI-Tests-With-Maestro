@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+- swipe:
+    from:
+      id: "com.kc.app.kc:id/tvNeeded"
+      text: "Oranges"
+    direction: RIGHT

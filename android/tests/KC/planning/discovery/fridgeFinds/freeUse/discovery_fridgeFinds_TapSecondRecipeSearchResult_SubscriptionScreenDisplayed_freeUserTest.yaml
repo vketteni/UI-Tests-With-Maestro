@@ -1,0 +1,22 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/free/freeUserSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapPlanningTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/discovery/tapDiscoveryTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/discovery/tapFridgeFinds.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/discovery/fridgeFinds/ingredientTags/tapIngredientTag.yaml
+      env:
+          TITLE: "tomato"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/actions/discovery/fridgeFinds/tapRecipeResultByIndex.yaml
+      env:
+          INDEX: 1
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/asserts/isVisible.yaml
+- launchApp

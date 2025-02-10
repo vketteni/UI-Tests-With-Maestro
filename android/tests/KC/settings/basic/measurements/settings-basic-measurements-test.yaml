@@ -1,0 +1,60 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/free/freeUserSetup.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/basic/measurements/tapImperial.yaml
+# Favorites # Collection # Recipe # Scroll Until # Assert
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/scrollUntil.yaml
+    env:
+      TITLE: "settings-collection"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/tapCollectionByTitle.yaml
+    env:
+      TITLE: "settings-collection"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/collections/actions/tapRecipeByIndex.yaml
+    env:
+      INDEX: 0
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/scrollUntil.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/ingredients/measurements/imperial/isVisible.yaml
+
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/basic/measurements/tapMetric.yaml
+# Favorites # Collection # Recipe # Scroll Until # Assert
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/scrollUntil.yaml
+      env:
+          TITLE: "settings-collection"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/tapCollectionByTitle.yaml
+      env:
+          TITLE: "settings-collection"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/collections/actions/tapRecipeByIndex.yaml
+      env:
+          INDEX: 0
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/scrollUntil.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/ingredients/measurements/metric/isVisible.yaml

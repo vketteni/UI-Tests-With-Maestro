@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- copyTextFrom:
-    id: com.kptncook.app.kptncook:id/tvTitle
-    index: ${ INDEX }
-
-- evalScript: ${ output.recipeTitle = maestro.copiedText }

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert profile tab (status: not logged in) by header text
+- assertVisible:
+    id: "com.kc.app.kc:id/niceTextView5"

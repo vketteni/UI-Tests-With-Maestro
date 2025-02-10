@@ -1,0 +1,39 @@
+appId: com.kc.app.kc
+# This flow tests correct behaviour of collection button when logged into an account
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/free/freeUserSetup.yaml
+
+# Go to flipper # Save recipe title # Go to recipe detail view
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/saveRecipeTitle.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+
+# Tap collection button # Add to new collection # Create new collection # Leave menu
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToCollection/tapCollectionButton.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToCollection/collectionMenu/addToCollection.yaml
+    env:
+      TITLE: "user-collection"
+
+# Go to favorites # Go to user collection # Assert titles equal
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/scrollUntil.yaml
+    env:
+      TITLE: "user-collection"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/favorites/actions/collections/tapCollectionByTitle.yaml
+    env:
+      TITLE: "user-collection"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/collections/asserts/savedRecipeTitle/isVisible.yaml
+
+
+

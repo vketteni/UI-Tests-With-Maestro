@@ -1,0 +1,50 @@
+appId: com.kc.app.kc
+# TODO: REFACTOR env variables into output attributes
+env:
+  INGREDIENT_INDEX: 2
+  LIST_INDEX: 0
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to flipper # Go to recipe detail view # Scroll until ingredients
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/scrollUntil.yaml
+
+# Select an ingredient # Save text under ingredient image
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/tapIngredient.yaml
+    env:
+      INDEX: ${ INGREDIENT_INDEX }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/ingredients/ingredientText/saveIngredientText.yaml
+    env:
+      INDEX: ${ INGREDIENT_INDEX }
+# Tap add to shopping list # Create new shopping list # Confirm
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addXIngredients/tapAdd.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addXIngredients/confirm.yaml
+
+# Go to shopping tab # Assert shopping tab not empty # Tap list
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapShoppingTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/asserts/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/actions/tapList.yaml
+    env:
+      INDEX: ${ LIST_INDEX }
+
+# Assert ingredient has been added
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListDetail/asserts/ingredients/ingredientText/savedIngredientText/isVisible.yaml
+
+
+

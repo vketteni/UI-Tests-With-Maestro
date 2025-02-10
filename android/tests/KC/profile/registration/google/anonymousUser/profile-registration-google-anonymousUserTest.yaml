@@ -1,0 +1,33 @@
+appId: com.kc.app.kc
+tags:
+  - registration
+---
+
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/registrationPage/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/registration/google/tapGoogle.yaml
+
+
+# Terms of use
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/registrationPage/registration/termsOfUse/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/registration/termsOfUse/confirm.yaml
+
+# Authenticate with google
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/registrationPage/registration/google/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/registration/google/selectGoogleAccount.yaml
+      env:
+        INDEX: 1
+
+# logged in user profile = done
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/userProfile/isVisible.yaml

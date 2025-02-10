@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Leave subscription screen by tapping on cross (Pixel 4a)
+- tapOn:
+    point: "7%,9%"

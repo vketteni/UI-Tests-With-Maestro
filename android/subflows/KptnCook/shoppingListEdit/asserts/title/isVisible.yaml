@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Assert list title is visible
-- assertVisible: ${ output.listTitle }

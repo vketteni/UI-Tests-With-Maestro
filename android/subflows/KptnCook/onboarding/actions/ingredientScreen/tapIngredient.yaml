@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Pick left out ingredients
-- tapOn:
-    id: com.kptncook.app.kptncook:id/item
-    index: 0

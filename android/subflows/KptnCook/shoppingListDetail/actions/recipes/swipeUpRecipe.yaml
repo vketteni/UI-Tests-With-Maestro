@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Delete recipe from shopping list
-- swipe:
-    from:
-      id: "com.kptncook.app.kptncook:id/ivCover"
-    direction: UP

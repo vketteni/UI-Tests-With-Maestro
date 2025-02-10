@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+# Tap google maps by string (regex)
+- tapOn: Google.*

@@ -1,4 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert don't eat screen
-- assertVisible: Is there anything you don't eat?

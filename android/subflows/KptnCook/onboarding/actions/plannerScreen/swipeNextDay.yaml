@@ -1,7 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Swipe time picker one day up
-- swipe:
-    from:
-      id: "android:id/numberpicker_input"
-    direction: "UP"

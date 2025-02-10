@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Confirm access notification
+- tapOn:
+    id: com.android.permissioncontroller:id/permission_allow_button

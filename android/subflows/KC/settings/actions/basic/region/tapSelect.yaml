@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+    text: ${ REGION }

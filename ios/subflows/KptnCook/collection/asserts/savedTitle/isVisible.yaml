@@ -1,4 +1,4 @@
-appId: com.kptncook.KptnCook
+appId: com.kc.KC
 ---
 # Assert output.recipeTitle exists
 - assertTrue: ${ typeof output.recipeTitle === 'string' }

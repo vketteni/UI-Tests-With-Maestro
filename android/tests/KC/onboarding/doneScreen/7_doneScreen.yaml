@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/doneScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/doneScreen/tapContinue.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/asserts/isVisible.yaml

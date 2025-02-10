@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Open favorites tab
+- tapOn:
+      id: "com.kc.app.kc:id/favoriteFragment"

@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+# Assert Whats your diet screen
+- assertVisible: What's your diet?

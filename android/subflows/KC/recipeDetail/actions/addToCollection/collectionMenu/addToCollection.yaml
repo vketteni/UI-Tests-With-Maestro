@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+
+# Add to collection: New collection
+- tapOn:
+    id: "com.kc.app.kc:id/textView"
+    text: ${ TITLE }

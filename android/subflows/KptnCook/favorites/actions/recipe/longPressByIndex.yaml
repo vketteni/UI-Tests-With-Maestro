@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- longPressOn:
-    id: com.kptncook.app.kptncook:id/tvTitle
-    index: ${ INDEX }

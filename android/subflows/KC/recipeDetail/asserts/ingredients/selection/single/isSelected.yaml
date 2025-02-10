@@ -1,0 +1,10 @@
+appId: com.kc.app.kc
+---
+
+- assertVisible:
+      id: "com.kc.app.kc:id/ivSelectedIcon"
+      index: 0
+
+- assertNotVisible:
+        id: "com.kc.app.kc:id/ivSelectedIcon"
+        index: 1

@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+- runScript:
+      file: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- assertVisible:
+    id: ${ output.strings.mealplanner_subscription_title_trialoptions }
+

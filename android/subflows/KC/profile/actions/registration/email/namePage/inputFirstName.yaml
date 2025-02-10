@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+# Focus text field for first name
+- tapOn:
+    id: "com.kc.app.kc:id/etFirstName"
+
+# Fill first name
+- inputText: ${FIRSTNAME}

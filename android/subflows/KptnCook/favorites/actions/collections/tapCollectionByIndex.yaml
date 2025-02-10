@@ -1,8 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Open collection by index on screen (0-2)
-# Give Index via environment variable
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/textView"
-    index: ${INDEX}

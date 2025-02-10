@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+
+# Delete collection
+- tapOn: ${ output.strings.collection_delete_collection }

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Tap edit icon
+- tapOn:
+    id: "com.kc.app.kc:id/action_edit_cartlist"

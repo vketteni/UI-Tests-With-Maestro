@@ -1,0 +1,33 @@
+appId: com.kc.app.kc
+env:
+    LIST_INDEX: 0
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/anonymous/anonymousUserSetup.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/emptyShoppingTab/emptyShoppingTabSetup.yaml
+
+# Create new list # Go to list detail # Go to list edit
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/actions/shoppingList/create/emptyBackground/tapCreate.yaml
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/shopping/actions/tapList.yaml
+    env:
+        INDEX: "${ LIST_INDEX }"
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListDetail/actions/edit/tapEdit.yaml
+
+# Tap share # Assert alert # Confirm # Assert registration visible
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListDetail/actions/shareIcon/tapShare.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListDetail/asserts/shareIcon/alert/isVisible.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListDetail/actions/shareIcon/alert/tapConfirm.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/registrationPage/isVisible.yaml
+

@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Celsius
+- tapOn:
+    id: "com.kc.app.kc:id/btnLeft"
+    index: 0

@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+# Write input
+- inputText: ${ INGREDIENT_TEXT }

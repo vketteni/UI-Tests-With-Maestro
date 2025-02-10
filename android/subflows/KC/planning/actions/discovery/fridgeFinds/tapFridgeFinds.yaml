@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+- runScript:
+    file: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- tapOn:
+    text: { output.strings.mealplanner_onboarding_ingredients_button_title }
+

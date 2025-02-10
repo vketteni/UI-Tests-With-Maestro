@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+# Copy
+- copyTextFrom:
+    id: com.kc.app.kc:id/row_recipe_detail_retailer_tab
+    index: 0
+
+# Save
+- evalScript: ${ output.retailer = maestro.copiedText }

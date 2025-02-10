@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert user profile
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/tvCaptain"

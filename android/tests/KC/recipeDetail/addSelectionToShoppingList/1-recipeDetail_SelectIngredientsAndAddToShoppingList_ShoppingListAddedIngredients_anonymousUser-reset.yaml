@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+# Tap edit # Tap delete list # Confirm
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListDetail/actions/edit/tapEdit.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListEdit/actions/delete/tapDelete.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/shoppingListEdit/actions/delete/alert/tapConfirm.yaml

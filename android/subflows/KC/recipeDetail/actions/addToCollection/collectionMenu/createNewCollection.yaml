@@ -1,0 +1,13 @@
+appId: com.kc.app.kc
+---
+
+# Focus text field
+- tapOn:
+    id: "com.kc.app.kc:id/etCollectionName"
+
+# Name
+- inputText: ${ COLLECTION_NAME }
+
+# Continue
+- tapOn:
+      id: "com.kc.app.kc:id/btnContinue"

@@ -1,4 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Write input
-- inputText: ${ INGREDIENT_TEXT }

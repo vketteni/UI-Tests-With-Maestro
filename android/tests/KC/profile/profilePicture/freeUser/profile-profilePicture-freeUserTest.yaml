@@ -1,0 +1,25 @@
+appId: com.kc.app.kc
+# This flow tests if profile stats increase with each new cooked recipe
+# Login required
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/free/freeUserSetup.yaml
+
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+# Tap profile picture # Tap take picture
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/profilePicture/tapProfilePicture.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/profilePicture/menu/tapTakePicture.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Camera/takePicture.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/Camera/selectPicture.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/asserts/userProfile/isVisible.yaml
+
+
+# Save cooked counter

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# List title
+- tapOn:
+    id: com.kc.app.kc:id/etListName

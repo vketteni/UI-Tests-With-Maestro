@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+# Assert welcome screen
+- assertVisible:
+    id: com.kc.app.kc:id/tvTerms
+- assertVisible:
+    id: com.kc.app.kc:id/avOnboarding
+- assertVisible:
+    id: com.kc.app.kc:id/tvTitle

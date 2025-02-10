@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+
+# Save portion size
+- copyTextFrom:
+    id: "com.kc.app.kc:id/tvPortionsValue"
+- evalScript: ${output.servings = maestro.copiedText}

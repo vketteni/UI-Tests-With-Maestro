@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Assert retailer attribute exists
+- evalScript: ${ typeof output.retailer == 'string' }
+
+# Assert retailer on google maps by string
+- assertVisible: ${ output.retailer }

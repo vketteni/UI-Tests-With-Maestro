@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert by index
-- assertNotVisible:
-    id: "com.kptncook.app.kptncook:id/title"
-    index: ${ INDEX }

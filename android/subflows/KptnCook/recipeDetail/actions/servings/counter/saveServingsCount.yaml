@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Save servings count
-- copyTextFrom:
-    id: "com.kptncook.app.kptncook:id/tvPortionsValue"
-- evalScript: ${output.servings = maestro.copiedText}

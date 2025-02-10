@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Save recipe to meal planner
+- tapOn:
+    id: "android:id/button1"

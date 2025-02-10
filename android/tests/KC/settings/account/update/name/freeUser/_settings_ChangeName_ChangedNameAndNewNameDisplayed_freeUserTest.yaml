@@ -1,0 +1,39 @@
+appId: com.kc.app.kc
+tags:
+  - ignore
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/free/freeUserSetup.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/tapAccount.yaml
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/name/tapUpdateName.yaml
+
+# Update
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/name/updateView/inputFirstName.yaml
+      env:
+        FIRSTNAME_NEW: ${ FIRSTNAME_NEW }
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/name/updateView/inputLastName.yaml
+      env:
+        LASTNAME_NEW: ${ LASTNAME_NEW }
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/name/updateView/tapSave.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/asserts/account/update/name/alert/isVisible.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/name/alert/close.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/name/tapUpdateName.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/asserts/account/update/name/firstName/hasUpdated.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/asserts/account/update/name/lastName/hasUpdated.yaml
+- launchApp

@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Assert list title attribute exists
+- assertTrue: ${ typeof output.listTitle == 'string' }
+
+# Assert title by its text
+- assertVisible: ${ output.listTitle }

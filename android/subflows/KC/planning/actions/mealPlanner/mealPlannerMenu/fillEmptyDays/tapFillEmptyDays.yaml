@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+    id: com.kc.app.kc:id/tvFillPlan

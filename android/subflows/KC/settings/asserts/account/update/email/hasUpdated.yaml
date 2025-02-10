@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+
+# Assert success by comparison
+- assertVisible: ${ EMAIL }

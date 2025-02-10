@@ -1,0 +1,4 @@
+appId: com.kc.app.kc
+---
+# Assert week planner screen
+- assertVisible: When would you like to plan your week?

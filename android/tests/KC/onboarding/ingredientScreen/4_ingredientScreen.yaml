@@ -1,0 +1,18 @@
+appId: com.kc.app.kc
+---
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/ingredientScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/ingredientScreen/tapSkip.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/exlpanationScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/explanationScreen/tapBack.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/ingredientScreen/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/ingredientScreen/tapIngredient.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/actions/ingredientScreen/tapConfirm.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/onboarding/asserts/exlpanationScreen/isVisible.yaml

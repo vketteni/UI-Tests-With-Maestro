@@ -1,0 +1,8 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+    id: "com.kc.app.kc:id/etEmail"
+- eraseText
+
+# Fill email field
+- inputText: ${EMAIL}

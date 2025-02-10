@@ -1,0 +1,25 @@
+appId: com.kc.app.kc
+---
+
+
+# Three dot menu
+- tapOn:
+    point: "95%,9%"
+
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+
+# Select
+- tapOn: ${ output.strings.general_select_button_text }
+
+# First Recipe
+- tapOn:
+    id: "com.kc.app.kc:id/ivCover"
+    index: ${ INDEX }
+
+# Delete
+- tapOn:
+    id: "com.kc.app.kc:id/action_delete"
+
+# Confirm
+- tapOn:
+    id: "android:id/button1"

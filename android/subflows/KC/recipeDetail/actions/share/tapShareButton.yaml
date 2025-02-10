@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+
+# Use the share button
+- tapOn:
+    id: "com.kc.app.kc:id/action_share"
+

@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- runScript:
-    file: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
-- assertVisible:
-    text: ${output.strings.signup_screen_question_login}

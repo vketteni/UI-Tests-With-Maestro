@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Always tap first recipe
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/ivCover"

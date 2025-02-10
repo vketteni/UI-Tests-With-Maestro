@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+- scrollUntilVisible:
+    element:
+      text: ${ FILTER }
+
+- tapOn: ${ FILTER }

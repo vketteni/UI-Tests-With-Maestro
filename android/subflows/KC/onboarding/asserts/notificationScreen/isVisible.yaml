@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Assert Notification screen
+- assertVisible: Don’t miss out!
+- assertVisible:
+    id: com.kc.app.kc:id/btnTurnNotificationsOn

@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Save the note
-- tapOn:
-    id: "android:id/button1"

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Save the note
+- tapOn:
+    id: "android:id/button1"

@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+- tapOn:
+      id: com.kc.app.kc:id/videoFrame
+      below:
+            id: com.kc.app.kc:id/tvStepDescription
+            above:
+                  id: com.kc.app.kc:id/tvStepNumber
+                  text:  ${ "0" + POSITION }

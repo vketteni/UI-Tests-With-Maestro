@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert picture page by skip button
-- assertVisible:
-    id: "com.kptncook.app.kptncook:id/btnSkip"

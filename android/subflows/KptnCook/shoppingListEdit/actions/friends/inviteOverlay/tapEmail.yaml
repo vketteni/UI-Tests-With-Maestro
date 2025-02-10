@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Select email option
-- tapOn:
-    id: com.kptncook.app.kptncook:id/title
-    index: 0

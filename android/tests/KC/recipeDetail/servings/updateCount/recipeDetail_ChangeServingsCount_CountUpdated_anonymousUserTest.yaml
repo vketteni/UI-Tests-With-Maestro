@@ -1,0 +1,29 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to flipper # Go to recipe detail # Scroll until servings segment # Save servings count
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/servings/scrollUntil.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/servings/counter/saveServingsCount.yaml
+
+# Tap decrease # Assert counter decreased by 1 # Save count
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/servings/tapDecreaseButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/servings/counter/hasDecreased.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/servings/counter/saveServingsCount.yaml
+
+# Tap increase # Assert counter increased by 1
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/servings/tapIncreaseButton.yaml
+- runFlow:
+          file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/servings/counter/hasIncreased.yaml

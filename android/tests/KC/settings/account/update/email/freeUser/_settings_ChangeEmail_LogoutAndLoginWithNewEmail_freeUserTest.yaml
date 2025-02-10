@@ -1,0 +1,46 @@
+appId: com.kc.app.kc
+tags:
+    - ignore
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/free/freeUserSetup.yaml
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/tapAccount.yaml
+- runFlow:
+    file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/email/tapUpdateEmail.yaml
+
+# Update
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/email/updateView/inputEmail.yaml
+    env:
+        EMAIL: ${ EMAIL }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/email/updateView/inputPassword.yaml
+    env:
+        PASSWORD: ${ PASSWORD }
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/email/updateView/tapSave.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/asserts/account/update/email/alert/isVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/account/update/email/alert/tapConfirmNow.yaml
+
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/tests/Gmail/email/confirmation/email-confirmationTest.yaml
+- launchApp
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/tapAccount.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/asserts/account/update/email/hasUpdated.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/tapBack.yaml

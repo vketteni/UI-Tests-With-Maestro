@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert recipes exist by title id
-- assertVisible:
-    id: com.kptncook.app.kptncook:id/tvOpenRecipe

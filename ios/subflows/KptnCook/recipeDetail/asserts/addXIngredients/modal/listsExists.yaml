@@ -1,4 +1,4 @@
-appId: com.kptncook.KptnCook
+appId: com.kc.KC
 ---
 # Assert at least 1 shopping list exists
 - assertVisible:

@@ -1,6 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Email
-- tapOn:
-    id: com.kptncook.app.kptncook:id/title
-    index: 1

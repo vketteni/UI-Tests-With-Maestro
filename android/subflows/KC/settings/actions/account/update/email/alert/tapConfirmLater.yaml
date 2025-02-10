@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Tap on confirm later
+- tapOn:
+    id: "com.kc.app.kc:id/btnNegative"

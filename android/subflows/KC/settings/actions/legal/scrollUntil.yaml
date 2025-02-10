@@ -1,0 +1,12 @@
+appId: com.kc.app.kc
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+- scrollUntilVisible:
+    element:
+        id: com.kc.app.kc:id/settingsLegal
+        above:
+            text: ${ output.strings.info_contactlabel }
+            above:
+                text: ${ output.strings.info_termslabel }
+                above:
+                    text: ${ output.strings.info_privacylabel }

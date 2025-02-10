@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Press email signup button
+- tapOn:
+    id: "com.kc.app.kc:id/btnEmailSignup"

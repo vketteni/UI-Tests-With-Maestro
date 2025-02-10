@@ -1,4 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-- assertTrue: ${parseInt(output.ingredientQuantity) > parseInt(maestro.copiedText.split(" ")[0])}

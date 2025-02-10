@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
-
-- tapOn: ${ output.strings.settings_subscription_upgrade }

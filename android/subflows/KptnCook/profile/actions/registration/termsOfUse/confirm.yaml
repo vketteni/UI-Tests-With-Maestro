@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Confirm terms of use
-- tapOn:
-    id: "com.kptncook.app.kptncook:id/btnOk"

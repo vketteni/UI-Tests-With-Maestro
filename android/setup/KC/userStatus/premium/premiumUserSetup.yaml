@@ -1,0 +1,27 @@
+appId: com.kc.app.kc
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+
+# Check user status
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/asserts/navbarIsVisible.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    when:
+      notVisible: .*Kptn Premium.*
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/premium/flowControl/runIf/notPremiumUser.yaml
+
+# Go to settings
+- runFlow:
+    when:
+      notVisible: .*Kptn Premium.*
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+
+# Check subscription status # Purchase subscription again if needed
+- runFlow:
+    when:
+      notVisible: ${ output.strings.settings_subscription_manage }
+    file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/premium/FlowControl/runIf/notPremiumSubscription.yaml

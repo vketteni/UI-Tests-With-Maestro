@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Assert count has decreased
+- copyTextFrom:
+    id: com.kc.app.kc:id/tvCookedCount
+- assertTrue: ${eval(output.cookedCount) > eval(maestro.copiedText)}

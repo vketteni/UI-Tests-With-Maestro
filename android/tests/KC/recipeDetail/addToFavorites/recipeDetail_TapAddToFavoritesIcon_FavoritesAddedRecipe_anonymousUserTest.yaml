@@ -1,0 +1,25 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+## Go to flipper # Save recipe title # Go to recipe detail view # Tap favorite icon
+#- runFlow:
+#    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/saveRecipeTitle.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToFavorites/tapFavoritesButton.yaml
+
+# Leave detail view # Go to favorites # Assert new favorite recipe by saved title
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/leaveRecipeDetail.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFavoritesTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/collections/asserts/savedRecipeTitle/isVisible.yaml
+      env:
+        INDEX: 0

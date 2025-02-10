@@ -1,0 +1,23 @@
+appId: com.kc.app.kc
+---
+# Setup
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/setup/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to flipper # Go to recipe detail view # Tap collection icon
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapFlipperTab.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/flipper/actions/tapRecipe.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToCollection/tapCollectionButton.yaml
+
+# Tap new collection # Assert signup notification visible # Tap refuse # Assert detail view visible
+- runFlow:
+      file:  /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToCollection/collectionMenu/addToNewCollection.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/addToCollection/signUpPrompt/hasOpened.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/actions/addToCollection/signUpPrompt/tapNegativ.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/recipeDetail/asserts/isVisible.yaml

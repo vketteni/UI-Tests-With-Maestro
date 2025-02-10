@@ -1,0 +1,7 @@
+appId: com.kc.app.kc
+---
+# Delete recipe from shopping list
+- swipe:
+    from:
+      id: "com.kc.app.kc:id/ivCover"
+    direction: UP

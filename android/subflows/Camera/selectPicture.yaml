@@ -1,4 +1,4 @@
-appId: com.kptncook.app.kptncook
+appId: com.kc.app.kc
 ---
 - tapOn:
-    id: "com.kptncook.app.kptncook:id/btnSelect"
+    id: "com.kc.app.kc:id/btnSelect"

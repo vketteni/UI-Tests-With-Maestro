@@ -1,0 +1,19 @@
+appId: com.kc.app.kc
+---
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/premium/upgradeToPremium/tapUpgrade.yaml
+
+
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/actions/tapOtherSubscriptions.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/actions/otherSubscriptions/tapAnnual.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/actions/startSubscription.yaml
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/subscriptionScreen/actions/confirmPurchase.yaml
+- tapOn:
+      point: "50%,30%"
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/planning/asserts/isVisible.yaml

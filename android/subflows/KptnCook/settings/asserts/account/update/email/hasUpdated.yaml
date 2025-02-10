@@ -1,5 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Assert success by comparison
-- assertVisible: ${ EMAIL }

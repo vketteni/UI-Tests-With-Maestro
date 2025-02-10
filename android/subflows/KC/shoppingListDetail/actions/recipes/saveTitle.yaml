@@ -1,0 +1,9 @@
+appId: com.kc.app.kc
+---
+# Copy first recipe title in row
+- copyTextFrom:
+    id: com.kc.app.kc:id/tvTitle
+    index: 0
+
+# Save title to its output attribute
+- evalScript: ${ output.recipeTitle = maestro.copiedText }

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert detailView is visible by favorite button on screen
+- assertVisible:
+    id: "com.kc.app.kc:id/action_favorite"

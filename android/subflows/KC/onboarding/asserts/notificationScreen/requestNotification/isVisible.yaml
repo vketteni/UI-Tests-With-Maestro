@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert access notification
+- assertVisible:
+    id: com.android.permissioncontroller:id/content_container

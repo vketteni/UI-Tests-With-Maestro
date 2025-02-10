@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert recipes exist by title id
+- assertVisible:
+    id: com.kc.app.kc:id/tvOpenRecipe

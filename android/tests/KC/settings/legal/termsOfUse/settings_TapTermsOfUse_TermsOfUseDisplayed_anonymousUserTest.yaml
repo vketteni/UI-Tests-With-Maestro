@@ -1,0 +1,21 @@
+appId: com.kc.app.kc
+
+---
+# Setup
+- runFlow:
+    file: /Users/vincentketteniss/UITests-KC/android/setups/KC/userStatus/anonymous/anonymousUserSetup.yaml
+
+# Go to profile # Go to settings # Find legal notices
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/navbar/actions/tapProfileTab.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/profile/actions/tapSettingsIcon.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/legal/scrollUntil.yaml
+
+# Go to terms of use # Assert terms of use page
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/KC/settings/actions/legal/termsOfUse/tapTermsOfUse.yaml
+- runFlow:
+      file: /Users/vincentketteniss/UITests-KC/android/subflows/Chrome/KCWebsite/asserts/termsOfUse/isVisible.yaml
+- launchApp

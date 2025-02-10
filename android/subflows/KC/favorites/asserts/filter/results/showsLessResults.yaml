@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+- copyTextFrom:
+    id: com.kc.app.kc:id/btnShowRecipes
+
+- evalScript: ${ parseInt(output.filterResults) > parseInt(maestro.copiedText.match(/\d+/)[0]) }

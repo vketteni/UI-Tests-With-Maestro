@@ -1,9 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-
-# Scroll until sticky stepView button
-- scrollUntilVisible:
-      element:
-          id: "com.kptncook.app.kptncook:id/btnStartCooking"
-      direction: UP
-

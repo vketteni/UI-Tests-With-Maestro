@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+
+# Back button (Pixel 4a)
+- tapOn:
+    point: "7%,9%"

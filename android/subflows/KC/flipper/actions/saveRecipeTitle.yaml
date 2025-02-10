@@ -1,0 +1,6 @@
+appId: com.kc.app.kc
+---
+# Save displayed recipe title
+- copyTextFrom:
+    id: "com.kc.app.kc:id/recipeTitle"
+- evalScript: ${output.recipeTitle = maestro.copiedText}

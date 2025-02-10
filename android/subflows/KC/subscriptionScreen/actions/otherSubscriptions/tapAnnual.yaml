@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+- runScript: /Users/vincentketteniss/UITests-KC/.localizations/android/EN/output.js
+
+- tapOn: ${ output.strings.mealplanner_subscription_yearly }

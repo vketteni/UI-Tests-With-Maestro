@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Navigate back to shopping list detail view
+- tapOn:
+    point: 7%,9%

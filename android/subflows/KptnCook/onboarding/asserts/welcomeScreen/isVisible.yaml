@@ -1,9 +1,0 @@
-appId: com.kptncook.app.kptncook
----
-# Assert welcome screen
-- assertVisible:
-    id: com.kptncook.app.kptncook:id/tvTerms
-- assertVisible:
-    id: com.kptncook.app.kptncook:id/avOnboarding
-- assertVisible:
-    id: com.kptncook.app.kptncook:id/tvTitle

@@ -1,0 +1,5 @@
+appId: com.kc.app.kc
+---
+# Assert empty by missing ingredients
+- assertNotVisible:
+    id: com.kc.app.kc:id/tvNeeded
